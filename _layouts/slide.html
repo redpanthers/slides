@@ -34,6 +34,8 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "/css/custom.css" | prpend: site.baseurl }}"/>
+
 
     <!-- Printing and PDF exports -->
     <script>
@@ -59,8 +61,12 @@
       <div class="slides">
         {{ content }}
       </div>
+      <div class="pesentation-details">
+        <p>{{page.author}} /
+          <a href="https://twitter.com/{{page.author_twitter}}" title="Follow me on Twitter">{{page.author_twitter}}</a>
+        </p>
+      </div>
     </div>
-
     <script src="{{ "/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
     <script>
