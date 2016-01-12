@@ -4,10 +4,10 @@
     <title>Red Panthers</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://slides.redpanthers.co/</link>
-    <atom:link href="http://slides.redpanthers.co/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 13 Jan 2016 00:59:22 +0530</pubDate>
-    <lastBuildDate>Wed, 13 Jan 2016 00:59:22 +0530</lastBuildDate>
+    <link>http://slides.redpanthers.co/slides/</link>
+    <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 13 Jan 2016 01:10:13 +0530</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 01:10:13 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -89,8 +89,8 @@ If you prefer markdown then use
 &lt;/section&gt;
 </description>
         <pubDate>Tue, 12 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/create-slides-with-revealjs-and-jekyll/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/create-slides-with-revealjs-and-jekyll/</guid>
+        <link>http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</guid>
         
         
       </item>
