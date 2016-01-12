@@ -1,0 +1,4 @@
+method: git
+site_dir: _site
+git_url: git@github.com:redpanthers/slides
+git_branch: gh-pages
