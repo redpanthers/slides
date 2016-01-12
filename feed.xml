@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red Panthers</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://slides.redpanthers.co/</link>
+    <atom:link href="http://slides.redpanthers.co/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 13 Jan 2016 00:59:22 +0530</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 00:59:22 +0530</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Make awesome presentations using reveal.js and Jekyll</title>
+        <description>&lt;section data-markdown&gt;
+# Create slides using reveal.js and Jekyll
+
+Jan 12, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Manu S Ajith&lt;/h3&gt;
+  &lt;div style=&quot;width:200%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;http://9piecesof8.com/img/manu.png&quot; style=&quot;float: left; width:300px; height:300px;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Writes code @RedPanthers&lt;/li&gt;
+          &lt;li&gt;Am committed to Ruby for some time,&lt;/li&gt;
+          &lt;li&gt;been dating Go during weekends,&lt;/li&gt;
+          &lt;li&gt;and recently flirting with Elixir at night&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown&gt;
+### Overview
+
+[reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
+beautiful interactive slides using HTML. This presentation will show/demo you
+how to use reveal.js and write your presentations in style with [Jekyll](http://jekyllrb.com/)
+&lt;/section&gt;
+
+&lt;section data-markdown&gt;
+### Slide Layout
+
+reveal.js is already included as a `git submodule`, so that we can use it in our layouts.
+
+Also a `slide.html` layout has been added into the `_layouts` folder which would be the base layout for all our slides.
+&lt;/section&gt;
+
+&lt;section data-markdown&gt;
+### Creating Slide
+
+Now, in your page/post YAML front matter, use `slide` for the layout.
+
+You can define *title*, *author*, *description* as well as the slide&#39;s *theme* and
+*transition*
+
+    --
+    layout: slide
+    title: Jekyll&amp;#58; Make presentation page with reveal.js
+    description: A presentation slide for how to use reveal.js in Jekyll
+    theme: black
+    transition: slide
+    --
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown&gt;
+### Slide
+
+Each slide is enclosed in a `&amp;lt;section&amp;gt;` tag.
+
+If you prefer markdown then use
+
+`&amp;lt;section data-markdown&amp;gt;`
+
+&lt;/section&gt;
+
+&lt;section data-markdown&gt;
+## THE END
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/create-slides-with-revealjs-and-jekyll/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/create-slides-with-revealjs-and-jekyll/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
