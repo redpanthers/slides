@@ -6,8 +6,8 @@
 </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Jan 2016 18:25:53 +0530</pubDate>
-    <lastBuildDate>Thu, 14 Jan 2016 18:25:53 +0530</lastBuildDate>
+    <pubDate>Fri, 15 Jan 2016 17:52:44 +0530</pubDate>
+    <lastBuildDate>Fri, 15 Jan 2016 17:52:44 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -196,6 +196,15 @@ NERDTree
 Syntastic  
 EasyMotion  
 
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+http://www.openvim.com  
+http://vimawesome.com  
+https://github.com/VundleVim/Vundle.vim  
+https://github.com/scrooloose/nerdtree  
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
