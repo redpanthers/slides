@@ -12,7 +12,9 @@
     </title>
 
     <meta name="author" content="{{ site.author }}" />
-
+    <!-- Include Social media meta content -->
+    {% include slide_meta.html %}
+    <!-- eof social media meta content -->
     <!-- Description -->
     {% if page.description %}
       <meta name="description" content="{{ page.description }}" />
