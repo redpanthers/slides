@@ -6,8 +6,8 @@
 </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Jan 2016 17:52:44 +0530</pubDate>
-    <lastBuildDate>Fri, 15 Jan 2016 17:52:44 +0530</lastBuildDate>
+    <pubDate>Fri, 15 Jan 2016 18:21:27 +0530</pubDate>
+    <lastBuildDate>Fri, 15 Jan 2016 18:21:27 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -29,7 +29,7 @@ Jan 14, 2016
     &lt;div style=&quot;float:right; width:70%;&quot;&gt;
       &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
           &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
-          
+
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -46,7 +46,7 @@ Vim editor is a clone of Bill Joy’s vi editor for Linux. Vim stands for Vi IMp
 &lt;section data-markdown=&quot;&quot;&gt;
 ### Introduction -- contd.
 
-Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.   
+Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.
 
 &lt;/section&gt;
 
@@ -100,7 +100,7 @@ Inserting into a new line is done by presing key&#39;O&#39;.Capital &#39;O&#39;c
 ### Searching in vim -- contd.
 
 In Vim you press ‘/‘ and give the text you are looking for.Repeat the search to find the next occurrence of the same text by pressing n and previous occurrence by pressing N.
-  
+
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
@@ -185,7 +185,7 @@ To configure vundle
   Plugin &#39;VundleVim/Vundle.vim&#39;  
   call vundle#end()  
 3.lauch vim and run plugin install
-  
+
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
@@ -209,12 +209,12 @@ https://github.com/scrooloose/nerdtree
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ##Thank you :)
-  
+
 &lt;/section&gt;
 </description>
         <pubDate>Wed, 13 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/Vim presentation/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/Vim presentation/</guid>
+        <link>http://slides.redpanthers.co/slides/vim-editor-tips</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips</guid>
         
         
       </item>
