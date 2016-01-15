@@ -4,8 +4,8 @@ title: Vim text editor
 description: A presentation slide for how to use Vim
 theme: black
 transition: slide
-permalink: /Vim presentation/
-author: Ajay Joseph 
+permalink: /vim-editor-tips
+author: Ajay Joseph
 ---
 
 <section data-markdown>
@@ -25,7 +25,7 @@ Jan 14, 2016
     <div style="float:right; width:70%;">
       <ul style="float: left; padding-top: 4%;">
           <li>Ruby Devoloper Trainee at Redpanthers</li>
-          
+
       </ul>
     </div>
   </div>
@@ -42,7 +42,7 @@ Vim editor is a clone of Bill Joy’s vi editor for Linux. Vim stands for Vi IMp
 <section data-markdown>
 ### Introduction -- contd.
 
-Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.   
+Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.
 
 </section>
 
@@ -96,7 +96,7 @@ Inserting into a new line is done by presing key'O'.Capital 'O'creates a line ab
 ### Searching in vim -- contd.
 
 In Vim you press ‘/‘ and give the text you are looking for.Repeat the search to find the next occurrence of the same text by pressing n and previous occurrence by pressing N.
-  
+
 </section>
 
 <section data-markdown>
@@ -182,7 +182,7 @@ To configure vundle
   Plugin 'VundleVim/Vundle.vim'  
   call vundle#end()  
 3.lauch vim and run plugin install
-  
+
 </section>
 
 <section data-markdown>
@@ -196,6 +196,15 @@ EasyMotion
 </section>
 
 <section data-markdown>
+### References
+
+http://www.openvim.com  
+http://vimawesome.com  
+https://github.com/VundleVim/Vundle.vim  
+https://github.com/scrooloose/nerdtree  
+</section>
+
+<section data-markdown>
 ##Thank you :)
-  
+
 </section>
