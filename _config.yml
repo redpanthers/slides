@@ -9,6 +9,8 @@ baseurl: "/slides" # the subpath of your site, e.g. /blog/
 url: "http://slides.redpanthers.co" # the base hostname & protocol for your site
 twitter_username: redpanthershq
 github_username:  redpanthers
+linkedin_username: redpanthers
+instagram_username: redpanthers 
 
 # Build settings
 markdown: kramdown
