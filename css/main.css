@@ -143,12 +143,6 @@ pre {
 /**
  * Site header
  */
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative; }
-
 .site-title {
   font-size: 26px;
   line-height: 56px;
@@ -300,6 +294,192 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.site-top {
+  min-height: 40px;
+  background: #343e47;
+  color: #999;
+  border-bottom: 1px solid #a70e0e; }
+  .site-top ul {
+    position: relative;
+    margin: 0;
+    padding: 0; }
+    .site-top ul li {
+      display: inline-block; }
+      .site-top ul li a {
+        display: block;
+        color: #999;
+        padding: 10px 10px; }
+        .site-top ul li a:first-child {
+          padding-left: 0; }
+  .site-top .contact-options li a {
+    padding: 10px 5px; }
+
+.site-main .navbar {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background: #f3f3f3;
+  border: none;
+  min-height: 140px;
+  padding: 40px 0; }
+  .site-main .navbar .navbar-brand .title {
+    margin: 0; }
+  .site-main .navbar .header-links li a {
+    font-size: 16px;
+    color: #111; }
+
+.slides-wrapper {
+  margin: 30px 0 0;
+  padding: 0px;
+  display: block; }
+  .slides-wrapper .slide {
+    width: 100%;
+    min-height: 320px;
+    border: 1px solid #f3f3f3;
+    padding: 0 15px 10px;
+    box-shadow: 5px 5px 15px 0 #f7f7f7; }
+    .slides-wrapper .slide .image-wrapper {
+      margin: 0 -15px 0;
+      display: block;
+      clear: both;
+      position: relative; }
+      .slides-wrapper .slide .image-wrapper:after {
+        content: '';
+        display: block;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        position: absolute;
+        background: -webkit-linear-gradient(transparent 50%, rgba(0, 0, 0, 0.7) 100%);
+        background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.7) 100%); }
+      .slides-wrapper .slide .image-wrapper .post-meta.date {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: #961818;
+        padding: 2px 6px;
+        font-size: 11px;
+        -webkit-border-top-right-radius: 6px;
+        -webkit-border-bottom-right-radius: 6px;
+        -webkit-border-bottom-left-radius: 6px;
+        -webkit-border-top-left-radius: 6px;
+        -moz-border-radius-topright: 6px;
+        -moz-border-radius-bottomright: 6px;
+        -moz-border-radius-bottomleft: 6px;
+        -moz-border-radius-topleft: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        -webkit-text-shadow: 1px 0px 0 #ccc;
+        -moz-text-shadow: 1px 0px 0 #ccc;
+        text-shadow: 1px 0px 0 #ccc;
+        color: #fff;
+        z-index: 3;
+        font-weight: lighter; }
+        .slides-wrapper .slide .image-wrapper .post-meta.date i {
+          position: relative;
+          margin-right: 2px;
+          font-size: 10px;
+          vertical-align: middle; }
+    .slides-wrapper .slide .post-link {
+      color: #555;
+      text-decoration: none; }
+    .slides-wrapper .slide .post-title-a {
+      height: 54px;
+      overflow: hidden; }
+
+/** Profile section on Index page **/
+.profile-author {
+  display: block;
+  padding: 5px 5px 5px 48px;
+  position: relative;
+  min-height: 48px; }
+  .profile-author .profile-author-a {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 0; }
+    .profile-author .profile-author-a img {
+      -webkit-border-top-right-radius: 50%;
+      -webkit-border-bottom-right-radius: 50%;
+      -webkit-border-bottom-left-radius: 50%;
+      -webkit-border-top-left-radius: 50%;
+      -moz-border-radius-topright: 50%;
+      -moz-border-radius-bottomright: 50%;
+      -moz-border-radius-bottomleft: 50%;
+      -moz-border-radius-topleft: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      width: 100%; }
+  .profile-author .profile-name {
+    display: block;
+    margin: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 6px 0;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #999; }
+
+.home-title {
+  display: block;
+  margin-bottom: 10px; }
+  .home-title .page-heading {
+    font-size: 42px;
+    font-weight: bold; }
+  .home-title .slides-icon {
+    font-size: 40px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    -webkit-border-top-right-radius: 50%;
+    -webkit-border-bottom-right-radius: 50%;
+    -webkit-border-bottom-left-radius: 50%;
+    -webkit-border-top-left-radius: 50%;
+    -moz-border-radius-topright: 50%;
+    -moz-border-radius-bottomright: 50%;
+    -moz-border-radius-bottomleft: 50%;
+    -moz-border-radius-topleft: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    padding-top: 12px;
+    line-height: normal; }
+
+/** Footer section **/
+.footer-section {
+  background: #343e47;
+  color: #eee;
+  display: block; }
+
+.social-media-list li a {
+  color: #777;
+  text-decoration: none; }
+
+.contact-list li a {
+  color: #777; }
 
 /**
  * Syntax highlighting styles
