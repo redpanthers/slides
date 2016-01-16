@@ -6,6 +6,8 @@ theme: black
 transition: slide
 permalink: /sublime-packages/
 author: Alfred Dominic
+post_thumbnail: /slides/images/vim-editor.jpg
+profile_image: /slides/profiles/alfi-max.jpg
 ---
 
 <section data-markdown>
