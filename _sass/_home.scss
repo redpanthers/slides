@@ -1,6 +1,6 @@
 .site-top{
 	min-height: 40px;
-	background: #333;
+	background: #343e47;
 	color: #999;
 	border-bottom: 1px solid #a70e0e;
 	ul{
@@ -13,7 +13,9 @@
 				display: block;
 				color: #999;
 				padding: 10px 10px;
-
+				&:first-child{
+					padding-left: 0;
+				}
 			}
 		}
 	}
@@ -144,7 +146,7 @@
 	}
 	.slides-icon{
 		font-size: 40px;
-		
+
 		display: block;
 		width: 64px;
 		height: 64px;
@@ -152,9 +154,28 @@
 		@include c-border-radius(50%,50%,50%,50%);
 		border: 1px solid #eee;
 		text-align: center;
-		padding-top: 6px;
+		padding-top: 12px;
 		line-height: normal;
 	}
 }
+/** Footer section **/
+.footer-section{
+	background: #343e47;
+	color: #eee;
+	display: block;
+}
+.social-media-list{
+	li a{
+		color: #777;
+		text-decoration: none;
+	}
+}
 
+.contact-list{
+	li{
+		a{
+			color: #777;
+		}
+	}
+}
 
