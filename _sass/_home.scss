@@ -178,4 +178,47 @@
 		}
 	}
 }
+/** Brand logo section **/
+.redpanther-brand{
+	height: auto;
+}
+.brand-logo{
+	display: block;
+	padding: 0 0 0 40px;
+	position: relative;
+	.logo-logo{
+		width: 30px;
+
+		float: left;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img{
+			width: 100%;
+		}
+	}
+
+	.logo-title{
+		display: block;
+		padding: 0;
+		.title{
+			color: #d52d2d;
+			font-weight: bold;
+		}
+		.sub-title{
+			font-size: 14px;
+			clear: both;
+			margin: 0;
+			font-style: italic;
+			font-weight: lighter;
+		}
+	}
+}
+
+
+
+
+
+
+
 
