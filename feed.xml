@@ -6,9 +6,183 @@
 </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 16 Jan 2016 15:51:07 +0530</pubDate>
-    <lastBuildDate>Sat, 16 Jan 2016 15:51:07 +0530</lastBuildDate>
+    <pubDate>Sat, 16 Jan 2016 17:32:24 +0530</pubDate>
+    <lastBuildDate>Sat, 16 Jan 2016 17:32:24 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Sublime Packages</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+  # Sublime Packages
+
+  Jan 16, 2016
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h4&gt;Hi, I&#39;m&lt;/h4&gt;
+  &lt;h3&gt;Alfred Dominic&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Alfred Dominic&quot; src=&quot;https://avatars1.githubusercontent.com/u/8247590?v=3&amp;amp;s=460&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;RoR Developer @RedPanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Sublime Text&lt;/h2&gt;
+
+  &lt;div&gt;
+    Sublime Text is a sophisticated text editor for code, markup and prose.
+
+    &lt;div&gt;&lt;a href=&quot;http://docs.sublimetext.info/en/latest/index.html&quot; target=&quot;_blank&quot;&gt;Unofficial Documentation&lt;/a&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Package Control&lt;/h2&gt;
+
+  &lt;div&gt;
+    This is the Sublime Text package manager that makes it exceedingly simple to find, install and keep packages up-to-date
+  &lt;/div&gt;
+
+  &lt;div&gt;Get it here: &lt;a href=&quot;https://packagecontrol.io/&quot; target=&quot;_blank&quot;&gt;Package Control&lt;/a&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Settings &amp;amp; Key Bindings&lt;/h2&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;
+      Preferences &amp;gt; Settings Default|User
+    &lt;/div&gt;
+    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/settings.html&quot; target=&quot;_blank&quot;&gt;All About Settings&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;
+      Preferences &amp;gt; Key Bindings Default|User
+    &lt;/div&gt;
+    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/key_bindings.html&quot; target=&quot;_blank&quot;&gt;All About Key Bindings&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### A few settings I set for myself
+
+  ```
+    {
+        &quot;auto_complete_commit_on_tab&quot;: true,
+        &quot;caret_style&quot;: &quot;phase&quot;,
+        &quot;default_line_ending&quot;: &quot;LF&quot;,
+        &quot;draw_white_space&quot;: &quot;all&quot;,
+        &quot;enable_tab_scrolling&quot;: false,
+        &quot;ensure_newline_at_eof_on_save&quot;: true,
+        &quot;font_size&quot;: 9,
+        &quot;highlight_line&quot;: true,
+        &quot;highlight_modified_tabs&quot;: true,
+        &quot;fade_fold_buttons&quot;: false,
+        &quot;rulers&quot;: [80],
+        &quot;scroll_past_end&quot;: false,
+        &quot;tab_size&quot;: 2,
+        &quot;trailing_spaces_include_current_line&quot;: false,
+        &quot;translate_tabs_to_spaces&quot;: true,
+        &quot;trim_trailing_white_space_on_save&quot;: true,
+        &quot;wide_caret&quot;: true,
+        &quot;word_separators&quot;: &quot;./\\()\&quot;&#39;-:,.;&amp;lt;&amp;gt;~@#$%^&amp;amp;*|+=[]{}`~&quot;,
+        &quot;word_wrap&quot;: true
+    }
+
+  ```
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Keyboard Shortcuts&lt;/h2&gt;
+
+  &lt;div&gt;
+    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html&quot; target=&quot;_blank&quot;&gt;Windows/Linux&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html&quot; target=&quot;_blank&quot;&gt;OSX&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### How to search for a sublime package
+
+
+  * *Ctrl+Shift+P* is used to show the Command Palette
+
+  * Start typing: `Package Control`
+
+  * Choose `Package Control: Install Package`
+
+  * Here you get to search amoung the tons of packages available
+
+  [Package Control Usage Ref](https://packagecontrol.io/docs/usage)
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### A list of packages that i use
+
+
+  * ChangeQuotes
+
+  * ERB Snippets
+
+  * ERB Autocomplete
+
+  * All Autocomplete
+
+  * Expression
+
+  * Git Gutter
+
+  * OmniMarkupPreviewer
+
+  * MarkDownPreview
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### Cont...
+
+  * TrailingSpaces
+
+  * HTML2HAML
+
+  * HTML Beautify
+
+  * HTML-CSS-JS Prettify
+
+  * Rails Developer Snippets
+
+  * Rails Partial
+
+  * Rails OpenView
+
+  * Ruby On Rails Snippets
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ## Thank you :)
+&lt;/section&gt;
+</description>
+        <pubDate>Sat, 16 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/sublime-packages/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/sublime-packages/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Vim text editor</title>

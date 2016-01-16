@@ -347,7 +347,8 @@ pre {
     min-height: 320px;
     border: 1px solid #f3f3f3;
     padding: 0 15px 10px;
-    box-shadow: 5px 5px 15px 0 #f7f7f7; }
+    box-shadow: 5px 5px 15px 0 #f7f7f7;
+    margin-bottom: 15px; }
     .slides-wrapper .slide .image-wrapper {
       margin: 0 -15px 0;
       display: block;
@@ -482,28 +483,30 @@ pre {
   color: #777; }
 
 /** Brand logo section **/
-.redpanther-brand {
+.site-main .redpanther-brand {
   height: auto; }
-
-.brand-logo {
+.site-main .brand-logo {
   display: block;
   padding: 0 0 0 40px;
   position: relative; }
-  .brand-logo .logo-logo {
+  .site-main .brand-logo .logo-logo {
     width: 30px;
     float: left;
     position: absolute;
     top: 0;
     left: 0; }
-    .brand-logo .logo-logo img {
+    .site-main .brand-logo .logo-logo img {
       width: 100%; }
-  .brand-logo .logo-title {
+  .site-main .brand-logo .logo-title {
     display: block;
     padding: 0; }
-    .brand-logo .logo-title .title {
+    .site-main .brand-logo .logo-title .title {
       color: #d52d2d;
-      font-weight: bold; }
-    .brand-logo .logo-title .sub-title {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 32px;
+      margin-bottom: 3px !important; }
+    .site-main .brand-logo .logo-title .sub-title {
       font-size: 14px;
       clear: both;
       margin: 0;
