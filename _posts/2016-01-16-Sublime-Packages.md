@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /sublime-packages/
 author: Alfred Dominic
-post_thumbnail: /slides/images/sublime-text-editor.jpg
+post_thumbnail: /slides/images/sublime-text-editor.png
 profile_image: /slides/profiles/alfi-max.jpg
 ---
 
