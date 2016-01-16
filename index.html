@@ -3,21 +3,45 @@ layout: default
 ---
 
 <div class="home">
+<div class="home-title text-center">
+  <h1 class="page-heading text-center">
+    Latest Slides
+  </h1>
+  <div class="slides-icon text-center">
+    <span class="fa fa-slideshare text-center "></span>
+  </div>
+  
+</div>  
+  
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+  <ul class="post-list slides-wrapper row">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <li class="col-xs-12 col-sm-6 col-md-4">
+      <div class="slide">        
+        <div class="image-wrapper">
+          <span class="post-meta date">
+            <i class="fa fa-calendar"></i>
+            {{ post.date | date: "%b %-d, %Y" }}
 
-        <h2>
+          </span>
+          <img src="{{post.post_thumbnail}}" class="img-responsive">  
+        </div>
+        
+        <h2 class="post-title-a">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <div class="profile-author">
+          <div class="profile-author-a">
+
+            <img src="{% if post.profile_image %}{{post.profile_image}}{% else %} /slides/profiles/profile_default.jpg {% endif %}" alt="{{post.author}}">
+          </div>
+          <a href="" class="profile-name">
+            {{post.author}}
+          </a>
+        </div> 
+        </div>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
+
