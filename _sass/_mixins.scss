@@ -1,0 +1,31 @@
+@mixin c-border-radius($top-right, $bottom-right, $bottom-left, $top-left){
+	-webkit-border-top-right-radius: $top-right;
+	-webkit-border-bottom-right-radius: $bottom-right;
+	-webkit-border-bottom-left-radius: $bottom-left;
+	-webkit-border-top-left-radius: $top-left;
+
+	-moz-border-radius-topright: $top-right;
+	-moz-border-radius-bottomright: $bottom-right;
+	-moz-border-radius-bottomleft: $bottom-left;
+	-moz-border-radius-topleft: $top-left;
+
+	border-top-right-radius: $top-right;
+	border-bottom-right-radius: $bottom-right;
+	border-bottom-left-radius: $bottom-left;
+	border-top-left-radius: $top-left;
+}
+@mixin c-gradient-shade($colorA,$colorAP, $colorB, $colorBP){
+	background: -webkit-linear-gradient($colorA $colorAP, $colorB $colorBP);
+	background: -moz-linear-gradient($colorA $colorAP, $colorB $colorBP);
+	background: linear-gradient($colorA $colorAP, $colorB $colorBP);
+}
+@mixin c-text-decoration($left, $top, $blur, $color){
+	-webkit-text-shadow: $left $top $blur $color;
+	-moz-text-shadow: $left $top $blur $color;
+	text-shadow: $left $top $blur $color;
+}
+@mixin c-box-shadow-outer($left, $top, $blur, $spread, $color){
+	-webkit-box-shadow: $left $top $blur $spread $color;
+	-moz-box-shadow: $left $top $blur $spread $color;
+	box-shadow: $left $top $blur $spread $color;
+}
