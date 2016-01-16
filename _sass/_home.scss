@@ -60,6 +60,7 @@
 		border: 1px solid #f3f3f3;
 		padding: 0 15px 10px;
 		@include c-box-shadow-outer(5px,5px, 15px, 0, #f7f7f7);
+		margin-bottom: 15px;
 		.image-wrapper{
 			margin: 0 -15px 0;
 			display: block;
