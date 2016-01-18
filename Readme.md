@@ -1,10 +1,9 @@
 Sample Markdown Slide
 =========================
-### Overview
 
 [reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
 beautiful interactive slides using HTML. This presentation will show/demo you
-how to use reveal.js and write your presentations in style with [Jekyll](http://jekyllrb.com/)
+how to use `reveal.js` and write your presentations in style with [Jekyll](http://jekyllrb.com/)
 
 ### Features
 
