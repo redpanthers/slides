@@ -6,9 +6,226 @@
 </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 16 Jan 2016 17:56:21 +0530</pubDate>
-    <lastBuildDate>Sat, 16 Jan 2016 17:56:21 +0530</lastBuildDate>
+    <pubDate>Mon, 18 Jan 2016 09:53:55 +0530</pubDate>
+    <lastBuildDate>Mon, 18 Jan 2016 09:53:55 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>React and Flux</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+ React and Flux
+&lt;/section&gt;
+&lt;section&gt;
+	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+	&lt;p&gt;
+		Frontend Developer
+	&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+	What is React, Why it is different
+&lt;/section&gt;
+&lt;section&gt;
+	React is a Javascript View Library, It can used with other Javascript frameworks
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+	It is not different, but it has some unique features
+	- Virtual DOM
+	- Fast render
+	- Uni directional data flow
+  - Reusable components
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### Virtual Dom
+  `Virtual-dom` is a collection of modules designed to provide a declarative way of representing the DOM for your app.
+  So instead of updating the DOM when your application state changes, you simply create a `virtual tree` or `VTree`, which looks like the DOM state that you want.
+  `virtual-dom` will then figure out how to make the DOM look like this efficiently without recreating all of the DOM nodes.
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+###SHow Codes
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;React Code&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### React Components has 3 properties
+- State
+- Props
+- Refs
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### State
+- state of a components
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+ ES5
+-----
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;getInitialState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nx&quot;&gt;retrun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+ES6
+-----
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&amp;gt; get value:
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&amp;gt; update value:
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Props
+
+- From Parent to Child
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Refs
+
+##### Get data from Component
+
+`&amp;lt;input type=/&#39;text/&#39; ref=/&#39;name/&#39; name=/&#39;name/&#39;&amp;gt;`
+
+
+`var name = this.refs.name`
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Life Cycle
+
+- getInitialState = constructor
+- componentWillMount
+- ComponentDidMount
+- componentWillReceiveProps
+- shouldComponentUpdate
+- ComponentWillUpdate
+- ComponentDidUpdate
+- componentWillUnmount
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### More Properties?
+
+Ans: Yes. Prop validation
+- You can specify state variable ( string, number, functions) with propType
+
+&amp;gt;
+`
+propTypes: {
+    // You can declare that a prop is a specific JS primitive. By default, these
+    // are all optional.
+    optionalArray: React.PropTypes.array,
+    optionalBool: React.PropTypes.bool,
+    optionalFunc: React.PropTypes.func,
+  }
+`
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### How to get Value from Components
+- Using different javascript events
+##### React and Native Javascript Events ?
+- onCLick , onHover, onMouseOver
+- onFocus, onKeyUp
+- Support all javascript events
+
+&amp;gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;input className=&#39;form-control&#39; onClick=&amp;#x7b;this.state.clickEvent&amp;#x7d;/&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;clickEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// You can call Stores or Action or anyother ajax calls&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Basic information about React, Lets move to Flux
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why Flux
+***
+Flux is an Application Architecture but it is not an MVC, Flux used to build scalable web applications with React and Flux
+#### Flux
+
+Action -&amp;gt; Dispatcher --&amp;gt; Store --&amp;gt; View
+( Then View -&amp;gt; Action via events/state change)
+![Flux](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+![Flux Architecture](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Action
+- as like its name
+We call/dispatch dispatcher with certain action type, in store dispatch invoke registered action
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Dispatcher
+- Center Hub, Like control center in Airport
+- APIS ( register, unresgister, dispatch, waitFor)
+- More Information [Dispatcher](https://facebook.github.io/flux/docs/dispatcher.html)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Store
+- Application state and Logic
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##### More informations about Action, Dispatcher and Store
+
+[React and Flux Doc](http://facebook.github.io/react/blog/2014/07/30/flux-actions-and-the-dispatcher.html)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Example Applications
+[React and Flux Examples](https://github.com/facebook/flux/tree/master/examples)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##### React and Flux continues...
+
+Next React Router
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Thanks
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+##### Reference
+
+- [React docs](https://facebook.github.io/react/index.html)
+- [Flux docs](https://facebook.github.io/flux/)
+- React and Flux Examples by Facebook(https://github.com/facebook/flux/tree/master/examples)
+- React and FLux ( Lynda, Tutplus, Pluralsight)
+- [Videoreels](https://bitbucket.org/sibinx7/newreels)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Mon, 18 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/web-with-react-and-flux/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/web-with-react-and-flux/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Sublime Packages</title>
