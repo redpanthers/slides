@@ -15,10 +15,9 @@ how to use *reveal.js* and write your presentations in style with [*Jekyll*](htt
 
 ### Creating Slide
 
-Now, in your page/post YAML front matter, use `slide` for the layout.
+To add a new slide, simply add a file in the `-posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext`.
 
-You can define *title*, *author*, *description* as well as the slide's *theme* and
-*transition*
+In the front matter use `slide` for layout. You can define *title*, *author*, *description* as well as the slide's *theme* and *transition* as. 
 
     --
     layout: slide
