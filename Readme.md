@@ -3,7 +3,7 @@ Sample Markdown Slide
 
 [reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
 beautiful interactive slides using HTML. This presentation will show/demo you
-how to use `reveal.js` and write your presentations in style with [Jekyll](http://jekyllrb.com/)
+how to use `reveal.js` and write your presentations in style with [Jekyll](http://jekyllrb.com/).
 
 ### Features
 
@@ -12,20 +12,6 @@ how to use `reveal.js` and write your presentations in style with [Jekyll](http:
     - Supports all Github-supported .gitignore files
     - Works on Mac, Linux and Windows
     
-
-
-### Sub-modules
-
-`reveal.js` is already included as a `git submodule`, so that we can use it in our layouts.
-
-`footer.html` `head.html` `header.html` are sub-modules listed in `_includes` folder.
-
-`custom.css` and `main.css` are sub-modules inside css.
-
- `_sass` folder contains following sub-modules `_base.scss` `_layout.scss` `_syntax-highlighting.scss`
-
-Also a `slide.html` `default.html` `page.html` `post.html`  layout has been added into the `_layouts` folder which would be the base layout for all our slides.
-
 ### Creating Slide
 
 Now, in your page/post YAML front matter, use `slide` for the layout.
