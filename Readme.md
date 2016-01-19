@@ -1,8 +1,8 @@
-Sample Markdown Slide
-=========================
-### Overview
+Markdown Slide
+==============
 
-[reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
+Markdown slide is the simplest way to share your thoughts.
+[reveal.js](https://github.com/hakimel/reveal.js/) allows you to create
 beautiful interactive slides using HTML. This presentation will show/demo you
 how to use reveal.js and write your presentations in style with [Jekyll](http://jekyllrb.com/)
 
@@ -12,8 +12,6 @@ how to use reveal.js and write your presentations in style with [Jekyll](http://
     - Stupidly easy to use
     - Supports all Github-supported .gitignore files
     - Works on Mac, Linux and Windows
-    
-
 
 ### Sub-modules
 
