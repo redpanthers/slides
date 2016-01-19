@@ -47,14 +47,8 @@ If you prefer markdown then use
 - On successfull merging of this branch with master, pull master branch.
 - From master branch give command `octopress deploy`  
 
-### Contact info
+### Contact info and Copyright
 
-Website : www.redpanthers.co
-
-Company name : Red Panthers Software Solutions (P) Ltd
-
-Address : Vijaya complex, Chembumukku, Kakkanad, Kochi 682030
-
-### Thanks
+[Red Panthers Software Solutions (P) Ltd](http://redpanthers.co/contact)
 
 redpanthers©2016
