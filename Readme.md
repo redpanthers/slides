@@ -26,21 +26,13 @@ In the front matter use `slide` for layout. You can define *title*, *author*, *d
     theme: black
     transition: slide
     --
-
-### Slide
-
-Each slide is enclosed in a `&lt;section&gt;` tag.
-
-If you prefer markdown then use
-
-`&lt;section data-markdown&gt;`
-
-### Instruction to add new slides to `http://redpanthers.github.io/slides/`
+    
+### Instruction to add new slides to [Red Panthers](http://redpanthers.github.io/slides/)
 
 
 - Clone the slide using  git clone git@github.com:redpanthers/slides.git – recursive
 - Create a 'new branch' with your name
-- Open it in the sublime editor and edit the content listed inside posts (2016-01-12-create-slides-with-   revealjs-and-jekyll.html).
+- Open it in any text editor and edit the content listed inside posts (2016-01-12-create-slides-with-   revealjs-and-jekyll.html).
 - Create new post in the newly created branch
 - Push this branch to remote (git push origin 'newbranch')
 - Create a pull request to master branch with a message to review the slides (tag sibinx7,pooja-r,manusajith)
