@@ -39,14 +39,8 @@ In the front matter use `slide` for layout. You can define *title*, *author*, *d
 - On successfull merging of this branch with master, pull master branch.
 - From master branch give command `octopress deploy`  
 
-### Contact info
+### Contact and Copyright
 
-Website : www.redpanthers.co
-
-Company name : Red Panthers Software Solutions (P) Ltd
-
-Address : Vijaya complex, Chembumukku, Kakkanad, Kochi 682030
-
-### Thanks
+[Red panthers](www.redpanthers.co)
 
 redpanthers©2016
