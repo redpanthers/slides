@@ -5,7 +5,7 @@ description: A presentation slide for Jenkins-CI
 theme: black
 transition: slide
 permalink: /Jenkins CI
-author: Augustin Pulikan
+author: Augustin Pulikan  
 post_thumbnail: /slides/images/vim-editor.jpg
 profile_image: /slides/profiles/augustin.jpg
 ---
