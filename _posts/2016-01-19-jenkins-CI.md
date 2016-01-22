@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /jenkins-ci-opensource-automation-server
 author: Augustin Pulikan  
-post_thumbnail: /slides/images/vim-editor.jpg
+post_thumbnail: /slides/images/jenkins.jpg
 profile_image: /slides/profiles/augustin.jpg
 ---
 
