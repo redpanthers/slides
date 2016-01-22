@@ -6,9 +6,371 @@
 </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 18 Jan 2016 09:53:55 +0530</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2016 09:53:55 +0530</lastBuildDate>
+    <pubDate>Fri, 22 Jan 2016 15:30:49 +0530</pubDate>
+    <lastBuildDate>Fri, 22 Jan 2016 15:30:49 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Pry alternative for IRB</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# PRY- Alternative for IRB 
+
+Jan 20, 2016
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h4&gt;Pooja Raghunath&lt;/h4&gt;
+  &lt;p&gt;
+    Ruby Developer@RedPanthers
+  &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+What is PRY?
+
+PRY is REPL (Read Eval Print Loop) that was written as a better alternative to IRB.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Main Features
+
+* Easier to debug code
+* Provide proper indendation
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Features -- contd.
+ * Besides indentation Pry does a lot more. 
+ * A feature that I think is very cool is the ability to show documentation and source code of methods right in your REPL .
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Features -- contd.
+* View the documentation or source for a method
+* Search your Pry history
+* Edit and reload files
+* Run shell commands
+* Dive into objects
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Features -- contd.
+Instead of ri and Rdoc documentation PRY uses show method or show-doc command.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Features -- contd.
+Calling show-doc pry would instead show the following:
+  pry(main)&amp;gt; show-doc pry
+
+From: /path/trimmed/for/readability/lib/pry/core_extensions.rb @ line 19:
+Number of lines: 17
+Owner: Object
+Visibility: public
+Signature: pry(target=?)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How to install PRY?
+We’ll need to install Pry within each project using Bundler if we want to utilize the debugging features.
+
+First add Pry to your Gemfile:
+[code lang=ruby] # Gemfile
+source ‘https://rubygems.org’
+gem ‘pry’
+[/code] 
+
+If you’re running a Rails project, then place Pry under the :development group:
+[code lang=ruby] # Gemfile
+source ‘https://rubygems.org’
+gem ‘rails’
+group :development do
+gem ‘pry’
+end
+[/code] 
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ###Pry Commands
+  * ack and Ctags can be used for browsing content
+  * cd  Change self
+  * List global variables: ls -g
+  * List constants: ls -c
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### pry gem vs pry_rails_gem
+* The pry-rails gem simply adds an initializer to change the Rails console to Pry and adds some Pry commands specific to Rails. 
+* Pry-rails depends on Pry, and there&#39;s no reason you couldn&#39;t use Pry with Rails without pry-rails, it just makes it easier.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Pry  as  debugger
+* pry_debugg gem
+* pry_stack_explorer
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Pry  as  debugger
+Use &#39;binding.pry&#39;
+
+Ruby interpeter will stop execute till line containing binding.pry and it open pry REPL session at that point.  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference 
+http://pryrepl.org/
+https://github.com/pry/pry
+https://www.bignerdranch.com/blog/my-top-5-pry-features/
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Thank You !!!
+&lt;section&gt;
+&lt;/section&gt;&lt;/section&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/pry-alternative-for-irb</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/pry-alternative-for-irb</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>jenkins</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Jenkins-CI
+
+Jan 19, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Augustin Pulikan&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xft1/v/t1.0-9/12065624_873705689393220_2906766376590498181_n.jpg?oh=a5eca759b8989d24dd44d77d04b5eb8d&amp;amp;oe=57443E25&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+
+Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###What is CI?
+
+Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### CI – Benefits
+ Immediate bug detection
+
+ No integration step in the lifecycle
+
+ A deployable system at any given point
+
+ Record of evolution of the project 
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why Jenkins? Flexibility!
+ Jenkins is a highly configurable system by itself
+  By combining Jenkins with Ant, Gradle, or other Build
+Automation tools, the possibilities are limitless 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What can Jenkins do?
+ Generate test reports
+
+ Integrate with many different Version Control Systems
+
+ Push to various artifact repositories
+
+ Deploys directly to production or test environments
+ 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How Jenkins works - Setup
+ Associating with a version control server
+
+ Triggering builds
+
+ Execution of shell scripts, bash scripts, Ant targets
+
+ Artifact archival
+
+ Email notifications
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How Jenkins works - Building
+ Building
+
+ Jenkins executes the build in an executer
+
+ Jenkins also has the concept of slave build servers
+
+ Useful for building on different architectures
+
+ Distribution of load 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How Jenkins works - Reporting
+
+ Jenkins comes with basic reporting features
+
+
+ Keeping track of build status
+ Last success and failure
+ “Weather” – Build trend
+ T
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Jenkins main page
+
+ What’s building (“No builds in the queue”)
+ Build Executor Status (both “Idle”)
+ Status of the projects 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Enhancing Jenkins
+SCM
+
+Testing
+
+Notifications
+
+Reporting
+
+Artifact savings
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What Can Plugins Do?
+Jenkins defines extensibility points, which are interfaces or abstract classes that model an aspect of a build system.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How to install plugins?
+
+Installing the newest version
+
+Installing a specific version
+
+By hand
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Installing the newest version
+
+clicking Manage Plugins and go to the Available tab. select the checkbox, and then either attempt to Install without restart or Download now and install after restart
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Installing a specific version
+
+you can upload it from your computer on the Advanced tab of the Manage Plugins page in Jenkins.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### By hand
+Save the downloaded *.hpi/*.jpi file into the $JENKINS_HOME/plugins directory. You will then need to restart Jenkins
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Plugin for highly productive ci
+Jenkins git plugin 
+
+Jenkins svn plugin 
+
+Jenkins ssh plugin
+
+Jenkins jira plugin
+
+Jenkins email plugin
+
+Artifactory
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Useful plugins
+
+All change plugin
+
+Bitbucket plugin
+
+Checkstyle plugin
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Useful plugins
+
+Depentency graph viewer
+
+git notes
+
+Deployment plugin
+
+Heroku plugin
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+https://wiki.jenkins-ci.org
+ 
+http://stackoverflow.com
+ 
+https://www.quora.com
+ 
+www.vogella.com
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 19 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</guid>
+        
+        
+      </item>
     
       <item>
         <title>React and Flux</title>
@@ -397,6 +759,148 @@ Next React Router
         <pubDate>Sat, 16 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/sublime-packages/</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/sublime-packages/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Docker</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Docker
+
+Jan 13, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Jeena Jacob&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/profiles/jeena_jacob.jpg&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;RoR Devoloper at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why Docker?
+
+Docker provides an integrated technology suite that enables development and IT operations teams to build,ship, and run distributed applications anywhere.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What is Docker?
+
+Docker allows you to package an application with all of its dependencies into a standardized unit for software development.
+
+Original author(s) :Solomon Hykes
+
+Developer(s)  : Docker, Inc.
+
+Initial release :13 March 2013
+
+Stable release	1.9.1[1] :21 November 2015
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Get Started with Docker for Linux
+
+Install Docker
+
+$ wget -qO- https://get.docker.com/ | shxt
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Verify if Docker is installed successfully.
+
+$ which docker 
+
+service docker start 
+service docker restart
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### images &amp;amp; containers
+
+An image is software you load into a container.A container is a stripped-to-basics version of a Linux operating system
+
+&lt;img alt=&quot;dockerrun&quot; src=&quot;/slides/images/run.png&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Build your own image
+
+#### Step 1: Write a Dockerfile
+
+touch Dockerfile
+
+eg:
+
+FROM docker/whalesay:latest
+RUN apt-get -y update &amp;amp;&amp;amp; apt-get install -y fortunes
+CMD /usr/games/fortune -a | cowsay
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+#### Step 2: Build an image from your Dockerfile
+
+$ docker build -t new_image_name .
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+#### Step 3: Run your new docker-whale
+
+ $ docker run new_image_name
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Remove Docker Images
+
+$ docker rmi -f image_id
+
+or
+
+$ docker rmi -f image_name
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+
+https://docs.docker.com/linux/
+
+https://www.youtube.com/watch?v=K6WER0oI-qs
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Thank You
+
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 14 Jan 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</guid>
         
         
       </item>

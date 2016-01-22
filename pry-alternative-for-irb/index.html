@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Pry alternative for IRB | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Pry alternative for IRB">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Pry alternative for IRB" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="A presentation slide for how to use Pry">
+  <meta name="description" content="A presentation slide for how to use Pry">
+  <meta property="og:description" content="A presentation slide for how to use Pry" />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="A presentation slide for how to use Pry" />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/pry-alternative-for-irb">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+# PRY- Alternative for IRB 
+
+Jan 20, 2016
+</section>
+
+<section>
+  <h4>Pooja Raghunath</h4>
+  <p>
+    Ruby Developer@RedPanthers
+  </p>
+</section>
+
+<section data-markdown="">
+### Introduction
+What is PRY?
+
+PRY is REPL (Read Eval Print Loop) that was written as a better alternative to IRB.
+</section>
+
+<section data-markdown="">
+### Main Features
+
+* Easier to debug code
+* Provide proper indendation
+
+</section>
+<section data-markdown="">
+### Features -- contd.
+ * Besides indentation Pry does a lot more. 
+ * A feature that I think is very cool is the ability to show documentation and source code of methods right in your REPL .
+</section>
+
+<section data-markdown="">
+### Features -- contd.
+* View the documentation or source for a method
+* Search your Pry history
+* Edit and reload files
+* Run shell commands
+* Dive into objects
+
+</section>
+
+<section data-markdown="">
+### Features -- contd.
+Instead of ri and Rdoc documentation PRY uses show method or show-doc command.
+</section>
+
+<section data-markdown="">
+### Features -- contd.
+Calling show-doc pry would instead show the following:
+  pry(main)&gt; show-doc pry
+
+From: /path/trimmed/for/readability/lib/pry/core_extensions.rb @ line 19:
+Number of lines: 17
+Owner: Object
+Visibility: public
+Signature: pry(target=?)
+</section>
+
+<section data-markdown="">
+### How to install PRY?
+We’ll need to install Pry within each project using Bundler if we want to utilize the debugging features.
+
+First add Pry to your Gemfile:
+[code lang=ruby] # Gemfile
+source ‘https://rubygems.org’
+gem ‘pry’
+[/code] 
+
+If you’re running a Rails project, then place Pry under the :development group:
+[code lang=ruby] # Gemfile
+source ‘https://rubygems.org’
+gem ‘rails’
+group :development do
+gem ‘pry’
+end
+[/code] 
+</section>
+
+<section data-markdown="">
+  ###Pry Commands
+  * ack and Ctags can be used for browsing content
+  * cd  Change self
+  * List global variables: ls -g
+  * List constants: ls -c
+</section>
+
+<section data-markdown="">
+### pry gem vs pry_rails_gem
+* The pry-rails gem simply adds an initializer to change the Rails console to Pry and adds some Pry commands specific to Rails. 
+* Pry-rails depends on Pry, and there's no reason you couldn't use Pry with Rails without pry-rails, it just makes it easier.
+</section>
+
+<section data-markdown="">
+### Pry  as  debugger
+* pry_debugg gem
+* pry_stack_explorer
+</section>
+
+<section data-markdown="">
+### Pry  as  debugger
+Use 'binding.pry'
+
+Ruby interpeter will stop execute till line containing binding.pry and it open pry REPL session at that point.  
+</section>
+
+<section data-markdown="">
+### Reference 
+http://pryrepl.org/
+https://github.com/pry/pry
+https://www.bignerdranch.com/blog/my-top-5-pry-features/
+</section>
+
+<section data-markdown="">
+### Thank You !!!
+<section>
+</section></section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Pooja Raghunath /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
