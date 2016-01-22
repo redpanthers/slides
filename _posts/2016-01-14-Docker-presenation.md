@@ -4,7 +4,7 @@ title: Docker
 description: Package an application with all of its dependencies into a standardized unit for software development.
 theme: black
 transition: slide
-permalink: /docker/
+permalink: /virtualization-using-docker-containers/
 author: Jeena Jacob
 post_thumbnail: /slides/images/docker.png
 profile_image: /slides/profiles/jeena_jacob.jpg
