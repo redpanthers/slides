@@ -1,42 +1,42 @@
-Markdown Slide
+http://redpanthers.github.io/slides
 ==============
 
-Markdown slide is the simplest way to share your thoughts.
-[reveal.js](https://github.com/hakimel/reveal.js/) allows you to create
-beautiful interactive slides using HTML. This presentation will show/demo you
-how to use *reveal.js* and write your presentations in style with [*Jekyll*](http://jekyllrb.com/)
 
-### Features
+At [Red Panthers](http://redpanthers.co), we always wanted to create a culture of continuous learning, innovation and delivery. We thrive to better ourselves, our craftsmanship, technical skills by learning new languages, frameworks, technology, methodologies that would help us to improve efficiency and productivity. Often we conduct technical talks/sessions
+sharing the knowledge we gained with the team members. We have benefitted from the open source community, and we believe that its our responsibility to share the knowledge that was once passed to us. We will be using this space to host our slides of our talks.
 
-    - Easy to install
-    - Stupidly easy to use
-    - Supports all Github-supported .gitignore files
-    - Works on Mac, Linux and Windows
- 
-### Instruction to add new slides to [Red Panthers](http://redpanthers.github.io/slides/)
+### Built with.
+1. Jekyll and Octopress
+2. Reveal.js
 
+### Contributing.
 
-  - Clone the slide using  git clone git@github.com:redpanthers/slides.git – recursive
-  - Create a 'new branch' with your name
-  - Open it in any text editor and edit the content listed inside posts (2016-01-12-create-slides-with-   revealjs-and-jekyll.html).
-    - In the front matter use `slide` for layout. You can define *title*, *author*, *description* as well as the slide's *theme* and *transition* as.
-        
-            --
-            layout: slide
-            title: Jekyll&#58; Make presentation page with reveal.js
-            description: A presentation slide for how to use reveal.js in Jekyll
-            theme: black
-            transition: slide
-            --
+Sharing is caring. If you want to contribute to this repo, follow the instructions below:
 
-  - Create new post in the newly created branch
-  - Push this branch to remote (git push origin 'newbranch')
-  - Create a pull request to master branch with a message to review the slides (tag sibinx7,pooja-r,manusajith)
-  - On successfull merging of this branch with master, pull master branch.
-  - From master branch give command `octopress deploy`  
+* Clone repo
 
-### Contact and Copyright
+```
+  git clone git@github.com:redpanthers/slides.git – recursive
+```
 
-[Red panthers](www.redpanthers.co)
+* Add your slide to the `posts` folder. Note the file name should be of the format `YYYY-MM-DD-your-awesome-talk.md`, and the layout should be set to `slide`.
 
-redpanthers©2016
+* Create a Pull Request, and ask any of the collaborators to review/merge your presentation. It will be helpful for the collaborators if you name your git branch after your name.
+
+### FAQ.
+
+1. Can I create my own layout?.
+
+  Yes, you can add your own layout inside the `_layouts` folder and use the same in your slides.
+
+2. Do you accept Pull Requests from members other than your github organization ?
+
+  Yes, any talks/slides that is informational is always welcome.
+
+3. Have another doubt ?
+
+  You want to ask us something, share your feedback, just shoot an email to `team@redpanthers.co`
+
+### License
+
+Copyright 2016 Red Panthers Software Solutions Pvt Ltd.
