@@ -16,4 +16,5 @@ group :jekyll_plugins do
   gem 'octopress-solarized'
   gem 'octopress-gist'
   gem 'jekyll-compose'
+  gem 'jekyll-paginate'
 end

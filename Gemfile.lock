@@ -213,6 +213,7 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-compose
+  jekyll-paginate
   octopress (~> 3.0.11)
   octopress-codeblock
   octopress-codefence
@@ -223,4 +224,4 @@ DEPENDENCIES
   octopress-video-tag
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

@@ -25,3 +25,7 @@ gems:
   - octopress-codefence
   - octopress-solarized
   - octopress-gist
+  - octopress-codefence
+  - jekyll-paginate
+
+paginate: 6
