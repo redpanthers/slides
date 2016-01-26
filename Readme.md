@@ -1,75 +1,42 @@
-Sample Markdown Slide
-=========================
-### Overview
-
-[reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
-beautiful interactive slides using HTML. This presentation will show/demo you
-how to use reveal.js and write your presentations in style with [Jekyll](http://jekyllrb.com/)
-
-### Features
-
-    - Easy to install
-    - Stupidly easy to use
-    - Supports all Github-supported .gitignore files
-    - Works on Mac, Linux and Windows
-    
+http://redpanthers.github.io/slides
+==============
 
 
-### Sub-modules
+At [Red Panthers](http://redpanthers.co), we always wanted to create a culture of continuous learning, innovation and delivery. We thrive to better ourselves, our craftsmanship, technical skills by learning new languages, frameworks, technology, methodologies that would help us to improve efficiency and productivity. Often we conduct technical talks/sessions
+sharing the knowledge we gained with the team members. We have benefitted from the open source community, and we believe that its our responsibility to share the knowledge that was once passed to us. We will be using this space to host our slides of our talks.
 
-`reveal.js` is already included as a `git submodule`, so that we can use it in our layouts.
+### Built with.
+1. Jekyll and Octopress
+2. Reveal.js
 
-`footer.html` `head.html` `header.html` are sub-modules listed in `_includes` folder.
+### Contributing.
 
-`custom.css` and `main.css` are sub-modules inside css.
+Sharing is caring. If you want to contribute to this repo, follow the instructions below:
 
- `_sass` folder contains following sub-modules `_base.scss` `_layout.scss` `_syntax-highlighting.scss`
+* Clone repo
 
-Also a `slide.html` `default.html` `page.html` `post.html`  layout has been added into the `_layouts` folder which would be the base layout for all our slides.
+```
+  git clone git@github.com:redpanthers/slides.git – recursive
+```
 
-### Creating Slide
+* Add your slide to the `posts` folder. Note the file name should be of the format `YYYY-MM-DD-your-awesome-talk.md`, and the layout should be set to `slide`.
 
-Now, in your page/post YAML front matter, use `slide` for the layout.
+* Create a Pull Request, and ask any of the collaborators to review/merge your presentation. It will be helpful for the collaborators if you name your git branch after your name.
 
-You can define *title*, *author*, *description* as well as the slide's *theme* and
-*transition*
+### FAQ.
 
-    --
-    layout: slide
-    title: Jekyll&#58; Make presentation page with reveal.js
-    description: A presentation slide for how to use reveal.js in Jekyll
-    theme: black
-    transition: slide
-    --
+1. Can I create my own layout?.
 
-### Slide
+  Yes, you can add your own layout inside the `_layouts` folder and use the same in your slides.
 
-Each slide is enclosed in a `&lt;section&gt;` tag.
+2. Do you accept Pull Requests from members other than your github organization ?
 
-If you prefer markdown then use
+  Yes, any talks/slides that is informational is always welcome.
 
-`&lt;section data-markdown&gt;`
+3. Have another doubt ?
 
-### Instruction to add new slides to `http://redpanthers.github.io/slides/`
+  You want to ask us something, share your feedback, just shoot an email to `team@redpanthers.co`
 
+### License
 
-- Clone the slide using  git clone git@github.com:redpanthers/slides.git – recursive
-- Create a 'new branch' with your name
-- Open it in the sublime editor and edit the content listed inside posts (2016-01-12-create-slides-with-   revealjs-and-jekyll.html).
-- Create new post in the newly created branch
-- Push this branch to remote (git push origin 'newbranch')
-- Create a pull request to master branch with a message to review the slides (tag sibinx7,pooja-r,manusajith)
-- On successfull merging of this branch with master, pull master branch.
-- From master branch give command `octopress deploy`  
-
-### Contact info
-
-Website : www.redpanthers.co
-
-Company name : Red Panthers Software Solutions (P) Ltd
-
-Address : Vijaya complex, Chembumukku, Kakkanad, Kochi 682030
-
-### Thanks
-
-redpanthers©2016
+Copyright 2016 Red Panthers Software Solutions Pvt Ltd.

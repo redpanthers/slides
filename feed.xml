@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks | Red Panthers - Experts in Ruby on Rails kochi, India</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://slides.redpanthers.co/slides/</link>
-    <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Jan 2016 15:37:00 +0530</pubDate>
-    <lastBuildDate>Fri, 22 Jan 2016 15:37:00 +0530</lastBuildDate>
+    <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
+    <link>http://slides.redpanthers.co/slides//</link>
+    <atom:link href="http://slides.redpanthers.co/slides//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 26 Jan 2016 19:04:16 +0530</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 19:04:16 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -132,8 +131,8 @@ https://www.bignerdranch.com/blog/my-top-5-pry-features/
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Wed, 20 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/pry-alternative-for-irb</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/pry-alternative-for-irb</guid>
+        <link>http://slides.redpanthers.co/slides//pry-alternative-for-irb</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//pry-alternative-for-irb</guid>
         
         
       </item>
@@ -366,8 +365,8 @@ www.vogella.com
 &lt;/section&gt;
 </description>
         <pubDate>Tue, 19 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</guid>
+        <link>http://slides.redpanthers.co/slides//jenkins-ci-opensource-automation-server</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//jenkins-ci-opensource-automation-server</guid>
         
         
       </item>
@@ -583,8 +582,8 @@ Next React Router
 &lt;/section&gt;
 </description>
         <pubDate>Mon, 18 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/web-with-react-and-flux/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/web-with-react-and-flux/</guid>
+        <link>http://slides.redpanthers.co/slides//web-with-react-and-flux/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//web-with-react-and-flux/</guid>
         
         
       </item>
@@ -757,8 +756,8 @@ Next React Router
 &lt;/section&gt;
 </description>
         <pubDate>Sat, 16 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/sublime-packages/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/sublime-packages/</guid>
+        <link>http://slides.redpanthers.co/slides//sublime-packages/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//sublime-packages/</guid>
         
         
       </item>
@@ -899,8 +898,8 @@ https://www.youtube.com/watch?v=K6WER0oI-qs
 &lt;/section&gt;
 </description>
         <pubDate>Thu, 14 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</guid>
+        <link>http://slides.redpanthers.co/slides//virtualization-using-docker-containers/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//virtualization-using-docker-containers/</guid>
         
         
       </item>
@@ -1108,8 +1107,8 @@ https://github.com/scrooloose/nerdtree
 &lt;/section&gt;
 </description>
         <pubDate>Wed, 13 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/vim-editor-tips</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips</guid>
+        <link>http://slides.redpanthers.co/slides//vim-editor-tips</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//vim-editor-tips</guid>
         
         
       </item>
@@ -1193,8 +1192,8 @@ If you prefer markdown then use
 &lt;/section&gt;
 </description>
         <pubDate>Tue, 12 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</guid>
+        <link>http://slides.redpanthers.co/slides//create-slides-with-revealjs-and-jekyll/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides//create-slides-with-revealjs-and-jekyll/</guid>
         
         
       </item>
