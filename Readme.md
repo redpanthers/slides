@@ -1,4 +1,4 @@
-http://redpanthers.github.io/slides
+https://redpanthers.io/slides
 ==============
 
 
@@ -35,8 +35,8 @@ Sharing is caring. If you want to contribute to this repo, follow the instructio
 
 3. Have another doubt ?
 
-  You want to ask us something, share your feedback, just shoot an email to `team@redpanthers.co`
+  You want to ask us something, share your feedback, just shoot an email to [team@redpanthers.co](mailto:team@redpanthers.co)
 
 ### License
 
-Copyright 2016 Red Panthers Software Solutions Pvt Ltd.
+Copyright 2016, Red Panthers Software Solutions Pvt Ltd.
