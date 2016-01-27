@@ -18,3 +18,5 @@ node_modules
 .vagrant
 /.vagrant
 Vagrantfile
+/.sass-cache/*
+.sass-cache/*
