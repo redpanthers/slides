@@ -22,7 +22,7 @@
 	.contact-options{
 		li{
 			a{
-				padding: 10px 5px;			
+				padding: 10px 5px;
 			}
 		}
 	}
@@ -37,7 +37,7 @@
 		.navbar-brand{
 			.title{
 				margin: 0;
-			}			
+			}
 		}
 		.header-links{
 			li{
@@ -220,10 +220,22 @@
 		}
 	}
 }
-
-
-
-
-
-
-
+.pagination-section{
+	text-align: right;
+	.pagination{
+		li >  a{
+			color: #a70e0e;
+			&:hover,&:active,&:focus{
+				color: #a70e0e;
+			}
+		}
+		li > span{
+			color: #a70e0e;
+		}
+		li.active > a{
+			background: #a70e0e;
+			border-color: #a70e0e;
+			color: #fff;
+		}
+	}
+}
