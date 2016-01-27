@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Share Tribe | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Share Tribe">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Share Tribe" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="A presentation slide for Sharetribe">
+  <meta name="description" content="A presentation slide for Sharetribe">
+  <meta property="og:description" content="A presentation slide for Sharetribe" />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="A presentation slide for Sharetribe" />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/sharetribe">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+# Sharetribe 
+
+Jan 30, 2016
+</section>
+
+<section>
+  <h4>Pooja Raghunath</h4>
+  <p>
+    Ruby Developer@RedPanthers
+  </p>
+</section>
+
+<section data-markdown="">
+### Introduction
+What is Sharetribe?
+Sharetribe is an open source platform to create your own peer-to-peer marketplace.
+
+</section>
+
+<section data-markdown="">
+### Requirements
+
+    * Ruby. Version 2.1.2 
+    * RubyGems
+    * Bundler: gem install bundler
+    * Git
+    * A database: Only MySQL has been tested, so we give no guarantees that other databases (e.g. PostgreSQL) work. 
+    * Sphinx: Version 2.1.4 has been used successfully, but newer versions should work as well. Make sure to enable MySQL support. If you're using OS X and have Homebrew installed, install it with brew install sphinx --with-mysql
+    * Imagemagick: If you're using OS X and have Homebrew installed, install it with brew install imagemagick
+
+</section>
+<section data-markdown="">
+### Setting up the development environment
+* Get the code. Cloning this git repo is probably easiest way:
+
+git clone git://github.com/sharetribe/sharetribe.git
+
+* Navigate to the Sharetribe project root directory.
+
+* Create a database.yml file by copying the example database configuration:
+
+cp config/database.example.yml config/database.yml
+
+* Create the required databases with these commands.
+* Add your database configuration details to config/database.yml. You will probably only need to fill in the password for the database(s).
+
+</section>
+<section data-markdown="">
+* Install the required gems by running the following command in the project root directory:
+
+`bundle install`
+
+* Initialize your database:
+
+`bundle exec rake db:schema:load`
+
+* Run Sphinx index:
+
+`bundle exec rake ts:index`
+
+* Start the Sphinx daemon:
+
+`bundle exec rake ts:start`
+</section>
+<section data-markdown="">
+* Use Mailcatcher to receive sent emails locally
+* Invoke the delayed job worker:
+
+`bundle exec rake jobs:work`
+
+* In a new console, open the project root folder and start the server. The simplest way is to use the included Webrick server:
+
+`bundle exec rails server`
+
+
+</section>
+<section data-markdown="">
+### Database migrations
+To update your local database schema to the newest version, run database migrations with:
+
+  `bundle exec rake db:migrate`
+</section>
+<section data-markdown="">
+### Setting up Sharetribe for production
+* Initialize your database:
+
+`bundle exec rake RAILS_ENV=production db:schema:load`
+
+* Run Sphinx index:
+
+`bundle exec rake RAILS_ENV=production ts:index`
+
+* Start the Sphinx daemon:
+
+`bundle exec rake RAILS_ENV=production ts:start`
+
+* Precompile the assets:
+
+`bundle exec rake assets:precompile`
+
+</section>
+<section data-markdown="">
+### Setting up Sharetribe for production
+* Invoke the delayed job worker:
+
+`bundle exec rake RAILS_ENV=production jobs:work`
+
+* In a new console, open the project root folder and start the server:
+
+`bundle exec rails server -e production `
+
+</section>
+<section data-markdown="">
+### Set configuration values
+Default configuration settings are stored in `config/config.default.yml`
+
+
+</section>
+<section data-markdown="">
+### Pros and cons for building with a Sharetribe backend
+## Procs
+* Get a fully functional marketplace built in one day.
+* Need not to write any new code to create a marketplace website
+* There's a community of other developers buiding on top of Sharetribe codebase.
+
+</section>
+
+<section data-markdown="">
+### pros and cons for building with a Sharetribe backend
+## Cons
+* Sharetribe is a marketplace CMS built to support multiple different marketplace types. 
+* Also, Sharetribe is a CMS built specifically for building marketplaces. 
+* To extend the platform by leveraging the open source code.
+
+</section>
+
+<section data-markdown="">
+### Thank You!!
+
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Pooja Raghunath /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

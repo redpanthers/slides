@@ -513,6 +513,17 @@ pre {
       font-style: italic;
       font-weight: lighter; }
 
+.pagination-section {
+  text-align: right; }
+  .pagination-section .pagination li > a {
+    color: #a70e0e; }
+    .pagination-section .pagination li > a:hover, .pagination-section .pagination li > a:active, .pagination-section .pagination li > a:focus {
+      color: #a70e0e; }
+  .pagination-section .pagination li.active > a {
+    background: #a70e0e;
+    border-color: #a70e0e;
+    color: #fff; }
+
 /**
  * Syntax highlighting styles
  */
