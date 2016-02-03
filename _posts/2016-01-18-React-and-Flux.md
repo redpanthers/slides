@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /web-with-react-and-flux/
 author: Sibin Xavier
-post_thumbnail: /slides/images/react-flux.jpg 
+post_thumbnail: /slides/images/react-flux.jpg
 profile_image: /slides/profiles/sibin.jpg
 ---
 <section data-markdown>
@@ -25,11 +25,15 @@ profile_image: /slides/profiles/sibin.jpg
 	React is a Javascript View Library, It can used with other Javascript frameworks
 </section>
 <section data-markdown>
-	It is not different, but it has some unique features
-	- Virtual DOM
-	- Fast render
-	- Uni directional data flow
-  - Reusable components
+	It is not a different, but it has some unique features
+  <ul>
+  <li>Virtual DOM</li>
+  <li>Fast render  </li>
+  <li>Reusable components</li>
+  <li>Uni directional data flow</li>
+  </ul>
+
+
 </section>
 <section data-markdown>
   ### Virtual Dom
