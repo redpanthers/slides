@@ -5,14 +5,188 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Jan 2016 12:24:58 +0530</pubDate>
-    <lastBuildDate>Wed, 27 Jan 2016 12:24:58 +0530</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2016 10:53:31 +0530</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2016 10:53:31 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Share Tribe</title>
+        <title>Spree Commerce</title>
         <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Sharetribe 
+# Spree Commerce
+
+Feb 2, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Ajay Joseph&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;amp;oe=5747C14D&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+Spree is a full featured e-commerce platform written for the Ruby on Rails framework. Spree is a production ready store that can be used “out of the box”, but more importantly, it is also a developer tool that can be used as a solid foundation for a more sophisticated application than what is generally possible with traditional open source offerings.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction -- contd.
+
+Spree is 100% open source. It is licensed under the very permissive New BSD License. You are free to use the software as you see fit, at no charge. Perhaps more important than the cost, Spree is a true open source community. Spree has hundreds of contributors who have used and improved it while building their own e-commerce solutions.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ##Why spree commerce and why not something like magento?
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##what is Magento
+
+* 25% marketshare
+* written in php with some elements of zend framework
+* over 8.2million lines of code
+* 2 editions CE and EE of which EE is paid
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Motivation
+
+The goal spree is to build a complete open source commerce solution for Ruby on Rails. At the start of this project, the Rails commerce space was immature and lacking serious solutions for developers with complex business needs. Spree seeks to create a large and healthy open source community that developers of other languages have come to expect.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+The founder of Spree was motivated to start the project after failing to find an existing community in the Rails space dedicated to this vision. In addition, he was motivated by unsuccessful efforts to use other open source solutions in other programming languages, including (but not limited to) the Magento and OSCommerce platforms. These solutions were deemed to be unsatisfactory when challenged with even the simplest practical cases of use.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###  Opinionated Commerce
+
+David Heinemeier Hansson (the creator of Rails) is well known for saying that Rails is “opinionated software.” Spree continues this fine tradition of adopting a few strong (possibly controversial) opinions which drive its development.
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### No Solution Will Satisfy Everyone
+
+No solution can possibly solve everyone’s needs perfectly. There are simply too many ways in which people do business for us to tailor to each individual need. Rather than come up short (like so many projects before it did), Spree’s approach is to simply accept this and not even try. Instead Spree tries to focus on solving 90% of the bulk that most commerce projects face. The remaining 10% will need to be addressed by the end developer familiar with the client’s exact business requirements.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Online Commerce --Spree
+
+Rails developers are the target audience for this application - not business owners. Serious businesses have complicated needs that require paying one or more software professionals to solve them. Spree seeks to be the platform that developers use as the foundation for their project rather than having to start from scratch or settle for less with other software
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Developers Need Complete Control
+
+ Most business owners will not be satisfied with the generic templates offered by other platforms. Most businesses have very specific shipping and taxation rules as well. Spree needs to be flexible enough to accommodate most situations. Sensible defaults should be provided with an eye towards allowing further customization.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## THE CORE of spree commerce
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Addresses
+* Address
+* Zones
+* Countries
+* State
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Adjustments
+
+* amount
+* label
+* eligible
+* mandatory
+* state
+* included
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Spree customization
+
+* Authentication
+* View
+* Checkout
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Setting up spree
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ###Setting up a sample rails application using spree
+
+  * gem install rails -v 4.2.0
+  * gem install bundle
+  * brew install imagemagick
+  * gem install spree_cmd
+  * rails _4.2.0_ new mystore
+  * cd mystore
+  * spree install --auto-accept // rails generate spree:install
+  * rails server
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://guides.spreecommerce.com/images/developer/spree_welcome.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###References
+
+* http://bluestout.com/blog/magento-vs-spree-best-ecommerce-platform/
+* https://guides.spreecommerce.com/developer/getting_started_tutorial.html
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 02 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/vim-editor-tips</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sharetribe an open source platform</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Sharetribe an open source platform
 
 Jan 30, 2016
 &lt;/section&gt;
@@ -25,114 +199,73 @@ Jan 30, 2016
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-What is Sharetribe?
+###What is Sharetribe?
 Sharetribe is an open source platform to create your own peer-to-peer marketplace.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Why is Sharetribe?
+* A sustainable peer econo Foster my where resources are shared and re-used.
+* Build a meaningful workplace that sets an example for other organizations.
+* Democratize platform ownership by making it easy for anyone to build and run their own marketplace.
 
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
-### Requirements
-
-    * Ruby. Version 2.1.2 
-    * RubyGems
-    * Bundler: gem install bundler
-    * Git
-    * A database: Only MySQL has been tested, so we give no guarantees that other databases (e.g. PostgreSQL) work. 
-    * Sphinx: Version 2.1.4 has been used successfully, but newer versions should work as well. Make sure to enable MySQL support. If you&#39;re using OS X and have Homebrew installed, install it with brew install sphinx --with-mysql
-    * Imagemagick: If you&#39;re using OS X and have Homebrew installed, install it with brew install imagemagick
+### Alternatives for Sharetribe
+* Airbnb
+* Etsy
+* Lyft
 
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-### Setting up the development environment
-* Get the code. Cloning this git repo is probably easiest way:
-
-git clone git://github.com/sharetribe/sharetribe.git
-
-* Navigate to the Sharetribe project root directory.
-
-* Create a database.yml file by copying the example database configuration:
-
-cp config/database.example.yml config/database.yml
-
-* Create the required databases with these commands.
-* Add your database configuration details to config/database.yml. You will probably only need to fill in the password for the database(s).
-
+###In what ways is this project unique and creative?
+* Openness 
+* Transparency
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-* Install the required gems by running the following command in the project root directory:
+###  What is the social value of this project?
+#### The true value of Sharetribe lies in
+*  Real-life encounters.
+*  Sense of empowerment. 
 
-`bundle install`
-
-* Initialize your database:
-
-`bundle exec rake db:schema:load`
-
-* Run Sphinx index:
-
-`bundle exec rake ts:index`
-
-* Start the Sphinx daemon:
-
-`bundle exec rake ts:start`
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-* Use Mailcatcher to receive sent emails locally
-* Invoke the delayed job worker:
-
-`bundle exec rake jobs:work`
-
-* In a new console, open the project root folder and start the server. The simplest way is to use the included Webrick server:
-
-`bundle exec rails server`
-
+### What is the potential of this project to expand and develop?
+* A cloud-based architecture that makes sure that the platform  easily scaled.
+* A local sharing community with lots of volunteer translators.
 
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-### Database migrations
-To update your local database schema to the newest version, run database migrations with:
+### What is the business model of this project?
+* Work together with local marketplace starters &amp;amp; ambassadors.
+* Each new tribe has someone who is in charge of it.
 
-  `bundle exec rake db:migrate`
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-### Setting up Sharetribe for production
-* Initialize your database:
-
-`bundle exec rake RAILS_ENV=production db:schema:load`
-
-* Run Sphinx index:
-
-`bundle exec rake RAILS_ENV=production ts:index`
-
-* Start the Sphinx daemon:
-
-`bundle exec rake RAILS_ENV=production ts:start`
-
-* Precompile the assets:
-
-`bundle exec rake assets:precompile`
+### Features of Sharetribe
+* Global payments made simple.
+* Selling and renting made easy.
+* Safe &amp;amp; secure.
+* Simple &amp;amp; effective.
+* Trust and reputation
 
 &lt;/section&gt;
+
 &lt;section data-markdown=&quot;&quot;&gt;
-### Setting up Sharetribe for production
-* Invoke the delayed job worker:
-
-`bundle exec rake RAILS_ENV=production jobs:work`
-
-* In a new console, open the project root folder and start the server:
-
-`bundle exec rails server -e production `
+### How to setup sharetribe?
+* https://github.com/sharetribe/sharetribe
 
 &lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Set configuration values
-Default configuration settings are stored in `config/config.default.yml`
 
-
-&lt;/section&gt;
 &lt;section data-markdown=&quot;&quot;&gt;
 ### Pros and cons for building with a Sharetribe backend
-## Procs
+ Pros
 * Get a fully functional marketplace built in one day.
 * Need not to write any new code to create a marketplace website
 * There&#39;s a community of other developers buiding on top of Sharetribe codebase.
@@ -141,10 +274,18 @@ Default configuration settings are stored in `config/config.default.yml`
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ### pros and cons for building with a Sharetribe backend
-## Cons
-* Sharetribe is a marketplace CMS built to support multiple different marketplace types. 
-* Also, Sharetribe is a CMS built specifically for building marketplaces. 
+Cons
+* Provide multiple different marketplace types.
+* CMS built specifically for building marketplaces. 
 * To extend the platform by leveraging the open source code.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+* https://www.sharetribe.com/
+* http://imaginationforpeople.org/en/project/sharetribe/
+* https://github.com/sharetribe/sharetribe
 
 &lt;/section&gt;
 
