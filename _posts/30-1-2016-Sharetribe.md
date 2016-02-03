@@ -6,6 +6,7 @@ theme: black
 transition: slide
 permalink: /sharetribe
 author: Pooja Raghunath
+post_thumbnail: /slides/images/sharetribe.jpg 
 profile_image: /slides/profiles/pooja-raghunath.jpg
 ---
 <section data-markdown>
@@ -51,8 +52,8 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
 <section data-markdown>
 ###  What is the social value of this project?
 #### The true value of Sharetribe lies in
-*  The real-life encounters.
-*  The sense of empowerment. 
+*  Real-life encounters.
+*  Sense of empowerment. 
 
 </section>
 
@@ -91,7 +92,7 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
 
 <section data-markdown>
 ### Pros and cons for building with a Sharetribe backend
- Procs
+ Pros
 * Get a fully functional marketplace built in one day.
 * Need not to write any new code to create a marketplace website
 * There's a community of other developers buiding on top of Sharetribe codebase.
@@ -101,8 +102,8 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
 <section data-markdown>
 ### pros and cons for building with a Sharetribe backend
 Cons
-* Sharetribe is a marketplace CMS built to support multiple different marketplace types. 
-* Also, Sharetribe is a CMS built specifically for building marketplaces. 
+* Provide multiple different marketplace types.
+* CMS built specifically for building marketplaces. 
 * To extend the platform by leveraging the open source code.
 
 </section>
