@@ -4,7 +4,7 @@ title: Spree Commerce
 description: A presentation on Spree Commerce
 theme: black
 transition: slide
-permalink: /vim-editor-tips
+permalink: /spree-commerce-an-opensource-ruby-on-rails-project
 author: Ajay Joseph
 post_thumbnail: /slides/images/spree_welcome.jpg
 profile_image: /slides/profiles/ajay-joseph.jpg
