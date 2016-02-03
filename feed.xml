@@ -5,8 +5,8 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Feb 2016 10:53:31 +0530</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2016 10:53:31 +0530</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2016 11:25:45 +0530</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2016 11:25:45 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -680,12 +680,18 @@ www.vogella.com
 &lt;section&gt;
 	React is a Javascript View Library, It can used with other Javascript frameworks
 &lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-	It is not different, but it has some unique features
-	- Virtual DOM
-	- Fast render
-	- Uni directional data flow
-  - Reusable components
+&lt;section&gt;
+	&lt;h3&gt;It is not a different, but it has some unique features&lt;/h3&gt;
+
+
+  &lt;ul&gt;
+    &lt;li&gt;Virtual DOM&lt;/li&gt;
+    &lt;li&gt;Fast render  &lt;/li&gt;
+    &lt;li&gt;Reusable components&lt;/li&gt;
+    &lt;li&gt;Uni directional data flow&lt;/li&gt;
+  &lt;/ul&gt;
+
+
 &lt;/section&gt;
 &lt;section data-markdown=&quot;&quot;&gt;
   ### Virtual Dom
@@ -798,7 +804,6 @@ propTypes: {
 - onFocus, onKeyUp
 - Support all javascript events
 
-&amp;gt;
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;input className=&#39;form-control&#39; onClick=&amp;#x7b;this.state.clickEvent&amp;#x7d;/&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 

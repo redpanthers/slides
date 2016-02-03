@@ -353,7 +353,8 @@ pre {
       margin: 0 -15px 0;
       display: block;
       clear: both;
-      position: relative; }
+      position: relative;
+      border: none; }
       .slides-wrapper .slide .image-wrapper:after {
         content: '';
         display: block;
