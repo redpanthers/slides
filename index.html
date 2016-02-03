@@ -18,14 +18,14 @@ layout: default
     {% for post in paginator.posts %}
       <li class="col-xs-12 col-sm-6 col-md-4">
       <div class="slide">
-        <div class="image-wrapper">
+        <a class="image-wrapper" href="{{ post.url | prepend: site.baseurl }}">
           <span class="post-meta date">
             <i class="fa fa-calendar"></i>
             {{ post.date | date: "%b %-d, %Y" }}
 
           </span>
           <img src="{{post.post_thumbnail}}" class="img-responsive">
-        </div>
+        </a>
 
         <h2 class="post-title-a">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
