@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /vim-editor-tips
 author: Ajay Joseph
-post_thumbnail: /slides/images/spree.jpg
+post_thumbnail: /slides/images/spree_welcome.jpg
 profile_image: /slides/profiles/ajay-joseph.jpg
 ---
 
