@@ -24,13 +24,15 @@ profile_image: /slides/profiles/sibin.jpg
 <section>
 	React is a Javascript View Library, It can used with other Javascript frameworks
 </section>
-<section data-markdown>
-	It is not a different, but it has some unique features
+<section >
+	<h3>It is not a different, but it has some unique features</h3>
+
+
   <ul>
-  <li>Virtual DOM</li>
-  <li>Fast render  </li>
-  <li>Reusable components</li>
-  <li>Uni directional data flow</li>
+    <li>Virtual DOM</li>
+    <li>Fast render  </li>
+    <li>Reusable components</li>
+    <li>Uni directional data flow</li>
   </ul>
 
 
@@ -151,7 +153,6 @@ propTypes: {
 - onFocus, onKeyUp
 - Support all javascript events
 
->
 
 ```
 input className='form-control' onClick={this.state.clickEvent}/
