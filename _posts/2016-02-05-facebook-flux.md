@@ -6,8 +6,8 @@ theme: black
 transition: slide
 permalink: /facebook-flux
 author: Sibin Xavier  
-post_thumbnail:
-profile_image:
+post_thumbnail: /slides/images/flux-react-node.jpg
+profile_image: /slides/profiles/sibin.jpg
 ---
 <section data-markdown>
  Flux
@@ -229,6 +229,6 @@ profile_image:
     - [NodeJS Events](https://nodejs.org/api/events.html)
     - [Flux Docs](http://facebook.github.io/flux/docs/overview.html#content)
     - [Scotch - Getting Know Flux](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
-    - [Unidirectional data flow](https://medium.com/@AdamRNeary/unidirectional-data-flow-yes-flux-i-am-not-so-sure-b4acf988196c#.5olj6qx6k)    
+    - [Unidirectional data flow](https://medium.com/@AdamRNeary/unidirectional-data-flow-yes-flux-i-am-not-so-sure-b4acf988196c#.5olj6qx6k)
 
 </section>
