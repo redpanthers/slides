@@ -5,9 +5,242 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Feb 2016 11:48:15 +0530</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2016 11:48:15 +0530</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2016 05:25:33 +0530</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 05:25:33 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Facebook Flux</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+ Flux
+&lt;/section&gt;
+&lt;section&gt;
+	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+	&lt;p&gt;
+		Frontend Developer
+	&lt;/p&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ## What is Flux
+  * Flux is an architecture used at Facebook with React
+  * Enhance React&#39;s features
+  * It is an architecture not a library like
+  Angular/ Backbone
+  * Flux has Unidirectional data flow
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### Uni directional data flow
+  * One directional data flow
+  * More predictable nature
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Example of Bi-directional data flow
+  ![Bi-Directional](/slides/assets/images/backbone-bi-directional.png)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Unidirectional data flow
+  ![Uni directional data flow](/slides/assets/images/uni-directional-data-flow.png)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### Flux - Important points
+  * Action
+  * dispatcher
+  * Store
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Flux Architecture diagram
+  ![Flux Architecture diagram](/slides/assets/images/flux-simple-f8-diagram-explained.png)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Action
+  * Collection of methods, that are called inside views
+  * Action methods can used with javascript events like click, change, mouseleave etc
+  * Action connected to dispatcher
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ##### Example code for action
+  ```
+    import dispatcher from &quot;../dispatcher&quot;;
+    import constants from &quot;../const/store-const&quot;;
+    var checkoutActions = {
+      addCart: function(data){
+        dispatcher.dispatch({
+          actionType: constants.ADD_CART,
+          data: data
+        })
+      }
+    }
+    export default checkoutActions;
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Dispatcher
+  * Center hub for your application
+  * Controls stores
+  * Receive data from actions and trigger stores
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ##### Example code Dispatcher
+  ```
+    import {Dispatcher} from &#39;flux&#39;;
+    var dispatcher = new Dispatcher();
+    export default dispatcher;
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Dispatcher have
+  * register (method)
+  * unregister (string)
+  * dispatch (object)
+  * waitFor
+  * isDispatching ( boolean)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ##### waitFor is not to handle ajax
+  waitFor is used to wait some other store to complete it can&#39;t be used to make ajax calls
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ```
+    CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
+     if (payload.actionType === &#39;country-update&#39;) {
+       CountryStore.country = payload.selectedCountry;
+     }
+    });
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ```
+  CityStore.dispatchToken = flightDispatcher.register(function(payload) {
+  if (payload.actionType === &#39;country-update&#39;) {
+    // `CountryStore.country` may not be updated.
+    flightDispatcher.waitFor([CountryStore.dispatchToken]);
+    // `CountryStore.country` is now guaranteed to be updated.
+
+    // Select the default city for the new country
+    CityStore.city = getDefaultCityForCountry(CountryStore.country);
+  }
+  });
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Store
+  * Manage application state
+  * Use it to get initial data and updated data
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ```
+    import dispatcher from &#39;../dispatcher.js&#39;;
+    import EventEmitter from &#39;events&#39;;
+    import assign from &#39;object-assign&#39;;
+    var CHANGE_EVENT = &#39;change&#39;;
+    var EventEmitterEvent  = EventEmitter.EventEmitter
+
+    var _number  = 0;
+    var checkoutStore = assign({}, EventEmitterEvent.prototype, {
+      addCart: function(number){
+        return _number = _number + number;
+      },
+      getCart: function(){
+        return _number;
+      },
+      emitChange: function(){
+        this.emit(CHANGE_EVENT)
+      },
+      addListener: function(callback){
+        this.on(CHANGE_EVENT, callback)
+      },
+      removeListner: function(callback){
+        this.removeListner(CHANGE_EVENT, callback)
+      }
+    });
+
+    dispatcher.register((action)=&amp;gt;{
+      switch (action.actionType){
+        case &#39;ADD_CART&#39;:
+          console.log(&quot;hello&quot;)
+          checkoutStore.addCart(action.data)
+          checkoutStore.emitChange()
+          break;
+      }
+    })
+
+
+    export default checkoutStore;
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Event Emitter
+  * Flux use similar node js Event emitter
+  * EventEmitter listen/broadcast named events
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### Event emitter
+
+  * emitter.on(&#39;event_name&#39;,callback) // addListener
+  * emitter.emit(&#39;event_name&#39;)
+  * emitter.removeListener(&#39;event_name&#39;)
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ![Event Diagram](/slides/assets/images/events.png)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  #### React View and Flux
+
+  * We can connect react components with react
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ```
+  class CartIconOnTopBar extends React.Component{
+    constructor(){
+      super()
+      this.state = {
+        cartItemCount: checkoutStore.getCart()
+      }
+    }
+    componentDidMount(){
+     checkoutStore.addListener(this.updateCart)
+    };
+    updateCart = () =&amp;gt; {
+      this.setState({
+        cartItemCount: checkoutStore.getCart()
+      })
+    };
+    openClassModal = () =&amp;gt; {
+
+    };
+    render(){
+      return(
+          &lt;li&gt;
+            &amp;lt;a href=&quot;#&quot; onClick={this.openCartModal} className=&quot;cart-element&quot;&amp;gt;
+              &lt;i classname=&quot;fi-shopping-cart&quot;&gt;&lt;/i&gt;
+              &lt;span classname=&quot;cart-count&quot;&gt; {this.state.cartItemCount} &lt;/span&gt;  
+            
+          &lt;/li&gt;
+      )
+    }
+  }
+    export default TopSearch;
+  ```
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+    ##### Reference
+    - [NodeJS Events](https://nodejs.org/api/events.html)
+    - [Flux Docs](http://facebook.github.io/flux/docs/overview.html#content)
+    - [Scotch - Getting Know Flux](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
+    - [Unidirectional data flow](https://medium.com/@AdamRNeary/unidirectional-data-flow-yes-flux-i-am-not-so-sure-b4acf988196c#.5olj6qx6k)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Fri, 05 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/facebook-flux</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/facebook-flux</guid>
+        
+        
+      </item>
     
       <item>
         <title>Spree Commerce</title>

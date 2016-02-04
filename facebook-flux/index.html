@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Facebook Flux | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Facebook Flux">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Facebook Flux" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta property="og:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. " />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/facebook-flux">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+ Flux
+</section>
+<section>
+	<h4>Sibin Xavier</h4>
+	<p>
+		Frontend Developer
+	</p>
+</section>
+<section data-markdown="">
+  ## What is Flux
+  * Flux is an architecture used at Facebook with React
+  * Enhance React's features
+  * It is an architecture not a library like
+  Angular/ Backbone
+  * Flux has Unidirectional data flow
+</section>
+<section data-markdown="">
+  ### Uni directional data flow
+  * One directional data flow
+  * More predictable nature
+</section>
+<section data-markdown="">
+  #### Example of Bi-directional data flow
+  ![Bi-Directional](/slides/assets/images/backbone-bi-directional.png)
+</section>
+<section data-markdown="">
+  #### Unidirectional data flow
+  ![Uni directional data flow](/slides/assets/images/uni-directional-data-flow.png)
+</section>
+<section data-markdown="">
+  ### Flux - Important points
+  * Action
+  * dispatcher
+  * Store
+</section>
+
+<section data-markdown="">
+  #### Flux Architecture diagram
+  ![Flux Architecture diagram](/slides/assets/images/flux-simple-f8-diagram-explained.png)
+</section>
+<section data-markdown="">
+  #### Action
+  * Collection of methods, that are called inside views
+  * Action methods can used with javascript events like click, change, mouseleave etc
+  * Action connected to dispatcher
+</section>
+<section data-markdown="">
+  ##### Example code for action
+  ```
+    import dispatcher from "../dispatcher";
+    import constants from "../const/store-const";
+    var checkoutActions = {
+      addCart: function(data){
+        dispatcher.dispatch({
+          actionType: constants.ADD_CART,
+          data: data
+        })
+      }
+    }
+    export default checkoutActions;
+  ```
+</section>
+<section data-markdown="">
+  #### Dispatcher
+  * Center hub for your application
+  * Controls stores
+  * Receive data from actions and trigger stores
+</section>
+<section data-markdown="">
+  ##### Example code Dispatcher
+  ```
+    import {Dispatcher} from 'flux';
+    var dispatcher = new Dispatcher();
+    export default dispatcher;
+  ```
+</section>
+<section data-markdown="">
+  #### Dispatcher have
+  * register (method)
+  * unregister (string)
+  * dispatch (object)
+  * waitFor
+  * isDispatching ( boolean)
+</section>
+<section data-markdown="">
+  ##### waitFor is not to handle ajax
+  waitFor is used to wait some other store to complete it can't be used to make ajax calls
+</section>
+<section data-markdown="">
+  ```
+    CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
+     if (payload.actionType === 'country-update') {
+       CountryStore.country = payload.selectedCountry;
+     }
+    });
+  ```
+</section>
+<section data-markdown="">
+  ```
+  CityStore.dispatchToken = flightDispatcher.register(function(payload) {
+  if (payload.actionType === 'country-update') {
+    // `CountryStore.country` may not be updated.
+    flightDispatcher.waitFor([CountryStore.dispatchToken]);
+    // `CountryStore.country` is now guaranteed to be updated.
+
+    // Select the default city for the new country
+    CityStore.city = getDefaultCityForCountry(CountryStore.country);
+  }
+  });
+  ```
+</section>
+<section data-markdown="">
+  #### Store
+  * Manage application state
+  * Use it to get initial data and updated data
+</section>
+<section data-markdown="">
+  ```
+    import dispatcher from '../dispatcher.js';
+    import EventEmitter from 'events';
+    import assign from 'object-assign';
+    var CHANGE_EVENT = 'change';
+    var EventEmitterEvent  = EventEmitter.EventEmitter
+
+    var _number  = 0;
+    var checkoutStore = assign({}, EventEmitterEvent.prototype, {
+      addCart: function(number){
+        return _number = _number + number;
+      },
+      getCart: function(){
+        return _number;
+      },
+      emitChange: function(){
+        this.emit(CHANGE_EVENT)
+      },
+      addListener: function(callback){
+        this.on(CHANGE_EVENT, callback)
+      },
+      removeListner: function(callback){
+        this.removeListner(CHANGE_EVENT, callback)
+      }
+    });
+
+    dispatcher.register((action)=&gt;{
+      switch (action.actionType){
+        case 'ADD_CART':
+          console.log("hello")
+          checkoutStore.addCart(action.data)
+          checkoutStore.emitChange()
+          break;
+      }
+    })
+
+
+    export default checkoutStore;
+  ```
+</section>
+<section data-markdown="">
+  #### Event Emitter
+  * Flux use similar node js Event emitter
+  * EventEmitter listen/broadcast named events
+</section>
+<section data-markdown="">
+  #### Event emitter
+
+  * emitter.on('event_name',callback) // addListener
+  * emitter.emit('event_name')
+  * emitter.removeListener('event_name')
+
+</section>
+<section data-markdown="">
+  ![Event Diagram](/slides/assets/images/events.png)
+</section>
+
+<section data-markdown="">
+  #### React View and Flux
+
+  * We can connect react components with react
+
+</section>
+<section data-markdown="">
+  ```
+  class CartIconOnTopBar extends React.Component{
+    constructor(){
+      super()
+      this.state = {
+        cartItemCount: checkoutStore.getCart()
+      }
+    }
+    componentDidMount(){
+     checkoutStore.addListener(this.updateCart)
+    };
+    updateCart = () =&gt; {
+      this.setState({
+        cartItemCount: checkoutStore.getCart()
+      })
+    };
+    openClassModal = () =&gt; {
+
+    };
+    render(){
+      return(
+          <li>
+            &lt;a href="#" onClick={this.openCartModal} className="cart-element"&gt;
+              <i classname="fi-shopping-cart"></i>
+              <span classname="cart-count"> {this.state.cartItemCount} </span>  
+            
+          </li>
+      )
+    }
+  }
+    export default TopSearch;
+  ```
+</section>
+<section data-markdown="">
+    ##### Reference
+    - [NodeJS Events](https://nodejs.org/api/events.html)
+    - [Flux Docs](http://facebook.github.io/flux/docs/overview.html#content)
+    - [Scotch - Getting Know Flux](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
+    - [Unidirectional data flow](https://medium.com/@AdamRNeary/unidirectional-data-flow-yes-flux-i-am-not-so-sure-b4acf988196c#.5olj6qx6k)
+
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Sibin Xavier /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
