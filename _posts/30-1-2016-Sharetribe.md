@@ -37,14 +37,16 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
 
 <section data-markdown>
 ### Alternatives for Sharetribe
-* Airbnb
-* Etsy
-* Lyft
+Practical guides for building an online marketplace business
+   - Airbnb
+   - Etsy
+   - Lyft
 
 </section>
 
 <section data-markdown>
 ###In what ways is this project unique and creative?
+
 * Openness 
 * Transparency
 </section>
@@ -95,16 +97,15 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
  Pros
 * Get a fully functional marketplace built in one day.
 * Need not to write any new code to create a marketplace website
-* There's a community of other developers buiding on top of Sharetribe codebase.
-
+* There is a community of other developers building on top of Sharetribe codebase.
 </section>
 
 <section data-markdown>
 ### pros and cons for building with a Sharetribe backend
 Cons
-* Provide multiple different marketplace types.
-* CMS built specifically for building marketplaces. 
-* To extend the platform by leveraging the open source code.
+* Sharetribe is a tool that is useful for certain purposes, but using it for others might do more harm than good.
+* As a developer, it's often more fun to start from scratch than to learn an entire complex platform and start extending it.
+* There might be lots of features that you actually don't want to have, which might be a distraction. If you build your own thing, you get to only build the features you want, which makes development easier, as you avoid complexity.
 
 </section>
 
