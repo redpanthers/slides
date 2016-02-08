@@ -139,22 +139,12 @@ Signature: pry(target=?)
 
 <section data-markdown="">
 ### How to install PRY?
-We’ll need to install Pry within each project using Bundler if we want to utilize the debugging features.
+* Install Pry within each project using Bundler inorder to utilize the debugging feature.
+* First add Pry to your Gemfile: gem ‘pry’
+* For running a Rails project, then place Pry under development group.
 
-First add Pry to your Gemfile:
-[code lang=ruby] # Gemfile
-source ‘https://rubygems.org’
-gem ‘pry’
-[/code] 
 
-If you’re running a Rails project, then place Pry under the :development group:
-[code lang=ruby] # Gemfile
-source ‘https://rubygems.org’
-gem ‘rails’
-group :development do
-gem ‘pry’
-end
-[/code] 
+
 </section>
 
 <section data-markdown="">

@@ -5,8 +5,8 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Feb 2016 05:25:33 +0530</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2016 05:25:33 +0530</lastBuildDate>
+    <pubDate>Mon, 08 Feb 2016 10:08:22 +0530</pubDate>
+    <lastBuildDate>Mon, 08 Feb 2016 10:08:22 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -243,6 +243,380 @@
       </item>
     
       <item>
+        <title>Art of debugging and how to ask for help</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Art of debugging and how to ask for help
+
+Feb 04, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Juliat Joy&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Juliat Joy&quot; src=&quot;https://avatars2.githubusercontent.com/u/7353124?v=3&amp;amp;u=6eeeedc3e9ecfbf20e6dcd128ea7344ed9261f49&amp;amp;s=140&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Debugging
+
+Even though debugging is an art rather than a science, there are definite
+principles that guide its practice
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### The Fundamental Principle of Confirmation
+
+Fixing a buggy program is a process of confirming, one by one, that the
+many things you believe to be true about the code actually are true. When
+you find that one of your assumptions is not true, you have found a clue
+to the location of a bug.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Good questions
+
+The kind of answers we get to our technical questions depends as much on the way we ask the questions. Good questions are a stimulus and a gift. “Good question!” are strong and sincere compliments.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What to do before asking a technical question by email or in newsgroup.
+
+
+  * Try to find an answer by searching the archives of the forum or mailing list you plan to post to.
+
+  * Try to find an answer by searching the Web.
+
+  * Try to find an answer by reading the manual.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd ...
+  * Try to find an answer by reading a FAQ.
+
+  * Try to find an answer by inspection or experimentation.
+
+  * Try to find an answer by asking a skilled friend.
+
+  * If you&#39;re a programmer, try to find an answer by reading the source code.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Do not&#39;s
+* post your question to a forum where it&#39;s off topic
+
+* post a very elementary question to a forum where advanced technical questions are expected, or vice-versa
+
+* cross-post to too many different newsgroups
+
+* post a personal e-mail to somebody who is neither an acquaintance of yours nor personally responsible for solving your problem
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Do&#39;s
+  ```
+         The first step, therefore, is to find the right forum.
+
+        With the help of google and other Web-searching find
+        the project webpage mostclosely associated with the
+        hardware or software giving you difficulties.
+
+        Usually it will have links to a FAQlist,
+        and to project mailing lists and their archives.
+        These mailing lists are the finalplaces to go for help.
+
+        if our own efforts do not find a solution.
+        The project page may also describe a bug-reporting procedure,
+        or have a link to one; if so, follow it.
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Choose forum correctly
+
+First, Know what your topic is!
+
+In general, ask questions to a well-selected public forum. Because the size of the pool of potential respondents is more in public forum also the size of the audience; hackers would rather answer questions that educate many people than questions serving only a few.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Stack Overflow
+
+Start with a Google search before looking at Stack Exchange. If you didn&#39;t find anything  through Google, search again on the specific site most relevant to your question. Searching with tags can help narrow down the  results
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Stack Overflow-contd..
+
+
+  If you still didn&#39;t find anything, post your question
+  on the one site where it&#39;s most on-topic.
+  Add tags that are related to the substance of your question
+  (particularly the name of the programming language,
+  operating system, or library you&#39;re having trouble with).
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Stack exchange sites
+
+* Super User is for questions about general-purpose computing. If your question isn&#39;t about code or programs that you talk to only over a network connection, it probably goes here.
+
+* Stack Overflow is for questions about programming.
+
+* Server Fault is for questions about server and network administration.
+
+* Several projects have their own specific sites, including Android, Ubuntu, TeX/LaTeX, and SharePoint. Check the Stack Exchange site for an up-to-date list.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How to post questions in web forum?
+
+Before posting to any Web forum, check if it has a Search feature. If it does, try a couple of keyword searches for something like your problem.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How to post questions in mail list?
+
+When a project has a development mailing list, write to the mailing list, not to individual developers, even if you believe you know who can best answer your question. Check the documentation of the project and its homepage for the address of a project mailing list.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Use specific and meaningful header
+
+For example:
+
+Stupid:
+HELP! Video doesn&#39;t work properly on my laptop!
+
+Smart:
+X.org 6.8.1 misshapen mouse cursor, Fooware MV1005 vid. chipset
+
+Smarter:
+X.org 6.8.1 mouse cursor on Fooware MV1005 vid. chipset - is misshapen
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Make it easy to reply
+
+Set up a correct Reply-To header in your mail agent
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Write in clear, grammatical, correctly-spelled language
+
+Expressing your question clearly and well is important. Spend the extra effort to polish your language. It doesn&#39;t have to be stiff or formal
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+Spell, punctuate, and capitalize correctly. Don&#39;t confuse “its” with “it&#39;s”, “loose” with “lose”, or “discrete” with “discreet”. Don&#39;t TYPE IN ALL CAPS; this is read as shouting and considered rude.
+
+Dont spell  Spelling &quot;you&quot; as &quot;u&quot;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Send questions in accessible, standard formats
+
+* Send plain text mail, not HTML
+* MIME attachments are usually OK, but only if they are real content
+* Don&#39;t send e-mail in which entire paragraphs are single multiply-wrapped lines
+* Do not wrap data at any fixed column width.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Send questions in accessible, standard formats-contd
+
+* Don&#39;t send MIME Quoted-Printable encoding to an English-language forum
+* In Web forums, do not abuse “smiley” and “HTML” features
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Be precise and informative about your problem
+
+* Describe the symptoms of your problem or bug carefully and clearly.
+
+* Describe the environment in which it occurs (machine, OS, application, whatever). Provide your vendor&#39;s distribution and release level (e.g.: “Fedora Core 7”, “Slackware 9.1”, etc.).
+
+* Describe the research you did to try and understand the problem before you asked the question.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Be precise and informative about your problem
+
+* Describe the diagnostic steps you took to try and pin down the problem yourself before you asked the question.
+
+* Describe any possibly relevant recent changes in your computer or software configuration.
+
+* If at all possible, provide a way to reproduce the problem in a controlled environment.&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Don&#39;t rush to claim that you have found a bug
+
+ Unless you can provide a source-code patch that fixes the problem, or a regression test against a previous version that demonstrates incorrect behavior, you are probably not sure enough.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Grovelling is not a substitute for doing your homework
+
+Some people who get that they shouldn&#39;t behave rudely or arrogantly, demanding an answer, retreat to the opposite extreme of grovelling. “I know I&#39;m just a pathetic newbie loser, but...”. This is distracting and unhelpful. It&#39;s especially annoying when it&#39;s coupled with vagueness about the actual problem.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Describe the problem&#39;s symptoms, not your guesses
+
+Stupid:
+
+I&#39;m getting back-to-back SIG11 errors on kernel compiles, and suspect a hairline crack on one of the motherboard traces. What&#39;s the best way to check for those?
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Describe the problem&#39;s symptoms, not your guesses
+
+Smart:
+
+My home-built K6/233 on an FIC-PA2007 motherboard (VIA Apollo VP2 chipset) with 256MB Corsair PC133 SDRAM starts getting frequent SIG11 errors about 20 minutes after power-on during the course of kernel compiles, but never in the first 20 minutes. Rebooting doesn&#39;t restart the clock, but powering down overnight does. Swapping out all RAM didn&#39;t help. The relevant part of a typical compile session log follows.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Describe your problem&#39;s symptoms in chronological order
+
+ Your account should describe precisely what you did, and what the machine and software did, leading up to the blowup. In the case of command-line processes, having a session log (e.g., using the script utility) and quoting the relevant twenty or so lines is very useful.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Describe the goal, not the step
+
+If you are trying to find out how to do something (as opposed to reporting a bug), begin by decribing the goal. Only then describe the particular step towards it that you are blocked on.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Describe the goal, not the step- Example
+Stupid:
+
+How do I get the color-picker on the FooDraw program to take a hexadecimal RGB value?
+
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;img src=&quot;/slides/images/Screenshot.png&quot; /&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+Smart:
+I&#39;m trying to replace the color table on an image with values of my choosing. Right now the only way I can see to do this is by editing each table slot, but I can&#39;t get FooDraw&#39;s color picker to take a hexadecimal RGB value.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Don&#39;t ask people to reply by private e-mail
+
+solving problems should be a public, transparent process during which a first try at an answer can and should be corrected if someone more knowledgeable notices that it is incomplete or incorrect.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Be explicit about your question
+
+You are more likely to get a useful response if you are explicit about what you want respondents to do (provide pointers, send code, check your patch, whatever). This will focus their effort and implicitly put an upper bound on the time and energy a respondent must allocate to helping you.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### When asking about code
+
+Generating a really small minimal test case will not always be possible, but trying to is good discipline. It may help you learn what you need to solve the problem on your own — and even when it doesn&#39;t, hackers like to see that you have tried. It will make them more cooperative.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Don&#39;t post homework questions
+
+Homework questions are for you to work out, so that you will learn from the experience. It is OK to ask for hints, but not for entire solutions.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Prune pointless queries
+
+Resist the temptation to close your request for help with semantically-null questions like
+  ```
+      “Can anyone help me?”
+      “Is there an answer?”
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Don&#39;t flag your question as “Urgent”, even if it is for you
+
+ Claiming urgency is very likely to be counter-productive: most hackers will simply delete such messages as rude and selfish attempts to elicit immediate and special attention
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Courtesy never hurts, and sometimes helps
+
+Be courteous. Use “Please” and “Thanks for your attention” or “Thanks for your consideration”. Make it clear you appreciate the time people spend helping you for free.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Follow up with a brief note on the solution
+
+Send a note after the problem has been solved to all who helped you; let them know how it came out and thank them again for their help. If the problem attracted general interest in a mailing list or newsgroup, it&#39;s appropriate to post the followup there.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+http://www.catb.org/~esr/faqs/smart-questions.html#intro
+http://www.techsupportalert.com/content/how-ask-question-when-you-want-technical-help.htm
+https://www.biostars.org/p/75548/
+https://github.com/scrooloose/nerdtree
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 04 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/vim-editor-tips/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips/</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Spree Commerce</title>
         <description>&lt;section data-markdown=&quot;&quot;&gt;
 # Spree Commerce
@@ -446,14 +820,16 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ### Alternatives for Sharetribe
-* Airbnb
-* Etsy
-* Lyft
+Practical guides for building an online marketplace business
+   - Airbnb
+   - Etsy
+   - Lyft
 
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ###In what ways is this project unique and creative?
+
 * Openness 
 * Transparency
 &lt;/section&gt;
@@ -501,16 +877,15 @@ Sharetribe is an open source platform to create your own peer-to-peer marketplac
  Pros
 * Get a fully functional marketplace built in one day.
 * Need not to write any new code to create a marketplace website
-* There&#39;s a community of other developers buiding on top of Sharetribe codebase.
-
+* There is a community of other developers building on top of Sharetribe codebase.
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ### pros and cons for building with a Sharetribe backend
 Cons
-* Provide multiple different marketplace types.
-* CMS built specifically for building marketplaces. 
-* To extend the platform by leveraging the open source code.
+* Sharetribe is a tool that is useful for certain purposes, but using it for others might do more harm than good.
+* As a developer, it&#39;s often more fun to start from scratch than to learn an entire complex platform and start extending it.
+* There might be lots of features that you actually don&#39;t want to have, which might be a distraction. If you build your own thing, you get to only build the features you want, which makes development easier, as you avoid complexity.
 
 &lt;/section&gt;
 
@@ -598,22 +973,12 @@ Signature: pry(target=?)
 
 &lt;section data-markdown=&quot;&quot;&gt;
 ### How to install PRY?
-We’ll need to install Pry within each project using Bundler if we want to utilize the debugging features.
+* Install Pry within each project using Bundler inorder to utilize the debugging feature.
+* First add Pry to your Gemfile: gem ‘pry’
+* For running a Rails project, then place Pry under development group.
 
-First add Pry to your Gemfile:
-[code lang=ruby] # Gemfile
-source ‘https://rubygems.org’
-gem ‘pry’
-[/code] 
 
-If you’re running a Rails project, then place Pry under the :development group:
-[code lang=ruby] # Gemfile
-source ‘https://rubygems.org’
-gem ‘rails’
-group :development do
-gem ‘pry’
-end
-[/code] 
+
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
@@ -1639,91 +2004,6 @@ https://github.com/scrooloose/nerdtree
         <pubDate>Wed, 13 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/vim-editor-tips</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Make awesome presentations using reveal.js and Jekyll</title>
-        <description>&lt;section data-markdown&gt;
-# Create slides using reveal.js and Jekyll
-
-Jan 12, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Manu S Ajith&lt;/h3&gt;
-  &lt;div style=&quot;width:200%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;http://9piecesof8.com/img/manu.png&quot; style=&quot;float: left; width:300px; height:300px;&quot;&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;Writes code @RedPanthers&lt;/li&gt;
-          &lt;li&gt;Am committed to Ruby for some time,&lt;/li&gt;
-          &lt;li&gt;been dating Go during weekends,&lt;/li&gt;
-          &lt;li&gt;and recently flirting with Elixir at night&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown&gt;
-### Overview
-
-[reveal.js](https://github.com/hakimel/reveal.js/) lets you to create
-beautiful interactive slides using HTML. This presentation will show/demo you
-how to use reveal.js and write your presentations in style with [Jekyll](http://jekyllrb.com/)
-&lt;/section&gt;
-
-&lt;section data-markdown&gt;
-### Slide Layout
-
-reveal.js is already included as a `git submodule`, so that we can use it in our layouts.
-
-Also a `slide.html` layout has been added into the `_layouts` folder which would be the base layout for all our slides.
-&lt;/section&gt;
-
-&lt;section data-markdown&gt;
-### Creating Slide
-
-Now, in your page/post YAML front matter, use `slide` for the layout.
-
-You can define *title*, *author*, *description* as well as the slide&#39;s *theme* and
-*transition*
-
-    --
-    layout: slide
-    title: Jekyll&amp;#58; Make presentation page with reveal.js
-    description: A presentation slide for how to use reveal.js in Jekyll
-    theme: black
-    transition: slide
-    --
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown&gt;
-### Slide
-
-Each slide is enclosed in a `&amp;lt;section&amp;gt;` tag.
-
-If you prefer markdown then use
-
-`&amp;lt;section data-markdown&amp;gt;`
-
-&lt;/section&gt;
-
-&lt;section data-markdown&gt;
-## THE END
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 12 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/create-slides-with-revealjs-and-jekyll/</guid>
         
         
       </item>
