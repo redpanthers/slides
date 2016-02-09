@@ -19,7 +19,7 @@ Sharing is caring. If you want to contribute to this repo, follow the instructio
   git clone git@github.com:redpanthers/slides.git -- recursive
 ```
 
-NB: Reveal.js is checked into the repo as a git submodule. For cloning the submodule localy, use the ``--recursive` flag.
+**NB: Reveal.js is checked into the repo as a git submodule. For cloning the submodule locally, use the `--recursive` flag.**
 
 In case you missed the `--recursive` flag when cloning, use ```git submodule update --init --recursive``` inside the git repo to pull the submodule.
 
