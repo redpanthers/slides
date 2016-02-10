@@ -5,9 +5,116 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 08 Feb 2016 10:08:22 +0530</pubDate>
-    <lastBuildDate>Mon, 08 Feb 2016 10:08:22 +0530</lastBuildDate>
+    <pubDate>Wed, 10 Feb 2016 09:17:30 +0530</pubDate>
+    <lastBuildDate>Wed, 10 Feb 2016 09:17:30 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Form Objects</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Form Objects
+### Decomplexing your models
+
+Feb 09, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left;&quot;&gt;
+      &lt;img alt=&quot;Harisankar P S&quot; src=&quot;https://avatars1.githubusercontent.com/u/979321?v=3&amp;amp;s=460&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;&lt;br /&gt;
+      &lt;b&gt;Harisankar P S aka &lt;i&gt; HsPS&lt;/i&gt;&lt;/b&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;ul style=&quot;float: left&quot;&gt;
+        &lt;li&gt;Biker&lt;/li&gt;
+        &lt;li&gt;Gadget Enthusiast&lt;/li&gt;
+        &lt;li&gt;Writes Ruby code for a living&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+
+* Models, as per the MVC pattern are where we store our business logic.
+* Forms, refering to web forms, are html pages through which we collect data from the user
+* We add a lot of code to the models to make our forms work properly like validations, extra attributes.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### So whats are these form objects?
+
+Form objects are like models just that it would only have code related to your forms.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### So if they are like models, then why create new objects?
+
+Building a complex business application is more or less like building a complex webform, the
+way we collect data is most important. Thus our models are growing for just a single form, now imagine
+if you require 10 forms for your model, and for each model there is a different requiement.
+
+You will end up with models having over ** 500-1000 ** lines of code. Which essentially becomes a nightmare to
+maintain.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### So what will using a form object achieve
+
+
+  * Code related to a forms would be at a single location
+
+  * Thus it becomes easier to write test for them
+
+  * Our model will end up having only the actual business logic
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Now some live code examples
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;https://github.com/coderhs/form-objects-example
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Branches:
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;gt; without-form-objects, 
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;gt; with-form-objects&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### So how does this work?
+* Duck Typing
+
+Ruby/Rails doesn&#39;t look into the type of object that was passed, the only concern is the methods it tries to call
+should be there. ie. if we ask it to quack, it should quack. In this case, we need to make sure that the form gets
+the model_name when it calls for it.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+* http://railscasts.com/episodes/416-form-objects
+* https://robots.thoughtbot.com/activemodel-form-objects
+* https://github.com/coderhs/form-objects-example
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 09 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/form-objects</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/form-objects</guid>
+        
+        
+      </item>
     
       <item>
         <title>Facebook Flux</title>
@@ -1795,215 +1902,6 @@ https://www.youtube.com/watch?v=K6WER0oI-qs
         <pubDate>Thu, 14 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Vim text editor</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Vim
-
-Jan 14, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Ajay Joseph&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;amp;oe=5747C14D&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-
-Vim editor is a clone of Bill Joy’s vi editor for Linux. Vim stands for Vi IMproved. Vim is designed for use both from a command line interface and as a standalone application in a graphical user interface. Vim is basically a open source application that is released under a license which includes some charityware clauses.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction -- contd.
-
-Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Vim -- modes
-
-There are 2 modes in vim say INSERT mode and NORMAL mode.Mode in which you are currently in is displayed in editor.
-Pressing i will take you to insert mode and press escape key to return to normal mode.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### navigation
-
-In contrast to the normal text editors, vim uses keys h,j,k,l to move the cursor. To navigate the text in terms of words, keys w,b and e are used.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### navigation -- contd.
-
-B moves cursor to the beginning  of the word,E to the end and W to the start of next word.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Number powered commands in vim
-
-Commands in Vim can be combined with numbers to good effect
-
-eg.5w is same as pressing w five times.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Inserting new content
-
-Inserting into a new line is done by presing key&#39;O&#39;.Capital &#39;O&#39;creates a line above the current line and &#39;o&#39; creates it below the current line.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Searching in vim
-
- F or f is the key used for this. For e.g. Fo finds the next occurrence of o from the current cursor position.
- Search in Vim can be combined with numbers as in the previous cases. 3fo will find the third occurrence of o from the current position.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Searching in vim -- contd.
-
-In Vim you press ‘/‘ and give the text you are looking for.Repeat the search to find the next occurrence of the same text by pressing n and previous occurrence by pressing N.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Matching Parenthesis/brackets
-
-‘%’ key is used to find the matching parenthesis. %key  matches {,[,( to its corresponding closing.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Movement between lines
-
-To reach the beginning of a line press 0 and $ key takes you to the end of the line.
-G takes you to the end of the file and gg to the beginning of the file.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Movement between lines -- contd.
-
-To navigate to a particular line, line number can be given along with G. e.g. 8G takes the cursor to the eighth line.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Occurrences of a word
-
-To find the next occurrence of a word in which the cursor is currently in press ‘*’ and the previous occurrence can be found by using #.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Deleting
-
-In line deleting is taken careof by &#39;x&#39; and &#39;X&#39;.‘x’ deletes the character the cursor is currently pointing to and ‘X’ deletes the character left of the cursor.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Deleting -- contd.
-
-‘d’ is the delete command. It can be combined with movement. For e.g. dw deletes the first word on the right side of the cursor, it also copies the content by default so that it can be pasted somewhere else using ‘p’.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Repeating commands
-
-The previously executed command can be repeated just by pressing ‘.’ for any number of times we want
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Vim plugins
-
-Vim plugins allow you to enhance, change, or add to Vim&#39;s existing behaviors. They&#39;re a powerful tool, and a key part of what has helped Vim remain relevant for 23 years, even as the computing world has changed dramatically around it. They allow Vim to support languages that didn&#39;t exist the last time its core was updated and also allow for powerful new features that benefit all users.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Plugin Management
-
-Plugin management in vim has no official solution, as we have with other editors like sublime.  Pathogen was first plugin manager for vim but later on Vundle became more popular and took over its position.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Vimrc
-
-Stands for vim runtime configuration  
-The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Plugin Management -- contd.
-
-To configure vundle  
-1.git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
-2.add this code to top of .vimrc file  
-  set nocompatible  
-  filetype off  
-  set rtp+=~/.vim/bundle/Vundle.vim  
-  call vundle#begin()  
-  Plugin &#39;VundleVim/Vundle.vim&#39;  
-  call vundle#end()  
-3.lauch vim and run plugin install
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Essential plugins for vim
-
-vundle  
-NERDTree  
-Syntastic  
-EasyMotion  
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### References
-
-http://www.openvim.com  
-http://vimawesome.com  
-https://github.com/VundleVim/Vundle.vim  
-https://github.com/scrooloose/nerdtree  
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##Thank you :)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Wed, 13 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/vim-editor-tips</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/vim-editor-tips</guid>
         
         
       </item>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Form Objects | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Form Objects">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Form Objects" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="Form objets used to de-complex ruby models">
+  <meta name="description" content="Form objets used to de-complex ruby models">
+  <meta property="og:description" content="Form objets used to de-complex ruby models" />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="Form objets used to de-complex ruby models" />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/form-objects">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+# Form Objects
+### Decomplexing your models
+
+Feb 09, 2016
+</section>
+
+<!-- Just to show that markdown and html can be mixed -->
+<section>
+  <div style="width:150%;">
+    <div style="float:left;">
+      <img alt="Harisankar P S" src="https://avatars1.githubusercontent.com/u/979321?v=3&amp;s=460" style="float: left; width:400px; height:400px;" /><br />
+      <b>Harisankar P S aka <i> HsPS</i></b>
+    </div>
+    <div>
+      <ul style="float: left">
+        <li>Biker</li>
+        <li>Gadget Enthusiast</li>
+        <li>Writes Ruby code for a living</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section data-markdown="">
+### Introduction
+
+* Models, as per the MVC pattern are where we store our business logic.
+* Forms, refering to web forms, are html pages through which we collect data from the user
+* We add a lot of code to the models to make our forms work properly like validations, extra attributes.
+
+</section>
+
+<section data-markdown="">
+### So whats are these form objects?
+
+Form objects are like models just that it would only have code related to your forms.
+
+</section>
+
+<section data-markdown="">
+### So if they are like models, then why create new objects?
+
+Building a complex business application is more or less like building a complex webform, the
+way we collect data is most important. Thus our models are growing for just a single form, now imagine
+if you require 10 forms for your model, and for each model there is a different requiement.
+
+You will end up with models having over ** 500-1000 ** lines of code. Which essentially becomes a nightmare to
+maintain.
+
+</section>
+
+<section data-markdown="">
+### So what will using a form object achieve
+
+
+  * Code related to a forms would be at a single location
+
+  * Thus it becomes easier to write test for them
+
+  * Our model will end up having only the actual business logic
+
+</section>
+
+<section data-markdown="">
+### Now some live code examples
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">https://github.com/coderhs/form-objects-example
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">Branches:
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&gt; without-form-objects, 
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">&gt; with-form-objects</div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+### So how does this work?
+* Duck Typing
+
+Ruby/Rails doesn't look into the type of object that was passed, the only concern is the methods it tries to call
+should be there. ie. if we ask it to quack, it should quack. In this case, we need to make sure that the form gets
+the model_name when it calls for it.
+</section>
+
+<section data-markdown="">
+### References
+
+* http://railscasts.com/episodes/416-form-objects
+* https://robots.thoughtbot.com/activemodel-form-objects
+* https://github.com/coderhs/form-objects-example
+
+</section>
+
+<section data-markdown="">
+##Thank you :)
+
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Harisankar P S /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
