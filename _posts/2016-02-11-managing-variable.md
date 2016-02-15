@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /managing environment variable
 author: Augustin Pulikan  
-post_thumbnail: /slides/images/env.jpg
+post_thumbnail: /slides/images/manage-env-variables.jpg
 profile_image: /slides/profiles/augustin.jpg
 ---
 
@@ -90,7 +90,7 @@ S3_BUCKET=YOURS3BUCKET
 
 <section data-markdown>
 ### Figaro
- Figaro is similar to dotenv. What it does is to allow you to store all your sensitive secrets in a YAML file at config/application.yml. With it’s simple figaro install command you get your YAML file automatically added to gitignore. 
+ Figaro is similar to dotenv. What it does is to allow you to store all your sensitive secrets in a YAML file at config/application.yml. With it’s simple figaro install command you get your YAML file automatically added to gitignore.
 
 </section>
 
@@ -99,7 +99,7 @@ S3_BUCKET=YOURS3BUCKET
  Very similar to Figaro’s config/application.yml, secrets.yml was added to Rails 4.1. You’ll have to add your secrets in config/secrets.yml as is done with Figaro
 
  The variables added here are accessible through Rails.application.secrets
- 
+
 
 </section>
 <section data-markdown>
@@ -117,8 +117,8 @@ S3_BUCKET=YOURS3BUCKET
 <section data-markdown>
 ###Other Solutions
 
-If you don’t want to use a gem to separate sensitive information from your project, there is a common pattern to create simple YAML files. You can name it private.yml. 
- 
+If you don’t want to use a gem to separate sensitive information from your project, there is a common pattern to create simple YAML files. You can name it private.yml.
+
 
 </section>
 
@@ -143,9 +143,9 @@ Using Bash or Zsh profile to store environment variables allows you to set syste
 ### References
 
 https://www.launchschool.com
- 
+
 http://stackoverflow.com
- 
+
 https://www.twilio.com
 </section>
 
