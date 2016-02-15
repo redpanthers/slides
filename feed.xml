@@ -5,8 +5,8 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Feb 2016 10:56:55 +0530</pubDate>
-    <lastBuildDate>Mon, 15 Feb 2016 10:56:55 +0530</lastBuildDate>
+    <pubDate>Mon, 15 Feb 2016 12:42:03 +0530</pubDate>
+    <lastBuildDate>Mon, 15 Feb 2016 12:42:03 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -379,7 +379,7 @@ S3_BUCKET=YOURS3BUCKET
 
 &lt;/section&gt;
 &lt;section data-markdown=&quot;&quot;&gt;
-### Advantagous of secrets.yml
+### Advantages of secrets.yml
 
  Enhanced security
 
