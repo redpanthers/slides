@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /playing-timezone-in-rails
 author: Pooja Raghunath
-post_thumbnail: /slides/images/timezone.jpg 
+post_thumbnail: /slides/images/timezone.png  
 profile_image: /slides/profiles/pooja-raghunath.jpg
 ---
 
@@ -26,15 +26,15 @@ Feb 8, 2016
 </section>
 
 <section data-markdown>
-### Why is time important? 
-* Track when something happened 
+### Why is time important?
+* Track when something happened
 
-* Schedule when something will happen 
+* Schedule when something will happen
 
 </section>
 
 <section data-markdown>
-### What is UTC? 
+### What is UTC?
 “Coordinated Universal Time” International Standard Other time zones can be described with the number of hours and minutes with which they deviate from UTC as an offset
 </section>
 
@@ -60,14 +60,14 @@ The UTC offset is the difference in hours and minutes from Coordinated Universal
 
 <section data-markdown>
 ### Parsing
-* When parsing time information it's important to never do it without specifying the time zone. 
+* When parsing time information it's important to never do it without specifying the time zone.
 * The best way to do this is to use Time.zone.parse (which will use the time zone specified in config.time_zone) instead of just Time.parse (which will use the computer's time zone).
 
 </section>
 
 <section data-markdown>
 ### Date vs Time
-* Time has date information but Date does NOT have time information. 
+* Time has date information but Date does NOT have time information.
 * Always make sure to convert it to your configured time zone:
 
 * 1.day.from_now # => Fri, 03 Mar 2012 22:04:47 JST +09:00
@@ -121,8 +121,8 @@ Create a private method in your ActionController and run it as an around filter.
 <section data-markdown>
 ### What if I don't have logged in users
 If your are building a site that needs to show times and you don't have logged in users, setting the server time zone is not a solution either. You have the following options:
-* Use Javascript on the front end to figure out the correct time to display, based on the user's browser 
-* Try this gem https://github.com/scottwater/detectimezonerails 
+* Use Javascript on the front end to figure out the correct time to display, based on the user's browser
+* Try this gem https://github.com/scottwater/detectimezonerails
 * Use the user's IP address to infer the timezone
 </section>
 
@@ -136,7 +136,7 @@ If your are building a site that needs to show times and you don't have logged i
 <section data-markdown>
 ### Integration testing with client side JS
 However if you are doing integration testing that involves client side JavaScript, things get more difficult. For example the client side could get the timezone from the browser and then use that for querying the server, this is really hard to mock.
-A particular gem that is very useful is timezone_local. 
+A particular gem that is very useful is timezone_local.
 
 </section>
 
