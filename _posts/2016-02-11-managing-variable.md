@@ -103,7 +103,7 @@ S3_BUCKET=YOURS3BUCKET
 
 </section>
 <section data-markdown>
-### Advantagous of secrets.yml
+### Advantages of secrets.yml
 
  Enhanced security
 
