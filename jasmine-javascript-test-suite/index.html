@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Jasmite Test Suite | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Jasmite Test Suite">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Jasmite Test Suite" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta property="og:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. " />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/jasmine-javascript-test-suite">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+ Jasmine Javascript Test Suite
+</section>
+<section>
+	<h4>Sibin Xavier</h4>
+	<p>
+		Frontend Developer
+	</p>
+</section>
+<section data-markdown="">
+### Testing is Important !!
+ - To discover defects.
+ - To avoid user detecting problems
+ - To prove that the software has no faults
+ - To learn about the reliability of the software.
+ - To avoid being sued by customers
+</section>
+<section data-markdown="">
+### Testing is Important Cont..
+ - To ensure that product works as user expected.
+ - To stay in business
+ - To detect defects early, which helps in reducing the cost of defect fixing?
+</section>
+<section data-markdown="">
+### Different type testing approach
+
+  - Test Driven Development ( TDD )
+
+  - Behavior Driven Development ( BDD )
+
+</section>
+
+<section data-markdown="">
+### TDD - Test Driven Development
+
+  Simple and Easy to understand for Developers
+
+  - First the developer writes some tests.
+  - The developer then runs those tests and (obviously) they fail because none of those features are actually implemented.
+  - Next the developer actually implements those tests in code.
+</section>
+
+<section data-markdown="">
+### TDD - contd..
+  - If the developer writes his code well, then the in next stage he will see his tests pass.
+  - The developer can then refactor his code, add comments, clean it up, as he wishes because the developer knows that    if the new code breaks something, then the tests will alert him by failing.
+
+</section>
+
+<section data-markdown="">
+### Test Driven Development - Life Cycle
+  * Add a Test
+  * Run all tests and see if the new one fails
+  * Write some code
+  * Run tests
+  * Refactor code
+  * Repeat
+</section>
+<section data-markdown="">
+
+  ![TDD](/slides/assets/images/tdd-flowchart.png)
+</section>
+<section data-markdown="">
+### Various Methods
+
+- KISS ( Keep It Simple, Stupid)
+- YAGNI (You Aren't Gonna Need It)
+
+</section>
+
+<section data-markdown="">
+### Everything have some Advantages
+
+  - More Test More Productive
+  - More Quality
+  - More Issue solving
+  - More Cases
+  - More Happy
+
+Still issues
+
+</section>
+<section data-markdown="">
+### Everything have some Limitation
+
+  * TDD also has many limitations
+  * Extensive use of `Unit Testing`
+  * Time spent to write Tests
+  * Depend upon developer
+  * Security Issues and Lots of useless codes
+  * Maintenance is Cumbersome
+
+</section>
+
+<section data-markdown="">
+### Many alternatives
+
+- Test Driven Work
+- Acceptance Test Driven Development
+
+</section>
+
+<section data-markdown="">
+### BDD - Behavior Driven Test  
+
+- New approach
+
+</section>
+
+<section data-markdown="">
+### BDD is not
+
+![TDD vs BDD](/slides/assets/images/two-roads.jpg)
+</section>
+
+<section data-markdown="">
+### BDD is
+
+![Originated from TDD](/slides/assets/images/originated-from-tdd.jpg)
+</section>
+<section data-markdown="">
+### BDD is
+
+- Use General Technique and Principle of TDD
+- Use benefits of Domain Driven Design and Object Oriented Analysis and Design
+
+
+</section>
+<section data-markdown="">
+### BDD Focus On
+
+  - Where to start in the process
+  - What to test and what not to test
+  - How much to test in one go
+  - What to call the tests
+  - How to understand why a test fails
+
+</section>
+<section data-markdown="">
+####Example
+
+  &gt;Scenario 1:
+  Refunded items should be returned to stock
+  Given a customer previously bought a black sweater from me
+  And I currently have three black sweaters left in stock
+  When he returns the sweater for a refund
+  Then I should have four black sweaters in stock
+
+</section>
+
+<section data-markdown="">
+## Jasmine - BDD for JavaScript Applications
+
+Jasmine is Behavior Driven Development framework, It is not depend upon any other Frameworks,
+Also It is not required DOM ( Document Object Model)
+
+Jasmine available as Standalone version, as packages for Angular JS, Meteor JS and a Couple of other frameworks
+
+Current Version is 2.4.1
+
+</section>
+
+<section data-markdown="">
+### Similar to other Testing Frameworks
+
+It is similar to RSpec and Other Frameworks
+***
+#### Common
+
+- Describe  block `describe`
+- It block `it`
+- Expect, ToBe, ToEqual etc...
+- Pending methods
+
+</section>
+
+<section data-markdown="">
+##### Typical Example
+
+  ```
+  describe('A Suite ', function(){
+    it("checking true equal to true", function(){
+      expect(true).tobe(true)
+    })  
+  })
+  ```
+
+</section>
+<section data-markdown="">
+### Suite
+
+* Describe method
+* Describe : String and Function as argument
+
+
+</section>
+
+<section data-markdown="">
+### Specs
+
+* It method
+* It: String and Function as arguments
+* As many expectations  
+</section>
+
+<section data-markdown="">
+#### `Pending` in Jasmine
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">xdescribe('A Pending Suite', function()&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">    xit("Checking pending spec", function()&#x7b;
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">        pending()
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">    &#x7d;)
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)
+</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+### Setup and Teardown
+
+##### Before and After methods
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">beforeEach(function()&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)</div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">afterEach(function()&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+### Setup and Teardown - Contd..
+
+##### Before All  and After  All
+- Execute only once
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">beforeAll(function()&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)</div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">afterAll(function()&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+# Spies
+
+- A Spy can stub any function and tracks call to it and all arguments
+- A Spy only exist inside describe or it block
+- A Spy remove after each spec (it)
+
+</section>
+
+<section data-markdown="">
+## Spies - Helpers
+- toHaveBeenCalled - return `true` if spy called
+- toHabeBeenCalledWith - return `true` if the argument list matches any recorded calls
+
+</section>
+<section data-markdown="">
+### Example with Spy
+
+</section>
+<section data-markdown="">
+### Reference
+
+* [Jasmine](http://jasmine.github.io/)
+* [Josidavis](http://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Sibin Xavier /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

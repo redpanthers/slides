@@ -5,9 +5,285 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 Feb 2016 09:17:30 +0530</pubDate>
-    <lastBuildDate>Wed, 10 Feb 2016 09:17:30 +0530</lastBuildDate>
+    <pubDate>Mon, 15 Feb 2016 10:22:31 +0530</pubDate>
+    <lastBuildDate>Mon, 15 Feb 2016 10:22:31 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Jasmite Test Suite</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+ Jasmine Javascript Test Suite
+&lt;/section&gt;
+&lt;section&gt;
+	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+	&lt;p&gt;
+		Frontend Developer
+	&lt;/p&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Testing is Important !!
+ - To discover defects.
+ - To avoid user detecting problems
+ - To prove that the software has no faults
+ - To learn about the reliability of the software.
+ - To avoid being sued by customers
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Testing is Important Cont..
+ - To ensure that product works as user expected.
+ - To stay in business
+ - To detect defects early, which helps in reducing the cost of defect fixing?
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Different type testing approach
+
+  - Test Driven Development ( TDD )
+
+  - Behavior Driven Development ( BDD )
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### TDD - Test Driven Development
+
+  Simple and Easy to understand for Developers
+
+  - First the developer writes some tests.
+  - The developer then runs those tests and (obviously) they fail because none of those features are actually implemented.
+  - Next the developer actually implements those tests in code.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### TDD - contd..
+  - If the developer writes his code well, then the in next stage he will see his tests pass.
+  - The developer can then refactor his code, add comments, clean it up, as he wishes because the developer knows that    if the new code breaks something, then the tests will alert him by failing.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Test Driven Development - Life Cycle
+  * Add a Test
+  * Run all tests and see if the new one fails
+  * Write some code
+  * Run tests
+  * Refactor code
+  * Repeat
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+
+  ![TDD](/slides/assets/images/tdd-flowchart.png)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Various Methods
+
+- KISS ( Keep It Simple, Stupid)
+- YAGNI (You Aren&#39;t Gonna Need It)
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Everything have some Advantages
+
+  - More Test More Productive
+  - More Quality
+  - More Issue solving
+  - More Cases
+  - More Happy
+
+Still issues
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Everything have some Limitation
+
+  * TDD also has many limitations
+  * Extensive use of `Unit Testing`
+  * Time spent to write Tests
+  * Depend upon developer
+  * Security Issues and Lots of useless codes
+  * Maintenance is Cumbersome
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Many alternatives
+
+- Test Driven Work
+- Acceptance Test Driven Development
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### BDD - Behavior Driven Test  
+
+- New approach
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### BDD is not
+
+![TDD vs BDD](/slides/assets/images/two-roads.jpg)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### BDD is
+
+![Originated from TDD](/slides/assets/images/originated-from-tdd.jpg)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### BDD is
+
+- Use General Technique and Principle of TDD
+- Use benefits of Domain Driven Design and Object Oriented Analysis and Design
+
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### BDD Focus On
+
+  - Where to start in the process
+  - What to test and what not to test
+  - How much to test in one go
+  - What to call the tests
+  - How to understand why a test fails
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+####Example
+
+  &amp;gt;Scenario 1:
+  Refunded items should be returned to stock
+  Given a customer previously bought a black sweater from me
+  And I currently have three black sweaters left in stock
+  When he returns the sweater for a refund
+  Then I should have four black sweaters in stock
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Jasmine - BDD for JavaScript Applications
+
+Jasmine is Behavior Driven Development framework, It is not depend upon any other Frameworks,
+Also It is not required DOM ( Document Object Model)
+
+Jasmine available as Standalone version, as packages for Angular JS, Meteor JS and a Couple of other frameworks
+
+Current Version is 2.4.1
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Similar to other Testing Frameworks
+
+It is similar to RSpec and Other Frameworks
+***
+#### Common
+
+- Describe  block `describe`
+- It block `it`
+- Expect, ToBe, ToEqual etc...
+- Pending methods
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##### Typical Example
+
+  ```
+  describe(&#39;A Suite &#39;, function(){
+    it(&quot;checking true equal to true&quot;, function(){
+      expect(true).tobe(true)
+    })  
+  })
+  ```
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Suite
+
+* Describe method
+* Describe : String and Function as argument
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Specs
+
+* It method
+* It: String and Function as arguments
+* As many expectations  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### `Pending` in Jasmine
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;xdescribe(&#39;A Pending Suite&#39;, function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    xit(&quot;Checking pending spec&quot;, function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;        pending()
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &amp;#x7d;)
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)
+&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Setup and Teardown
+
+##### Before and After methods
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;beforeEach(function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;afterEach(function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Setup and Teardown - Contd..
+
+##### Before All  and After  All
+- Execute only once
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;beforeAll(function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;afterAll(function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+# Spies
+
+- A Spy can stub any function and tracks call to it and all arguments
+- A Spy only exist inside describe or it block
+- A Spy remove after each spec (it)
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Spies - Helpers
+- toHaveBeenCalled - return `true` if spy called
+- toHabeBeenCalledWith - return `true` if the argument list matches any recorded calls
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Example with Spy
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+
+* [Jasmine](http://jasmine.github.io/)
+* [Josidavis](http://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)
+&lt;/section&gt;
+</description>
+        <pubDate>Mon, 15 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/jasmine-javascript-test-suite</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/jasmine-javascript-test-suite</guid>
+        
+        
+      </item>
     
       <item>
         <title>Form Objects</title>
@@ -1760,148 +2036,6 @@ Next React Router
         <pubDate>Sat, 16 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/sublime-packages/</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/sublime-packages/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Docker</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Docker
-
-Jan 13, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Jeena Jacob&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/profiles/jeena_jacob.jpg&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;RoR Devoloper at Redpanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Why Docker?
-
-Docker provides an integrated technology suite that enables development and IT operations teams to build,ship, and run distributed applications anywhere.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### What is Docker?
-
-Docker allows you to package an application with all of its dependencies into a standardized unit for software development.
-
-Original author(s) :Solomon Hykes
-
-Developer(s)  : Docker, Inc.
-
-Initial release :13 March 2013
-
-Stable release	1.9.1[1] :21 November 2015
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Get Started with Docker for Linux
-
-Install Docker
-
-$ wget -qO- https://get.docker.com/ | shxt
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Verify if Docker is installed successfully.
-
-$ which docker 
-
-service docker start 
-service docker restart
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### images &amp;amp; containers
-
-An image is software you load into a container.A container is a stripped-to-basics version of a Linux operating system
-
-&lt;img alt=&quot;dockerrun&quot; src=&quot;/slides/images/run.png&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Build your own image
-
-#### Step 1: Write a Dockerfile
-
-touch Dockerfile
-
-eg:
-
-FROM docker/whalesay:latest
-RUN apt-get -y update &amp;amp;&amp;amp; apt-get install -y fortunes
-CMD /usr/games/fortune -a | cowsay
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
-#### Step 2: Build an image from your Dockerfile
-
-$ docker build -t new_image_name .
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
-#### Step 3: Run your new docker-whale
-
- $ docker run new_image_name
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Remove Docker Images
-
-$ docker rmi -f image_id
-
-or
-
-$ docker rmi -f image_name
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Reference
-
-https://docs.docker.com/linux/
-
-https://www.youtube.com/watch?v=K6WER0oI-qs
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Thank You
-
-&lt;/section&gt;
-</description>
-        <pubDate>Thu, 14 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/virtualization-using-docker-containers/</guid>
         
         
       </item>
