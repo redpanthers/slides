@@ -5,8 +5,8 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Feb 2016 10:22:31 +0530</pubDate>
-    <lastBuildDate>Mon, 15 Feb 2016 10:22:31 +0530</lastBuildDate>
+    <pubDate>Mon, 15 Feb 2016 10:41:33 +0530</pubDate>
+    <lastBuildDate>Mon, 15 Feb 2016 10:41:33 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -286,6 +286,148 @@ It is similar to RSpec and Other Frameworks
       </item>
     
       <item>
+        <title>managing environment variable</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+## Managing Environment Configuration Variables in Rails
+
+Feb 11, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Augustin Pulikan&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xft1/v/t1.0-9/12065624_873705689393220_2906766376590498181_n.jpg?oh=a5eca759b8989d24dd44d77d04b5eb8d&amp;amp;oe=57443E25&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+
+when developing apps with Rails you need to set up environment variables to keep sensitive information secure in your code
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Why Configuration Variables?
+
+Hard coding sensitive information and committing them into source control can be dangerous as it means anyone with access to your code can see your API keys and secrets
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### few ways to manage environment variables in Rails
+
+ Using Bash or Zsh Profile
+
+ dotenv
+
+ Figaro
+
+ secrets.yml
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Using Bash or Zsh Profile
+ You can store the environment variable key/value pairs with the operating system directly and globally
+
+ export KEY=value
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Demerits of using Zsh or Bash profile
+
+ Config file might get cluttered with so many of these variables and you’ll end up with one very messy global space
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### dotenv
+dotenv solves the problems of setting project-specific environment vars and is super easy
+You can then put your sensitive information inside a .env file at the root of your project directory
+
+gem &#39;dotenv-rails&#39;
+
+PASSWORD=h4lpd4skpw0rd
+
+S3_BUCKET=YOURS3BUCKET
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Figaro
+ Figaro is similar to dotenv. What it does is to allow you to store all your sensitive secrets in a YAML file at config/application.yml. With it’s simple figaro install command you get your YAML file automatically added to gitignore. 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### secrets.yml
+ Very similar to Figaro’s config/application.yml, secrets.yml was added to Rails 4.1. You’ll have to add your secrets in config/secrets.yml as is done with Figaro
+
+ The variables added here are accessible through Rails.application.secrets
+ 
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Advantagous of secrets.yml
+
+ Enhanced security
+
+ Prevents session tampering
+
+ No need for any external dependency
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Other Solutions
+
+If you don’t want to use a gem to separate sensitive information from your project, there is a common pattern to create simple YAML files. You can name it private.yml. 
+ 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### How do I choose?
+
+Using Bash or Zsh profile to store environment variables allows you to set system wide and user specific environment variable this approach is, as your configuration grows and becomes more complex The addition of secrets.yml to Rails 4.1 is a major step in the right direction and also does a very good job at managing app-specific environment variables in dotenv add your .env file to gitignore when using dotenv. Figaro does this for you because of its convention of never committing configuration files
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+https://www.launchschool.com
+ 
+http://stackoverflow.com
+ 
+https://www.twilio.com
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 11 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/managing environment variable</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/managing environment variable</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Form Objects</title>
         <description>&lt;section data-markdown=&quot;&quot;&gt;
 # Form Objects
@@ -388,6 +530,158 @@ the model_name when it calls for it.
         <pubDate>Tue, 09 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/form-objects</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/form-objects</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Playing timezones in rails</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+
+# Playing timezone in rails
+
+Feb 8, 2016
+
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h4&gt;Pooja Raghunath&lt;/h4&gt;
+  &lt;p&gt;
+    Ruby Developer@RedPanthers
+  &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why is time important? 
+* Track when something happened 
+
+* Schedule when something will happen 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What is UTC? 
+“Coordinated Universal Time” International Standard Other time zones can be described with the number of hours and minutes with which they deviate from UTC as an offset
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### UTC offset?
+The UTC offset is the difference in hours and minutes from Coordinated Universal Time (UTC) for a particular place and date.It is generally shown in the format ±[hh]:[mm], ±[hh][mm], or ±[hh].
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+ ### Time zones vs time offsets
+ * A time zone is a geographical region where almost everyone observes the same standard time.
+
+* A time offset is an amount of time subtracted from or added to UTC to get the current civil time – whether it&#39;s standard time or daylight saving time.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Configure your Rails app
+ * The most important one is the config.time_zone configuration in your `config/application.rb file`.
+ * ActiveRecord will help you convert from and to UTC and the time zone.
+ * ActiveRecord fetches UTc time from DB and convert it to the timezone in config.time.zone
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Parsing
+* When parsing time information it&#39;s important to never do it without specifying the time zone. 
+* The best way to do this is to use Time.zone.parse (which will use the time zone specified in config.time_zone) instead of just Time.parse (which will use the computer&#39;s time zone).
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Date vs Time
+* Time has date information but Date does NOT have time information. 
+* Always make sure to convert it to your configured time zone:
+
+* 1.day.from_now # =&amp;gt; Fri, 03 Mar 2012 22:04:47 JST +09:00
+
+* Date.current.in_time_zone # =&amp;gt; Fri, 02 Mar 2012 00:00:00 JST +09:00
+
+* Never use:
+
+ Date.today.to_time # =&amp;gt; 2012-03-02 00:00:00 +0100
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Querying
+Since Rails know that your time information is stored as UTC in the database it will convert any time you give it to UTC.
+
+* Post.where([&quot;posts.published_at &amp;gt; ?&quot;, Time.current])
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Working with multiple user time zones
+
+Create a private method in your ActionController and run it as an around filter.  
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###DOs
+* 2.hours.ago # =&amp;gt; Thu, 27 Aug 2015 14:39:36 AFT +04:30
+* 1.day.from_now # =&amp;gt; Fri, 28 Aug 2015 16:39:36 AFT +04:30
+* Time.zone.parse(&quot;2015-08-27T12:09:36Z&quot;) # =&amp;gt; Thu, 27 Aug 2015 16:39:36 AFT +04:30
+* Time.current # =&amp;gt; Thu, 27 Aug 2015 16:39:36 AFT +04:30
+* Time.current.utc.iso8601 # When supliyng an API (&quot;2015-08-27T12:09:36Z&quot;)
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+* Time.strptime(&quot;2015-08-27T12:09:36Z&quot;, &quot;%Y-%m-%dT%H:%M:%S%z&quot;).in_time_zone # If you can&#39;t use Time.zone.parse (Thu, 27 Aug 2015 16:39:36 AFT +04:30)
+* Date.current # If you really can&#39;t have a Time or DateTime for some reason (Thu, 27 Aug 2015)
+* Date.current.in_time_zone # If you have a date and want to make the best out of it (Thu, 27 Aug 2015 00:00:00 AFT +04:30)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### DON&#39;Ts
+* Time.now # Returns system time and ignores your configured time zone. (2015-08-27 14:09:36 +0200)
+* Time.parse(&quot;2015-08-27T12:09:36Z&quot;) # Will assume time string given is in the system&#39;s time zone. (2015-08-27 12:09:36 UTC)
+* Time.strptime(&quot;2015-08-27T12:09:36Z&quot;, &quot;%Y-%m-%dT%H:%M:%S%z&quot;) # Same problem as with Time.parse. (2015-08-27 12:09:36 UTC)
+* Date.today # This could be yesterday or tomorrow depending on the machine&#39;s time zone, see https://github.com/ramhoj/time-zone-article/issues/1 for more info. (Thu, 27 Aug 2015)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What if I don&#39;t have logged in users
+If your are building a site that needs to show times and you don&#39;t have logged in users, setting the server time zone is not a solution either. You have the following options:
+* Use Javascript on the front end to figure out the correct time to display, based on the user&#39;s browser 
+* Try this gem https://github.com/scottwater/detectimezonerails 
+* Use the user&#39;s IP address to infer the timezone
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Testing
+
+* Timezones are working correctly by changing the timezone for the current user and checking that  views show the correct date/time for their timezone.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Integration testing with client side JS
+However if you are doing integration testing that involves client side JavaScript, things get more difficult. For example the client side could get the timezone from the browser and then use that for querying the server, this is really hard to mock.
+A particular gem that is very useful is timezone_local. 
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+* http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html
+* http://www.elabs.se/blog/36-working-with-time-zones-in-ruby-on-rails
+* https://www.reinteractive.net/posts/168-dealing-with-timezones-effectively-in-rails
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Thank You!!
+
+&lt;/section&gt;
+</description>
+        <pubDate>Mon, 08 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/playing-timezone-in-rails</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/playing-timezone-in-rails</guid>
         
         
       </item>
@@ -1640,402 +1934,6 @@ www.vogella.com
         <pubDate>Tue, 19 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>React and Flux</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
- React and Flux
-&lt;/section&gt;
-&lt;section&gt;
-	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
-	&lt;p&gt;
-		Frontend Developer
-	&lt;/p&gt;
-&lt;/section&gt;
-&lt;section&gt;
-	What is React, Why it is different
-&lt;/section&gt;
-&lt;section&gt;
-	React is a Javascript View Library, It can used with other Javascript frameworks
-&lt;/section&gt;
-&lt;section&gt;
-	&lt;h3&gt;It is not a different, but it has some unique features&lt;/h3&gt;
-
-
-  &lt;ul&gt;
-    &lt;li&gt;Virtual DOM&lt;/li&gt;
-    &lt;li&gt;Fast render  &lt;/li&gt;
-    &lt;li&gt;Reusable components&lt;/li&gt;
-    &lt;li&gt;Uni directional data flow&lt;/li&gt;
-  &lt;/ul&gt;
-
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### Virtual Dom
-  `Virtual-dom` is a collection of modules designed to provide a declarative way of representing the DOM for your app.
-  So instead of updating the DOM when your application state changes, you simply create a `virtual tree` or `VTree`, which looks like the DOM state that you want.
-  `virtual-dom` will then figure out how to make the DOM look like this efficiently without recreating all of the DOM nodes.
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-###SHow Codes
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;React Code&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### React Components has 3 properties
-- State
-- Props
-- Refs
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-#### State
-- state of a components
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
- ES5
------
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;getInitialState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nx&quot;&gt;retrun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-
-ES6
------
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&amp;gt; get value:
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&amp;gt; update value:
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&amp;#x7b;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Props
-
-- From Parent to Child
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Refs
-
-##### Get data from Component
-
-`&amp;lt;input type=/&#39;text/&#39; ref=/&#39;name/&#39; name=/&#39;name/&#39;&amp;gt;`
-
-
-`var name = this.refs.name`
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Life Cycle
-
-- getInitialState = constructor
-- componentWillMount
-- ComponentDidMount
-- componentWillReceiveProps
-- shouldComponentUpdate
-- ComponentWillUpdate
-- ComponentDidUpdate
-- componentWillUnmount
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### More Properties?
-
-Ans: Yes. Prop validation
-- You can specify state variable ( string, number, functions) with propType
-
-&amp;gt;
-`
-propTypes: {
-    // You can declare that a prop is a specific JS primitive. By default, these
-    // are all optional.
-    optionalArray: React.PropTypes.array,
-    optionalBool: React.PropTypes.bool,
-    optionalFunc: React.PropTypes.func,
-  }
-`
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### How to get Value from Components
-- Using different javascript events
-##### React and Native Javascript Events ?
-- onCLick , onHover, onMouseOver
-- onFocus, onKeyUp
-- Support all javascript events
-
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;input className=&#39;form-control&#39; onClick=&amp;#x7b;this.state.clickEvent&amp;#x7d;/&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;clickEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&amp;#x7b;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// You can call Stores or Action or anyother ajax calls&amp;#x7d;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Basic information about React, Lets move to Flux
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Why Flux
-***
-Flux is an Application Architecture but it is not an MVC, Flux used to build scalable web applications with React and Flux
-#### Flux
-
-Action -&amp;gt; Dispatcher --&amp;gt; Store --&amp;gt; View
-( Then View -&amp;gt; Action via events/state change)
-![Flux](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-![Flux Architecture](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Action
-- as like its name
-We call/dispatch dispatcher with certain action type, in store dispatch invoke registered action
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Dispatcher
-- Center Hub, Like control center in Airport
-- APIS ( register, unresgister, dispatch, waitFor)
-- More Information [Dispatcher](https://facebook.github.io/flux/docs/dispatcher.html)
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Store
-- Application state and Logic
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##### More informations about Action, Dispatcher and Store
-
-[React and Flux Doc](http://facebook.github.io/react/blog/2014/07/30/flux-actions-and-the-dispatcher.html)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Example Applications
-[React and Flux Examples](https://github.com/facebook/flux/tree/master/examples)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##### React and Flux continues...
-
-Next React Router
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-#### Thanks
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-##### Reference
-
-- [React docs](https://facebook.github.io/react/index.html)
-- [Flux docs](https://facebook.github.io/flux/)
-- React and Flux Examples by Facebook(https://github.com/facebook/flux/tree/master/examples)
-- React and FLux ( Lynda, Tutplus, Pluralsight)
-- [Videoreels](https://bitbucket.org/sibinx7/newreels)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Mon, 18 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/web-with-react-and-flux/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/web-with-react-and-flux/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Sublime Packages</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-  # Sublime Packages
-
-  Jan 16, 2016
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h4&gt;Hi, I&#39;m&lt;/h4&gt;
-  &lt;h3&gt;Alfred Dominic&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Alfred Dominic&quot; src=&quot;https://avatars1.githubusercontent.com/u/8247590?v=3&amp;amp;s=460&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;RoR Developer @RedPanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h2&gt;Sublime Text&lt;/h2&gt;
-
-  &lt;div&gt;
-    Sublime Text is a sophisticated text editor for code, markup and prose.
-
-    &lt;div&gt;&lt;a href=&quot;http://docs.sublimetext.info/en/latest/index.html&quot; target=&quot;_blank&quot;&gt;Unofficial Documentation&lt;/a&gt;&lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h2&gt;Package Control&lt;/h2&gt;
-
-  &lt;div&gt;
-    This is the Sublime Text package manager that makes it exceedingly simple to find, install and keep packages up-to-date
-  &lt;/div&gt;
-
-  &lt;div&gt;Get it here: &lt;a href=&quot;https://packagecontrol.io/&quot; target=&quot;_blank&quot;&gt;Package Control&lt;/a&gt;&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h2&gt;Settings &amp;amp; Key Bindings&lt;/h2&gt;
-
-  &lt;div&gt;
-    &lt;div&gt;
-      Preferences &amp;gt; Settings Default|User
-    &lt;/div&gt;
-    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/settings.html&quot; target=&quot;_blank&quot;&gt;All About Settings&lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div&gt;
-    &lt;div&gt;
-      Preferences &amp;gt; Key Bindings Default|User
-    &lt;/div&gt;
-    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/key_bindings.html&quot; target=&quot;_blank&quot;&gt;All About Key Bindings&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### A few settings I set for myself
-
-  ```
-    {
-        &quot;auto_complete_commit_on_tab&quot;: true,
-        &quot;caret_style&quot;: &quot;phase&quot;,
-        &quot;default_line_ending&quot;: &quot;LF&quot;,
-        &quot;draw_white_space&quot;: &quot;all&quot;,
-        &quot;enable_tab_scrolling&quot;: false,
-        &quot;ensure_newline_at_eof_on_save&quot;: true,
-        &quot;font_size&quot;: 9,
-        &quot;highlight_line&quot;: true,
-        &quot;highlight_modified_tabs&quot;: true,
-        &quot;fade_fold_buttons&quot;: false,
-        &quot;rulers&quot;: [80],
-        &quot;scroll_past_end&quot;: false,
-        &quot;tab_size&quot;: 2,
-        &quot;trailing_spaces_include_current_line&quot;: false,
-        &quot;translate_tabs_to_spaces&quot;: true,
-        &quot;trim_trailing_white_space_on_save&quot;: true,
-        &quot;wide_caret&quot;: true,
-        &quot;word_separators&quot;: &quot;./\\()\&quot;&#39;-:,.;&amp;lt;&amp;gt;~@#$%^&amp;amp;*|+=[]{}`~&quot;,
-        &quot;word_wrap&quot;: true
-    }
-
-  ```
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h2&gt;Keyboard Shortcuts&lt;/h2&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html&quot; target=&quot;_blank&quot;&gt;Windows/Linux&lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html&quot; target=&quot;_blank&quot;&gt;OSX&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### How to search for a sublime package
-
-
-  * *Ctrl+Shift+P* is used to show the Command Palette
-
-  * Start typing: `Package Control`
-
-  * Choose `Package Control: Install Package`
-
-  * Here you get to search amoung the tons of packages available
-
-  [Package Control Usage Ref](https://packagecontrol.io/docs/usage)
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### A list of packages that i use
-
-
-  * ChangeQuotes
-
-  * ERB Snippets
-
-  * ERB Autocomplete
-
-  * All Autocomplete
-
-  * Expression
-
-  * Git Gutter
-
-  * OmniMarkupPreviewer
-
-  * MarkDownPreview
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### Cont...
-
-  * TrailingSpaces
-
-  * HTML2HAML
-
-  * HTML Beautify
-
-  * HTML-CSS-JS Prettify
-
-  * Rails Developer Snippets
-
-  * Rails Partial
-
-  * Rails OpenView
-
-  * Ruby On Rails Snippets
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ## Thank you :)
-&lt;/section&gt;
-</description>
-        <pubDate>Sat, 16 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/sublime-packages/</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/sublime-packages/</guid>
         
         
       </item>
