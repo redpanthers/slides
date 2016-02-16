@@ -5,7 +5,7 @@
 
     <title>
       
-        Art of debugging and how to ask for help | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+        Vim text editor | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
       
     </title>
 
@@ -14,14 +14,14 @@
     <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@redpanthershq">
-<meta name="twitter:title" content="Art of debugging and how to ask for help">
+<meta name="twitter:title" content="Vim text editor">
 
 <meta name="twitter:creator" content="@redpanthershq">
 <!-- Twitter Summary card images must be at least 120x120px -->
 <meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
 
 <!-- Open Graph data -->
-<meta property="og:title" content="Art of debugging and how to ask for help" />
+<meta property="og:title" content="Vim text editor" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.redpanthers.github.com/slides" />
 <meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
@@ -31,13 +31,13 @@
 <meta property="fb:app_id" content="458945877638235" />
 
 
-  <meta name="twitter:description" content="A presentation of debugging and how to ask for help">
-  <meta name="description" content="A presentation of debugging and how to ask for help">
-  <meta property="og:description" content="A presentation of debugging and how to ask for help" />
+  <meta name="twitter:description" content="A presentation slide for how to use Vim">
+  <meta name="description" content="A presentation slide for how to use Vim">
+  <meta property="og:description" content="A presentation slide for how to use Vim" />
     <!-- eof social media meta content -->
     <!-- Description -->
     
-      <meta name="description" content="A presentation of debugging and how to ask for help" />
+      <meta name="description" content="A presentation slide for how to use Vim" />
     
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -66,7 +66,7 @@
 
     <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
 
-    <link rel="canonical" href="http://slides.redpanthers.co/slides/vim-editor-tips/">
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/vim-editor-tips">
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -78,18 +78,18 @@
     <div class="reveal">
       <div class="slides">
         <section data-markdown="">
-# Art of debugging and how to ask for help
+# Vim
 
-Feb 04, 2016
+Jan 14, 2016
 </section>
 
 <!-- Just to show that markdown and html can be mixed -->
 <section>
   <h4>Hi, I am</h4>
-  <h3>Juliat Joy</h3>
+  <h3>Ajay Joseph</h3>
   <div style="width:150%;">
     <div style="float:left; width:30%;">
-      <img alt="Juliat Joy" src="https://avatars2.githubusercontent.com/u/7353124?v=3&amp;u=6eeeedc3e9ecfbf20e6dcd128ea7344ed9261f49&amp;s=140" style="float: left; width:400px; height:400px;" />
+      <img alt="Jeroen De Meerleer" src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;oe=5747C14D" style="float: left; width:300px; height:300px;" />
     </div>
     <div style="float:right; width:70%;">
       <ul style="float: left; padding-top: 4%;">
@@ -102,339 +102,174 @@ Feb 04, 2016
 </section>
 
 <section data-markdown="">
-### Debugging
+### Introduction
 
-Even though debugging is an art rather than a science, there are definite
-principles that guide its practice
-
-</section>
-
-<section data-markdown="">
-### The Fundamental Principle of Confirmation
-
-Fixing a buggy program is a process of confirming, one by one, that the
-many things you believe to be true about the code actually are true. When
-you find that one of your assumptions is not true, you have found a clue
-to the location of a bug.
+Vim editor is a clone of Bill Joy’s vi editor for Linux. Vim stands for Vi IMproved. Vim is designed for use both from a command line interface and as a standalone application in a graphical user interface. Vim is basically a open source application that is released under a license which includes some charityware clauses.
 
 </section>
 
 <section data-markdown="">
-### Good questions
+### Introduction -- contd.
 
-The kind of answers we get to our technical questions depends as much on the way we ask the questions. Good questions are a stimulus and a gift. “Good question!” are strong and sincere compliments.
-
-</section>
-
-<section data-markdown="">
-### What to do before asking a technical question by email or in newsgroup.
-
-
-  * Try to find an answer by searching the archives of the forum or mailing list you plan to post to.
-
-  * Try to find an answer by searching the Web.
-
-  * Try to find an answer by reading the manual.
+Even though vim is available both in command line as well as an application with GUI, vim is widely used in command line and the full functionality is expressed through its command line mode.
 
 </section>
 
 <section data-markdown="">
-### contd ...
-  * Try to find an answer by reading a FAQ.
+### Vim -- modes
 
-  * Try to find an answer by inspection or experimentation.
-
-  * Try to find an answer by asking a skilled friend.
-
-  * If you're a programmer, try to find an answer by reading the source code.
+There are 2 modes in vim say INSERT mode and NORMAL mode.Mode in which you are currently in is displayed in editor.
+Pressing i will take you to insert mode and press escape key to return to normal mode.
 
 </section>
 
 <section data-markdown="">
-### Do not's
-* post your question to a forum where it's off topic
+### navigation
 
-* post a very elementary question to a forum where advanced technical questions are expected, or vice-versa
-
-* cross-post to too many different newsgroups
-
-* post a personal e-mail to somebody who is neither an acquaintance of yours nor personally responsible for solving your problem
-</section>
-
-<section data-markdown="">
-### Do's
-  ```
-         The first step, therefore, is to find the right forum.
-
-        With the help of google and other Web-searching find
-        the project webpage mostclosely associated with the
-        hardware or software giving you difficulties.
-
-        Usually it will have links to a FAQlist,
-        and to project mailing lists and their archives.
-        These mailing lists are the finalplaces to go for help.
-
-        if our own efforts do not find a solution.
-        The project page may also describe a bug-reporting procedure,
-        or have a link to one; if so, follow it.
-  ```
-</section>
-
-<section data-markdown="">
-### Choose forum correctly
-
-First, Know what your topic is!
-
-In general, ask questions to a well-selected public forum. Because the size of the pool of potential respondents is more in public forum also the size of the audience; hackers would rather answer questions that educate many people than questions serving only a few.
+In contrast to the normal text editors, vim uses keys h,j,k,l to move the cursor. To navigate the text in terms of words, keys w,b and e are used.
 
 </section>
 
 <section data-markdown="">
-### Stack Overflow
+### navigation -- contd.
 
-Start with a Google search before looking at Stack Exchange. If you didn't find anything  through Google, search again on the specific site most relevant to your question. Searching with tags can help narrow down the  results
-
-</section>
-
-<section data-markdown="">
-### Stack Overflow-contd..
-
-
-  If you still didn't find anything, post your question
-  on the one site where it's most on-topic.
-  Add tags that are related to the substance of your question
-  (particularly the name of the programming language,
-  operating system, or library you're having trouble with).
-</section>
-
-<section data-markdown="">
-### Stack exchange sites
-
-* Super User is for questions about general-purpose computing. If your question isn't about code or programs that you talk to only over a network connection, it probably goes here.
-
-* Stack Overflow is for questions about programming.
-
-* Server Fault is for questions about server and network administration.
-
-* Several projects have their own specific sites, including Android, Ubuntu, TeX/LaTeX, and SharePoint. Check the Stack Exchange site for an up-to-date list.
+B moves cursor to the beginning  of the word,E to the end and W to the start of next word.
 
 </section>
 
 <section data-markdown="">
-### How to post questions in web forum?
+### Number powered commands in vim
 
-Before posting to any Web forum, check if it has a Search feature. If it does, try a couple of keyword searches for something like your problem.
+Commands in Vim can be combined with numbers to good effect
 
-</section>
-
-<section data-markdown="">
-### How to post questions in mail list?
-
-When a project has a development mailing list, write to the mailing list, not to individual developers, even if you believe you know who can best answer your question. Check the documentation of the project and its homepage for the address of a project mailing list.
+eg.5w is same as pressing w five times.
 
 </section>
 
 <section data-markdown="">
-### Use specific and meaningful header
+### Inserting new content
 
-For example:
-
-Stupid:
-HELP! Video doesn't work properly on my laptop!
-
-Smart:
-X.org 6.8.1 misshapen mouse cursor, Fooware MV1005 vid. chipset
-
-Smarter:
-X.org 6.8.1 mouse cursor on Fooware MV1005 vid. chipset - is misshapen
+Inserting into a new line is done by presing key'O'.Capital 'O'creates a line above the current line and 'o' creates it below the current line.
 
 </section>
 
 <section data-markdown="">
-### Make it easy to reply
+### Searching in vim
 
-Set up a correct Reply-To header in your mail agent
-
-</section>
-
-<section data-markdown="">
-### Write in clear, grammatical, correctly-spelled language
-
-Expressing your question clearly and well is important. Spend the extra effort to polish your language. It doesn't have to be stiff or formal
-</section>
-
-<section data-markdown="">
-### contd...
-
-Spell, punctuate, and capitalize correctly. Don't confuse “its” with “it's”, “loose” with “lose”, or “discrete” with “discreet”. Don't TYPE IN ALL CAPS; this is read as shouting and considered rude.
-
-Dont spell  Spelling "you" as "u"
+ F or f is the key used for this. For e.g. Fo finds the next occurrence of o from the current cursor position.
+ Search in Vim can be combined with numbers as in the previous cases. 3fo will find the third occurrence of o from the current position.
 
 </section>
 
 <section data-markdown="">
-### Send questions in accessible, standard formats
+### Searching in vim -- contd.
 
-* Send plain text mail, not HTML
-* MIME attachments are usually OK, but only if they are real content
-* Don't send e-mail in which entire paragraphs are single multiply-wrapped lines
-* Do not wrap data at any fixed column width.
-</section>
-
-<section data-markdown="">
-### Send questions in accessible, standard formats-contd
-
-* Don't send MIME Quoted-Printable encoding to an English-language forum
-* In Web forums, do not abuse “smiley” and “HTML” features
-</section>
-
-<section data-markdown="">
-### Be precise and informative about your problem
-
-* Describe the symptoms of your problem or bug carefully and clearly.
-
-* Describe the environment in which it occurs (machine, OS, application, whatever). Provide your vendor's distribution and release level (e.g.: “Fedora Core 7”, “Slackware 9.1”, etc.).
-
-* Describe the research you did to try and understand the problem before you asked the question.
+In Vim you press ‘/‘ and give the text you are looking for.Repeat the search to find the next occurrence of the same text by pressing n and previous occurrence by pressing N.
 
 </section>
 
 <section data-markdown="">
-### Be precise and informative about your problem
+### Matching Parenthesis/brackets
 
-* Describe the diagnostic steps you took to try and pin down the problem yourself before you asked the question.
-
-* Describe any possibly relevant recent changes in your computer or software configuration.
-
-* If at all possible, provide a way to reproduce the problem in a controlled environment.</section>
-
-<section data-markdown="">
-### Don't rush to claim that you have found a bug
-
- Unless you can provide a source-code patch that fixes the problem, or a regression test against a previous version that demonstrates incorrect behavior, you are probably not sure enough.
-</section>
-
-<section data-markdown="">
-### Grovelling is not a substitute for doing your homework
-
-Some people who get that they shouldn't behave rudely or arrogantly, demanding an answer, retreat to the opposite extreme of grovelling. “I know I'm just a pathetic newbie loser, but...”. This is distracting and unhelpful. It's especially annoying when it's coupled with vagueness about the actual problem.
+‘%’ key is used to find the matching parenthesis. %key  matches {,[,( to its corresponding closing.
 
 </section>
 
 <section data-markdown="">
-### Describe the problem's symptoms, not your guesses
+### Movement between lines
 
-Stupid:
-
-I'm getting back-to-back SIG11 errors on kernel compiles, and suspect a hairline crack on one of the motherboard traces. What's the best way to check for those?
-
-</section>
-
-<section data-markdown="">
-### Describe the problem's symptoms, not your guesses
-
-Smart:
-
-My home-built K6/233 on an FIC-PA2007 motherboard (VIA Apollo VP2 chipset) with 256MB Corsair PC133 SDRAM starts getting frequent SIG11 errors about 20 minutes after power-on during the course of kernel compiles, but never in the first 20 minutes. Rebooting doesn't restart the clock, but powering down overnight does. Swapping out all RAM didn't help. The relevant part of a typical compile session log follows.
+To reach the beginning of a line press 0 and $ key takes you to the end of the line.
+G takes you to the end of the file and gg to the beginning of the file.
 
 </section>
 
 <section data-markdown="">
-### Describe your problem's symptoms in chronological order
+### Movement between lines -- contd.
 
- Your account should describe precisely what you did, and what the machine and software did, leading up to the blowup. In the case of command-line processes, having a session log (e.g., using the script utility) and quoting the relevant twenty or so lines is very useful.
+To navigate to a particular line, line number can be given along with G. e.g. 8G takes the cursor to the eighth line.
+</section>
+
+<section data-markdown="">
+### Occurrences of a word
+
+To find the next occurrence of a word in which the cursor is currently in press ‘*’ and the previous occurrence can be found by using #.
 
 </section>
 
 <section data-markdown="">
-### Describe the goal, not the step
+### Deleting
 
-If you are trying to find out how to do something (as opposed to reporting a bug), begin by decribing the goal. Only then describe the particular step towards it that you are blocked on.
+In line deleting is taken careof by 'x' and 'X'.‘x’ deletes the character the cursor is currently pointing to and ‘X’ deletes the character left of the cursor.
 </section>
 
 <section data-markdown="">
-### Describe the goal, not the step- Example
-Stupid:
+### Deleting -- contd.
 
-How do I get the color-picker on the FooDraw program to take a hexadecimal RGB value?
-
-</section>
-
-<section>
-<img src="/slides/images/Screenshot.png" />
-</section>
-
-<section data-markdown="">
-### contd...
-
-Smart:
-I'm trying to replace the color table on an image with values of my choosing. Right now the only way I can see to do this is by editing each table slot, but I can't get FooDraw's color picker to take a hexadecimal RGB value.
+‘d’ is the delete command. It can be combined with movement. For e.g. dw deletes the first word on the right side of the cursor, it also copies the content by default so that it can be pasted somewhere else using ‘p’.
 
 </section>
 
 <section data-markdown="">
-### Don't ask people to reply by private e-mail
+### Repeating commands
 
-solving problems should be a public, transparent process during which a first try at an answer can and should be corrected if someone more knowledgeable notices that it is incomplete or incorrect.
-</section>
-
-<section data-markdown="">
-### Be explicit about your question
-
-You are more likely to get a useful response if you are explicit about what you want respondents to do (provide pointers, send code, check your patch, whatever). This will focus their effort and implicitly put an upper bound on the time and energy a respondent must allocate to helping you.
-</section>
-
-<section data-markdown="">
-### When asking about code
-
-Generating a really small minimal test case will not always be possible, but trying to is good discipline. It may help you learn what you need to solve the problem on your own — and even when it doesn't, hackers like to see that you have tried. It will make them more cooperative.
+The previously executed command can be repeated just by pressing ‘.’ for any number of times we want
 
 </section>
 
 <section data-markdown="">
-### Don't post homework questions
+### Vim plugins
 
-Homework questions are for you to work out, so that you will learn from the experience. It is OK to ask for hints, but not for entire solutions.
-</section>
-
-<section data-markdown="">
-### Prune pointless queries
-
-Resist the temptation to close your request for help with semantically-null questions like
-  ```
-      “Can anyone help me?”
-      “Is there an answer?”
-  ```
-</section>
-
-<section data-markdown="">
-### Don't flag your question as “Urgent”, even if it is for you
-
- Claiming urgency is very likely to be counter-productive: most hackers will simply delete such messages as rude and selfish attempts to elicit immediate and special attention
+Vim plugins allow you to enhance, change, or add to Vim's existing behaviors. They're a powerful tool, and a key part of what has helped Vim remain relevant for 23 years, even as the computing world has changed dramatically around it. They allow Vim to support languages that didn't exist the last time its core was updated and also allow for powerful new features that benefit all users.
 
 </section>
 
 <section data-markdown="">
-### Courtesy never hurts, and sometimes helps
+### Plugin Management
 
-Be courteous. Use “Please” and “Thanks for your attention” or “Thanks for your consideration”. Make it clear you appreciate the time people spend helping you for free.
+Plugin management in vim has no official solution, as we have with other editors like sublime.  Pathogen was first plugin manager for vim but later on Vundle became more popular and took over its position.
 
 </section>
 
 <section data-markdown="">
-### Follow up with a brief note on the solution
+### Vimrc
 
-Send a note after the problem has been solved to all who helped you; let them know how it came out and thank them again for their help. If the problem attracted general interest in a mailing list or newsgroup, it's appropriate to post the followup there.
+Stands for vim runtime configuration  
+The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.
+
+</section>
+<section data-markdown="">
+### Plugin Management -- contd.
+
+To configure vundle  
+1.git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
+2.add this code to top of .vimrc file  
+  set nocompatible  
+  filetype off  
+  set rtp+=~/.vim/bundle/Vundle.vim  
+  call vundle#begin()  
+  Plugin 'VundleVim/Vundle.vim'  
+  call vundle#end()  
+3.lauch vim and run plugin install
+
+</section>
+
+<section data-markdown="">
+### Essential plugins for vim
+
+vundle  
+NERDTree  
+Syntastic  
+EasyMotion  
 
 </section>
 
 <section data-markdown="">
 ### References
 
-http://www.catb.org/~esr/faqs/smart-questions.html#intro
-http://www.techsupportalert.com/content/how-ask-question-when-you-want-technical-help.htm
-https://www.biostars.org/p/75548/
-https://github.com/scrooloose/nerdtree
+http://www.openvim.com  
+http://vimawesome.com  
+https://github.com/VundleVim/Vundle.vim  
+https://github.com/scrooloose/nerdtree  
 </section>
 
 <section data-markdown="">
@@ -444,7 +279,7 @@ https://github.com/scrooloose/nerdtree
 
       </div>
       <div class="pesentation-details">
-        <p>Juliat Joy /
+        <p>Ajay Joseph /
           <a href="https://twitter.com/" title="Follow me on Twitter"></a>
         </p>
       </div>
