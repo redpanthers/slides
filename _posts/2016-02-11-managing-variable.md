@@ -1,6 +1,6 @@
 ---
 layout: slide
-title: managing environment variable
+title: Managing environment variable
 description: A presentation slide for managing environment variable
 theme: black
 transition: slide
