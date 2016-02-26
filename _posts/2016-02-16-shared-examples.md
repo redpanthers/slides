@@ -6,6 +6,7 @@ theme: black
 transition: slide
 permalink: /shared-examples-rspec
 author: Ajay Joseph
+post_thumbnail: /slides/images/rspec.jpg
 profile_image: /slides/profiles/ajay-joseph.jpg
 ---
 
