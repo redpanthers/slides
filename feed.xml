@@ -5,9 +5,461 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 16 Feb 2016 21:06:01 +0530</pubDate>
-    <lastBuildDate>Tue, 16 Feb 2016 21:06:01 +0530</lastBuildDate>
+    <pubDate>Fri, 26 Feb 2016 09:40:06 +0530</pubDate>
+    <lastBuildDate>Fri, 26 Feb 2016 09:40:06 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Meteor JS</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+### Meteor Javascript Framework
+&lt;/section&gt;
+&lt;section&gt;
+	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+	&lt;p&gt;
+		Frontend Developer
+	&lt;/p&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Frameworks
+#### Web Frameworks
+- Ruby On Rails, Laravel, Django, Zend, Yii, Symphony...
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+####  Meteor JS is a complete Javascript Framework
+- Use HTML,CSS, Javascript and MongoDB
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Node JS , Mongo DB, Javascript Template engines, Javascript View Frameworks
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Javascript Web Technologies
+#### Meteor and MEAN ( MonogoDB Express Angular NodeJS)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Node JS
+- Server side Javascript
+- Originated from Chrome&#39;s Webkit engine
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Mongo DB
+- No SQL Database
+- Stores as Object
+- No Columns and Rows
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Javascript Template Engines
+- React JS, Handlebar , Blaze
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Meteor
+- Cross Platform application - Windows, Linux and Mac
+- Executable meteor application available on Windows
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Meteor command
+##### Basic
+&amp;gt; Meteor
+
+- `create`, `run`
+
+##### Install packages
+&amp;gt; Meteor
+
+- `add`, `remove`, `update`
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Create Application
+
+&amp;gt;
+`meteor create app-name`
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Server and Client side codes
+##### Client
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;if(Meteor.isClient)&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	// work only in client side web browser or mobile devices
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+##### Server
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;if(Meteor.isServer)&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	// work only in server, like PHP, Ruby
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Ease of Use
+###### Can use folder structure
+- client - html,css, subscribe, calles
+- server - methods, publish, restirction , collection
+- public - images,fonts
+- lib - common collection
+- private  - secure contents, can asses using `Asset`
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Routes/ Routing
+- Iron Router
+- Flow Router
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Flow Router
+
+`meteor add kadira:flow-router`
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Flow Router Config
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nx&quot;&gt;FlowRouter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/blog/:cat/:id&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;blogPostRoute&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&lt;span class=&quot;nx&quot;&gt;subscriptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;p&quot;&gt;&amp;#x7d;,&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&lt;span class=&quot;nx&quot;&gt;triggersEnter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;localeCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&lt;span class=&quot;nx&quot;&gt;triggersLeave&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;localeCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queryParams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;			&lt;span class=&quot;c1&quot;&gt;// Render Template Logic, Subscription&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;10&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;			&lt;span class=&quot;nx&quot;&gt;BlazeLayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;componentLayout&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;#x7b;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;);&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;11&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;    &lt;span class=&quot;p&quot;&gt;&amp;#x7d;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;12&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;#x7d;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&quot;/blog/meteor/abc?show=yes&amp;amp;color=black&quot;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Flow Router properties, helpers
+- FlowRouter.go(&#39;/&#39;)
+- FlowRouter.getParam(paramName);
+- FlowRouter.getQueryParam(queryStringKey);
+- FlowRouter.path(pathDef, params, queryParams)
+- FlowRouter.url(pathDef, params, queryParams)
+- FlowRouter.getRouteName()
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Flow Router Contd..
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;FlowRouter.notFound = &amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		// Subscriptions registered here don&#39;t have Fast Render support.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		subscriptions: function() &amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&amp;#x7d;,
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		action: function() &amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Flow Router helper for Template
+- subsReady
+- isSubReady (deprecated)
+- pathFor
+- urlFor
+- param
+- queryParam
+- currentRouteName
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;lt;a href=&quot;&amp;#x7b;&amp;#x7b;pathFor &#39;routeName&#39; params=params query params&amp;#x7d;&amp;#x7d;&quot;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;id=3 name=&quot;John Doe&quot;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Template
+- Blaze Template
+- Reusable Components
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;lt;template name=&quot;templateName&quot;&amp;gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	// html codes
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;lt;/template&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Temaplete Helpers
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;#if booleanValue&amp;#x7d;&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b; else&amp;#x7d;&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;/if&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;#each array|object &amp;#x7d;&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	- this.objectProperties
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	- @index
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;/each&amp;#x7d;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Meteor Template Helpers
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Template.templateName.helpers(&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		teams: function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;			return array
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;		&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;#each teams&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7b;&amp;#x7b;/each&amp;#x7d;&amp;#x7d;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Meteor Template Events
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Template.templateName.events(&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&#39;click selector&#39;: function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&amp;#x7d;,
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&#39;submit form selector&#39;: function()&amp;#x7b;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;7&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&amp;#x7d;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;8&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;9&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;#x7d;)
+&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Meteor Template Events
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Template.templateName.onCreated
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Template.templateName.onRendered
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Template.templateName.onDestroyed
+&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Mongo
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Task = new Meteor.Collection(&#39;tasks&#39;)
+&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Mongo CRUD
+- Task.insert()
+- Task.update(id,{updatedData})
+- Task.remove({})
+- Task.remove({_id:id})
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Mongo Read
+- Task.find({}).fetch() -&amp;gt; array
+- Task.find({selector},{options})
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Mongo Read Selector
+
+- {_id: id, name:name}
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Mongo Read Options
+- limit
+- skip (Meteor)
+- sort
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Authetication
+
+##### Meteor Account packages
+- Username/Password, Facebook, Twitter
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Roles
+
+##### Meteor Roles Packages
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Extend/ Improve meteor Applications
+- Use Pckages
+- Use alternate Template Engines
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+#### Thanks
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+* [Meteor](https://www.meteor.com/)
+* [Iron Router](https://github.com/iron-meteor/iron-router)
+* [Flow Router](https://github.com/kadirahq/flow-router)
+* [Blaze Layout](https://github.com/kadirahq/blaze-layout)
+* [Flow Router Helpers](https://github.com/arillo/meteor-flow-router-helpers)
+&lt;/section&gt;
+</description>
+        <pubDate>Fri, 26 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/meteor-framework</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/meteor-framework</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Shared Examples in Rspec</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Shared Examples in Rspec and keeping the code dry
+
+Feb 16, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Ajay Joseph&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;amp;oe=5747C14D&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### DRY
+DRY (Don&#39;t Repeat Yourself)  is a principle of Software Development to reducing repetition of information or codes. We can apply DRY quite broadly to database schema, test plan, system, even documentation. DRY is mainly impremented using inheritance.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##What is shared example?
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Shared examples describe behaviour of classes or modules.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Shared examples make testing compositions of objects much easier. They allow us to execute the same group of expectations against several classes.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###Including shared groups in other groups
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+* include_examples &quot;name&quot;
+* it_behaves_like &quot;name&quot;
+* it_should_behave_like &quot;name&quot;
+* matching metadata
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/images/Screen Shot 2016-02-16 at 7.58.14 am.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/images/Screen Shot 2016-02-16 at 8.01.30 am.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+To prevent this kind of subtle error a warning is emitted if you declare multiple
+methods with the same name in the same context. Should you get this warning
+the simplest solution is to replace include_examples with it_behaves_like, in this
+way method overriding is avoided because of the nested context created by it_behaves_like.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Shared Examples Conventions
+
+The simplest approach is to require files with shared examples explicitly
+from the files that use them. Keep in mind that RSpec adds the spec
+directory to the LOAD_PATH, so you can say require
+&#39;shared_examples_for_widgets&#39; to require a file at
+###{PROJECT_ROOT}/spec/shared_examples_for_widgets.rb.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Shared Examples Conventions contd
+
+One convention is to put files containing shared examples in spec/support/
+and require files in that directory from spec/spec_helper.rb:
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Shared Examples Conventions contd
+
+When all of the groups that include the shared group reside in the same file,
+just declare the shared group in that file.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Shared Examples Scenarios
+
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Shared examples group included in two groups in one file
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/images/Screen Shot 2016-02-16 at 8.15.17 am.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Passing parameters to a shared example group
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/images/Screen Shot 2016-02-16 at 8.20.11 am.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Sharing metadata automatically includes shared example groups
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;/slides/images/Screen Shot 2016-02-16 at 8.24.01 am.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###References
+
+* https://www.relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples
+* http://modocache.svbtle.com/code-reading-shared-examples-in-rspec
+* http://modocache.io/shared-examples-in-rspec
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 16 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/shared-examples-rspec</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/shared-examples-rspec</guid>
+        
+        
+      </item>
     
       <item>
         <title>Jasmite Test Suite</title>
@@ -1582,358 +2034,6 @@ Cons
         <pubDate>Sat, 30 Jan 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/sharetribe</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/sharetribe</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Pry alternative for IRB</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# PRY- Alternative for IRB 
-
-Jan 20, 2016
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h4&gt;Pooja Raghunath&lt;/h4&gt;
-  &lt;p&gt;
-    Ruby Developer@RedPanthers
-  &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-What is PRY?
-
-PRY is REPL (Read Eval Print Loop) that was written as a better alternative to IRB.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Main Features
-
-* Easier to debug code
-* Provide proper indendation
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Features -- contd.
- * Besides indentation Pry does a lot more. 
- * A feature that I think is very cool is the ability to show documentation and source code of methods right in your REPL .
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Features -- contd.
-* View the documentation or source for a method
-* Search your Pry history
-* Edit and reload files
-* Run shell commands
-* Dive into objects
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Features -- contd.
-Instead of ri and Rdoc documentation PRY uses show method or show-doc command.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Features -- contd.
-Calling show-doc pry would instead show the following:
-  pry(main)&amp;gt; show-doc pry
-
-From: /path/trimmed/for/readability/lib/pry/core_extensions.rb @ line 19:
-Number of lines: 17
-Owner: Object
-Visibility: public
-Signature: pry(target=?)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How to install PRY?
-* Install Pry within each project using Bundler inorder to utilize the debugging feature.
-* First add Pry to your Gemfile: gem ‘pry’
-* For running a Rails project, then place Pry under development group.
-
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ###Pry Commands
-  * ack and Ctags can be used for browsing content
-  * cd  Change self
-  * List global variables: ls -g
-  * List constants: ls -c
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### pry gem vs pry_rails_gem
-* The pry-rails gem simply adds an initializer to change the Rails console to Pry and adds some Pry commands specific to Rails. 
-* Pry-rails depends on Pry, and there&#39;s no reason you couldn&#39;t use Pry with Rails without pry-rails, it just makes it easier.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Pry  as  debugger
-* pry_debugg gem
-* pry_stack_explorer
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Pry  as  debugger
-Use &#39;binding.pry&#39;
-
-Ruby interpeter will stop execute till line containing binding.pry and it open pry REPL session at that point.  
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Reference 
-http://pryrepl.org/
-https://github.com/pry/pry
-https://www.bignerdranch.com/blog/my-top-5-pry-features/
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Thank You !!!
-&lt;section&gt;
-&lt;/section&gt;&lt;/section&gt;
-</description>
-        <pubDate>Wed, 20 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/pry-alternative-for-irb</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/pry-alternative-for-irb</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>jenkins</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Jenkins-CI
-
-Jan 19, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Augustin Pulikan&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xft1/v/t1.0-9/12065624_873705689393220_2906766376590498181_n.jpg?oh=a5eca759b8989d24dd44d77d04b5eb8d&amp;amp;oe=57443E25&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-
-Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. 
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###What is CI?
-
-Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### CI – Benefits
- Immediate bug detection
-
- No integration step in the lifecycle
-
- A deployable system at any given point
-
- Record of evolution of the project 
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Why Jenkins? Flexibility!
- Jenkins is a highly configurable system by itself
-  By combining Jenkins with Ant, Gradle, or other Build
-Automation tools, the possibilities are limitless 
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### What can Jenkins do?
- Generate test reports
-
- Integrate with many different Version Control Systems
-
- Push to various artifact repositories
-
- Deploys directly to production or test environments
- 
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How Jenkins works - Setup
- Associating with a version control server
-
- Triggering builds
-
- Execution of shell scripts, bash scripts, Ant targets
-
- Artifact archival
-
- Email notifications
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How Jenkins works - Building
- Building
-
- Jenkins executes the build in an executer
-
- Jenkins also has the concept of slave build servers
-
- Useful for building on different architectures
-
- Distribution of load 
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How Jenkins works - Reporting
-
- Jenkins comes with basic reporting features
-
-
- Keeping track of build status
- Last success and failure
- “Weather” – Build trend
- T
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Jenkins main page
-
- What’s building (“No builds in the queue”)
- Build Executor Status (both “Idle”)
- Status of the projects 
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Enhancing Jenkins
-SCM
-
-Testing
-
-Notifications
-
-Reporting
-
-Artifact savings
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### What Can Plugins Do?
-Jenkins defines extensibility points, which are interfaces or abstract classes that model an aspect of a build system.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How to install plugins?
-
-Installing the newest version
-
-Installing a specific version
-
-By hand
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Installing the newest version
-
-clicking Manage Plugins and go to the Available tab. select the checkbox, and then either attempt to Install without restart or Download now and install after restart
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Installing a specific version
-
-you can upload it from your computer on the Advanced tab of the Manage Plugins page in Jenkins.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### By hand
-Save the downloaded *.hpi/*.jpi file into the $JENKINS_HOME/plugins directory. You will then need to restart Jenkins
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Plugin for highly productive ci
-Jenkins git plugin 
-
-Jenkins svn plugin 
-
-Jenkins ssh plugin
-
-Jenkins jira plugin
-
-Jenkins email plugin
-
-Artifactory
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Useful plugins
-
-All change plugin
-
-Bitbucket plugin
-
-Checkstyle plugin
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Useful plugins
-
-Depentency graph viewer
-
-git notes
-
-Deployment plugin
-
-Heroku plugin
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### References
-
-https://wiki.jenkins-ci.org
- 
-http://stackoverflow.com
- 
-https://www.quora.com
- 
-www.vogella.com
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##Thank you :)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 19 Jan 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/jenkins-ci-opensource-automation-server</guid>
         
         
       </item>

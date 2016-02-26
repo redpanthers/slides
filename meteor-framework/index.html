@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Meteor JS | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Meteor JS">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Meteor JS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta property="og:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. " />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/meteor-framework">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+### Meteor Javascript Framework
+</section>
+<section>
+	<h4>Sibin Xavier</h4>
+	<p>
+		Frontend Developer
+	</p>
+</section>
+<section data-markdown="">
+### Frameworks
+#### Web Frameworks
+- Ruby On Rails, Laravel, Django, Zend, Yii, Symphony...
+</section>
+<section data-markdown="">
+####  Meteor JS is a complete Javascript Framework
+- Use HTML,CSS, Javascript and MongoDB
+</section>
+<section data-markdown="">
+### Node JS , Mongo DB, Javascript Template engines, Javascript View Frameworks
+</section>
+<section data-markdown="">
+### Javascript Web Technologies
+#### Meteor and MEAN ( MonogoDB Express Angular NodeJS)
+</section>
+<section data-markdown="">
+### Node JS
+- Server side Javascript
+- Originated from Chrome's Webkit engine
+</section>
+<section data-markdown="">
+### Mongo DB
+- No SQL Database
+- Stores as Object
+- No Columns and Rows
+</section>
+<section data-markdown="">
+### Javascript Template Engines
+- React JS, Handlebar , Blaze
+</section>
+
+<section data-markdown="">
+#### Meteor
+- Cross Platform application - Windows, Linux and Mac
+- Executable meteor application available on Windows
+
+</section>
+<section data-markdown="">
+#### Meteor command
+##### Basic
+&gt; Meteor
+
+- `create`, `run`
+
+##### Install packages
+&gt; Meteor
+
+- `add`, `remove`, `update`
+</section>
+<section data-markdown="">
+#### Create Application
+
+&gt;
+`meteor create app-name`
+
+</section>
+
+<section data-markdown="">
+#### Server and Client side codes
+##### Client
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">if(Meteor.isClient)&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	// work only in client side web browser or mobile devices
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;</div></div></pre></div></figure>
+
+##### Server
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">if(Meteor.isServer)&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	// work only in server, like PHP, Ruby
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;</div></div></pre></div></figure>
+
+
+</section>
+<section data-markdown="">
+#### Ease of Use
+###### Can use folder structure
+- client - html,css, subscribe, calles
+- server - methods, publish, restirction , collection
+- public - images,fonts
+- lib - common collection
+- private  - secure contents, can asses using `Asset`
+</section>
+
+<section data-markdown="">
+#### Routes/ Routing
+- Iron Router
+- Flow Router
+</section>
+
+<section data-markdown="">
+#### Flow Router
+
+`meteor add kadira:flow-router`
+
+</section>
+
+<section data-markdown="">
+#### Flow Router Config
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nx">FlowRouter</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="s2">&quot;/blog/:cat/:id&quot;</span><span class="p">,</span> <span class="p">&#x7b;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;blogPostRoute&quot;</span><span class="p">,</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">		<span class="nx">subscriptions</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">&#x7b;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="p">&#x7d;,</span>
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">		<span class="nx">triggersEnter</span><span class="o">:</span> <span class="p">[</span><span class="nx">localeCheck</span><span class="p">],</span>
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line">		<span class="nx">triggersLeave</span><span class="o">:</span> <span class="p">[</span><span class="nx">localeCheck</span><span class="p">],</span>
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nx">action</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">queryParams</span><span class="p">,</span><span class="nx">params</span><span class="p">)</span> <span class="p">&#x7b;</span>
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line">			<span class="c1">// Render Template Logic, Subscription</span>
+</div></div><div data-line="10" class="code-highlight-row numbered"><div class="code-highlight-line">			<span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;componentLayout&#39;</span><span class="p">,</span> <span class="p">&#x7b;</span><span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;login&#39;</span><span class="p">&#x7d;);</span>
+</div></div><div data-line="11" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="p">&#x7d;</span>
+</div></div><div data-line="12" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="p">&#x7d;)</span></div></div></pre></div></figure>
+
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">"/blog/meteor/abc?show=yes&amp;color=black"</div></div></pre></div></figure>
+
+
+</section>
+<section data-markdown="">
+#### Flow Router properties, helpers
+- FlowRouter.go('/')
+- FlowRouter.getParam(paramName);
+- FlowRouter.getQueryParam(queryStringKey);
+- FlowRouter.path(pathDef, params, queryParams)
+- FlowRouter.url(pathDef, params, queryParams)
+- FlowRouter.getRouteName()
+</section>
+<section data-markdown="">
+#### Flow Router Contd..
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">FlowRouter.notFound = &#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">		// Subscriptions registered here don't have Fast Render support.
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">		subscriptions: function() &#x7b;
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">		&#x7d;,
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">		action: function() &#x7b;
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line">		&#x7d;
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;;</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Flow Router helper for Template
+- subsReady
+- isSubReady (deprecated)
+- pathFor
+- urlFor
+- param
+- queryParam
+- currentRouteName
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">&lt;a href="&#x7b;&#x7b;pathFor 'routeName' params=params query params&#x7d;&#x7d;"
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">id=3 name="John Doe"</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Template
+- Blaze Template
+- Reusable Components
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">&lt;template name="templateName"&gt;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	// html codes
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&lt;/template&gt;</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Temaplete Helpers
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;#if booleanValue&#x7d;&#x7d;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b; else&#x7d;&#x7d;
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;/if&#x7d;</div></div></pre></div></figure>
+
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;#each array|object &#x7d;&#x7d;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	- this.objectProperties
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">	- @index
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;/each&#x7d;&#x7d;</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Meteor Template Helpers
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">Template.templateName.helpers(&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">		teams: function()&#x7b;
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">			return array
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">		&#x7d;
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)</div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;#each teams&#x7d;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7b;&#x7b;/each&#x7d;&#x7d;</div></div></pre></div></figure>
+
+
+</section>
+
+<section data-markdown="">
+#### Meteor Template Events
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">Template.templateName.events(&#x7b;
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	'click selector': function()&#x7b;
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">	&#x7d;,
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">	'submit form selector': function()&#x7b;
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line">	&#x7d;
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line">&#x7d;)
+</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Meteor Template Events
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">Template.templateName.onCreated
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">Template.templateName.onRendered
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">Template.templateName.onDestroyed
+</div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+#### Mongo
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">Task = new Meteor.Collection('tasks')
+</div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+#### Mongo CRUD
+- Task.insert()
+- Task.update(id,{updatedData})
+- Task.remove({})
+- Task.remove({_id:id})
+</section>
+<section data-markdown="">
+#### Mongo Read
+- Task.find({}).fetch() -&gt; array
+- Task.find({selector},{options})
+</section>
+<section data-markdown="">
+#### Mongo Read Selector
+
+- {_id: id, name:name}
+</section>
+<section data-markdown="">
+#### Mongo Read Options
+- limit
+- skip (Meteor)
+- sort
+</section>
+
+<section data-markdown="">
+#### Authetication
+
+##### Meteor Account packages
+- Username/Password, Facebook, Twitter
+
+</section>
+<section data-markdown="">
+#### Roles
+
+##### Meteor Roles Packages
+
+</section>
+<section data-markdown="">
+#### Extend/ Improve meteor Applications
+- Use Pckages
+- Use alternate Template Engines
+</section>
+<section data-markdown="">
+#### Thanks
+</section>
+<section data-markdown="">
+### Reference
+* [Meteor](https://www.meteor.com/)
+* [Iron Router](https://github.com/iron-meteor/iron-router)
+* [Flow Router](https://github.com/kadirahq/flow-router)
+* [Blaze Layout](https://github.com/kadirahq/blaze-layout)
+* [Flow Router Helpers](https://github.com/arillo/meteor-flow-router-helpers)
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Sibin Xavier /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
