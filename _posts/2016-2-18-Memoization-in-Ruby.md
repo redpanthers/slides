@@ -6,7 +6,7 @@ theme: black
 transition: slide
 permalink: /memoization-in-ruby
 author: Pooja Raghunath
-post_thumbnail: /slides/images/.jpg 
+post_thumbnail: /slides/images/memorization.jpg 
 profile_image: /slides/profiles/pooja-raghunath.jpg
 ---
 <section data-markdown>
@@ -27,7 +27,7 @@ Feb 18, 2016
 
 * Memoization is the process of storing a computed value to avoid duplicated work by future calls.
 
-* Memoization can be used to initialize a variable and store it with the result of some computation that is expected to give same result if computed again. 
+* Memoization can be used to initialize a variable and store it with the result of some computation that is expected to give same result if computed again.
 
 </section>
 <section data-markdown>
@@ -108,7 +108,7 @@ Lazy initialization is delaying intialization of the object/entity until the nee
 </section>
 
 <section>
- Lazy initialization 
+ Lazy initialization
 <img alt="Jeroen De Meerleer" src="/slides/images/lazy1.png">
 
 
@@ -117,7 +117,7 @@ Lazy initialization is delaying intialization of the object/entity until the nee
 <section data-markdown>
 ### Does Rails support Memoization?
 
-* Rails had support for Memoize through ActiveSupport::Memoizable. 
+* Rails had support for Memoize through ActiveSupport::Memoizable.
 * Memoizable is deprecated from Rails.
 * Memoist is an extraction of ActiveSupport::Memoizable.
 
@@ -126,7 +126,7 @@ Lazy initialization is delaying intialization of the object/entity until the nee
 <section data-markdown>
 ### When should you memoize?
 
-* When  duplicated database calls 
+* When  duplicated database calls
 * When  expensive calculations
 * When  repeated calculations that don’t change
 
@@ -155,4 +155,3 @@ Lazy initialization is delaying intialization of the object/entity until the nee
 * http://gavinmiller.io/2013/basics-of-ruby-memoization/
 
 </section>
-
