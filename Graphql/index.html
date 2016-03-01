@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Graphql | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Graphql">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Graphql" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="A presentation based on GraphQl">
+  <meta name="description" content="A presentation based on GraphQl">
+  <meta property="og:description" content="A presentation based on GraphQl" />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="A presentation based on GraphQl" />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/Graphql/">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+# Graphql
+
+Feb 21, 2016
+</section>
+
+<!-- Just to show that markdown and html can be mixed -->
+<section>
+  <h4>Hi, I am</h4>
+  <h3>Juliat Joy</h3>
+  <div style="width:150%;">
+    <div style="float:left; width:30%;">
+      <img alt="Juliat Joy" src="https://avatars2.githubusercontent.com/u/7353124?v=3&amp;u=6eeeedc3e9ecfbf20e6dcd128ea7344ed9261f49&amp;s=140" style="float: left; width:400px; height:400px;" />
+    </div>
+    <div style="float:right; width:70%;">
+      <ul style="float: left; padding-top: 4%;">
+          <li>Ruby Devoloper Trainee at Redpanthers</li>
+
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section data-markdown="">
+### GraphQl
+
+GraphQl is a data query and data manipulation language for client applications.GraphQL is an application layer query language from Facebook. GrpahQl is not tied with a database. With GraphQL, you can define your backend as a well-defined graph-based schema. Then client applications can query your dataset as they are needed.
+
+</section>
+
+<section data-markdown="">
+### contd...
+
+We don't need to change our backend for data requirement changes in client apps. This simply solves one of the biggest problems in managing REST API.
+
+</section>
+
+<section>
+
+<img src="/slides/images/GraphQl.png" />
+
+</section>
+
+<section data-markdown="">
+### contd...
+
+GraphQL is a specification so, it can be used with any platform and any language. It has a reference implementation on JavaScript, maintained by Facebook.
+
+</section>
+
+<section data-markdown="">
+### What problems does GraphQl try to solve
+
+* Client-side developers should have a way to ask for the data they need.
+* Server-side developers should have a way to expose the data they have.
+* There should be an easy and efficient way to query data (the REST API consumes a lot of resources, especially with mobile apps).
+
+</section>
+
+<section data-markdown="">
+### We will see how Graphql works
+
+
+At the heart of any GraphQL implementation is a description of what types of objects it can return, described in a GraphQL type system and returned in the GraphQL Schema.
+
+  ```type Student {
+  name: String
+}```
+
+</section>
+
+<section data-markdown="">
+### contd ...
+
+  A common pattern in many APIs, and indeed in GraphQL is to give objects an ID that can be used to refetch the object.
+
+  ```type Student {
+  id: String
+  name: String
+}```
+
+
+</section>
+
+<section data-markdown="">
+### contd...
+
+  Now thing in this particular school there are only 8th 9th and 10th standard.
+  So we have to define an enum for standard
+
+  ```enum Standard { 8th, 9th, 10th}```
+
+  Now we will add a field to Student describing what standard they are in.
+
+  ```type Student {
+  id: String
+  name: String
+  appearsIn: [standard]
+}```
+
+</section>
+
+<section data-markdown="">
+### Graphql
+
+  When we define a schema, we define an object type that is the basis for all queries. The name of this type is Query by convention, and it describes our public, top-level API. Our Query type for this example will look like this:
+
+  ```type Query {
+  student(id: String!): Student
+}```
+
+</section>
+
+<section data-markdown="">
+### Query syntax
+
+An example query on the above schema would be:
+
+  ```query StudentNameQuery {
+  student {
+    name
+  }
+}```
+
+The initial line, query StudentNameQuery, defines a query with the operation name StudentNameQuery that starts with the schema's root query type; in this case, Query.
+</section>
+
+<section data-markdown="">
+### contd...
+
+The result of this query would then be:
+
+  ```{
+  "student": {
+    "name": "R2-D2"
+  }
+}```
+
+
+</section>
+
+<section data-markdown="">
+  ### contd...
+
+  One of the key aspects of GraphQL is its ability to nest queries.
+
+  ```
+    query NestedQuery {
+      student{
+        name
+        friends {
+          name
+          appearsIn
+          friends {
+            name
+          }
+        }
+      }
+    }
+  ```
+</section>
+
+<section data-markdown="">
+  ### contd...
+
+  ```
+    {
+      "student": {
+        "name": "Ram",
+        "friends": [
+          {
+            "name": "Luke",
+            "appearsIn": [ "8th" ],
+            "friends": [
+              { "name": "Han" },
+              { "name": "Leia" },
+              { "name": "Krishna" },
+              { "name": "Mujeeb" }
+            ]
+          },
+          {
+            "name": "Han",
+            "appearsIn": [ "10th" ],
+            "friends": [
+              { "name": "Luke" },
+              { "name": "Lei Organa" },
+              { "name": "Neethu" }
+            ]
+          },
+          {
+            "name": "Leia",
+            "appearsIn": [ "8th" ],
+            "friends": [
+              { "name": "Luke" },
+              { "name": "Han" }
+            ]
+          }
+        ]
+      }
+    }
+  ```
+</section>
+
+<section data-markdown="">
+### contd...
+
+The Query type above defined a way to fetch a student given their ID. We can use it by hardcoding the ID in the query:
+
+  ```
+    query FetchLukeQuery {
+      student(id: "1000") {
+        name
+      }
+    }
+  ```
+to get
+
+  ```
+    {
+      "student": {
+        "name": "Luke Skywalker"
+      }
+    }
+  ```
+
+</section>
+
+<section data-markdown="">
+### Drawbacks
+
+It misses the ability to update clients reactively. In the GraphQL spec, there is no way to subscribe and get updates. Right now, to achieve real-time updates, we need to poll the server and get the changes.
+
+</section>
+
+<section data-markdown="">
+### Setup
+
+Make a demo folder
+
+  ```
+    mkdir graphql-demo
+    cd graphql-demo
+  ```
+</section>
+
+<section data-markdown="">
+### contd...
+
+We have to install 3 packages
+
+* graphql, the reference implementation of GraphQL in JS
+
+* express, a basic web framework.
+
+* express-graphql, middleware for express to make it easy to expose a GraphQL server.
+
+</section>
+
+<section data-markdown="">
+### contd...
+
+Install 3 packages
+
+  ```
+    npm init -f
+    npm install graphql --save
+    npm install express --save
+    npm install express-graphql --save
+  ```
+</section>
+
+<section data-markdown="">
+### References
+
+http://hueypetersen.com/posts/2015/02/02/first-thoughts-on-graph-ql/
+https://github.com/facebook/graphql
+https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html/
+https://code.facebook.com/posts/1691455094417024/graphql-a-data-query-language/
+</section>
+
+<section data-markdown="">
+##Thank you :)
+
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Juliat Joy /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

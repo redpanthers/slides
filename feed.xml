@@ -5,8 +5,8 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Feb 2016 13:01:01 +0530</pubDate>
-    <lastBuildDate>Mon, 29 Feb 2016 13:01:01 +0530</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2016 08:58:13 +0530</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2016 08:58:13 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -289,6 +289,301 @@
         <pubDate>Fri, 26 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/meteor-framework</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/meteor-framework</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Graphql</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Graphql
+
+Feb 21, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Juliat Joy&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Juliat Joy&quot; src=&quot;https://avatars2.githubusercontent.com/u/7353124?v=3&amp;amp;u=6eeeedc3e9ecfbf20e6dcd128ea7344ed9261f49&amp;amp;s=140&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### GraphQl
+
+GraphQl is a data query and data manipulation language for client applications.GraphQL is an application layer query language from Facebook. GrpahQl is not tied with a database. With GraphQL, you can define your backend as a well-defined graph-based schema. Then client applications can query your dataset as they are needed.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+We don&#39;t need to change our backend for data requirement changes in client apps. This simply solves one of the biggest problems in managing REST API.
+
+&lt;/section&gt;
+
+&lt;section&gt;
+
+&lt;img src=&quot;/slides/images/GraphQl.png&quot; /&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+GraphQL is a specification so, it can be used with any platform and any language. It has a reference implementation on JavaScript, maintained by Facebook.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What problems does GraphQl try to solve
+
+* Client-side developers should have a way to ask for the data they need.
+* Server-side developers should have a way to expose the data they have.
+* There should be an easy and efficient way to query data (the REST API consumes a lot of resources, especially with mobile apps).
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### We will see how Graphql works
+
+
+At the heart of any GraphQL implementation is a description of what types of objects it can return, described in a GraphQL type system and returned in the GraphQL Schema.
+
+  ```type Student {
+  name: String
+}```
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd ...
+
+  A common pattern in many APIs, and indeed in GraphQL is to give objects an ID that can be used to refetch the object.
+
+  ```type Student {
+  id: String
+  name: String
+}```
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+  Now thing in this particular school there are only 8th 9th and 10th standard.
+  So we have to define an enum for standard
+
+  ```enum Standard { 8th, 9th, 10th}```
+
+  Now we will add a field to Student describing what standard they are in.
+
+  ```type Student {
+  id: String
+  name: String
+  appearsIn: [standard]
+}```
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Graphql
+
+  When we define a schema, we define an object type that is the basis for all queries. The name of this type is Query by convention, and it describes our public, top-level API. Our Query type for this example will look like this:
+
+  ```type Query {
+  student(id: String!): Student
+}```
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Query syntax
+
+An example query on the above schema would be:
+
+  ```query StudentNameQuery {
+  student {
+    name
+  }
+}```
+
+The initial line, query StudentNameQuery, defines a query with the operation name StudentNameQuery that starts with the schema&#39;s root query type; in this case, Query.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+The result of this query would then be:
+
+  ```{
+  &quot;student&quot;: {
+    &quot;name&quot;: &quot;R2-D2&quot;
+  }
+}```
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### contd...
+
+  One of the key aspects of GraphQL is its ability to nest queries.
+
+  ```
+    query NestedQuery {
+      student{
+        name
+        friends {
+          name
+          appearsIn
+          friends {
+            name
+          }
+        }
+      }
+    }
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### contd...
+
+  ```
+    {
+      &quot;student&quot;: {
+        &quot;name&quot;: &quot;Ram&quot;,
+        &quot;friends&quot;: [
+          {
+            &quot;name&quot;: &quot;Luke&quot;,
+            &quot;appearsIn&quot;: [ &quot;8th&quot; ],
+            &quot;friends&quot;: [
+              { &quot;name&quot;: &quot;Han&quot; },
+              { &quot;name&quot;: &quot;Leia&quot; },
+              { &quot;name&quot;: &quot;Krishna&quot; },
+              { &quot;name&quot;: &quot;Mujeeb&quot; }
+            ]
+          },
+          {
+            &quot;name&quot;: &quot;Han&quot;,
+            &quot;appearsIn&quot;: [ &quot;10th&quot; ],
+            &quot;friends&quot;: [
+              { &quot;name&quot;: &quot;Luke&quot; },
+              { &quot;name&quot;: &quot;Lei Organa&quot; },
+              { &quot;name&quot;: &quot;Neethu&quot; }
+            ]
+          },
+          {
+            &quot;name&quot;: &quot;Leia&quot;,
+            &quot;appearsIn&quot;: [ &quot;8th&quot; ],
+            &quot;friends&quot;: [
+              { &quot;name&quot;: &quot;Luke&quot; },
+              { &quot;name&quot;: &quot;Han&quot; }
+            ]
+          }
+        ]
+      }
+    }
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+The Query type above defined a way to fetch a student given their ID. We can use it by hardcoding the ID in the query:
+
+  ```
+    query FetchLukeQuery {
+      student(id: &quot;1000&quot;) {
+        name
+      }
+    }
+  ```
+to get
+
+  ```
+    {
+      &quot;student&quot;: {
+        &quot;name&quot;: &quot;Luke Skywalker&quot;
+      }
+    }
+  ```
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Drawbacks
+
+It misses the ability to update clients reactively. In the GraphQL spec, there is no way to subscribe and get updates. Right now, to achieve real-time updates, we need to poll the server and get the changes.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Setup
+
+Make a demo folder
+
+  ```
+    mkdir graphql-demo
+    cd graphql-demo
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+We have to install 3 packages
+
+* graphql, the reference implementation of GraphQL in JS
+
+* express, a basic web framework.
+
+* express-graphql, middleware for express to make it easy to expose a GraphQL server.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd...
+
+Install 3 packages
+
+  ```
+    npm init -f
+    npm install graphql --save
+    npm install express --save
+    npm install express-graphql --save
+  ```
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+http://hueypetersen.com/posts/2015/02/02/first-thoughts-on-graph-ql/
+https://github.com/facebook/graphql
+https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html/
+https://code.facebook.com/posts/1691455094417024/graphql-a-data-query-language/
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Sun, 21 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/Graphql/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/Graphql/</guid>
         
         
       </item>
@@ -1891,180 +2186,6 @@ https://github.com/scrooloose/nerdtree
         <pubDate>Thu, 04 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/art-of-debugging/</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/art-of-debugging/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Spree Commerce</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Spree Commerce
-
-Feb 2, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Ajay Joseph&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;amp;oe=5747C14D&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-Spree is a full featured e-commerce platform written for the Ruby on Rails framework. Spree is a production ready store that can be used “out of the box”, but more importantly, it is also a developer tool that can be used as a solid foundation for a more sophisticated application than what is generally possible with traditional open source offerings.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction -- contd.
-
-Spree is 100% open source. It is licensed under the very permissive New BSD License. You are free to use the software as you see fit, at no charge. Perhaps more important than the cost, Spree is a true open source community. Spree has hundreds of contributors who have used and improved it while building their own e-commerce solutions.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ##Why spree commerce and why not something like magento?
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##what is Magento
-
-* 25% marketshare
-* written in php with some elements of zend framework
-* over 8.2million lines of code
-* 2 editions CE and EE of which EE is paid
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Motivation
-
-The goal spree is to build a complete open source commerce solution for Ruby on Rails. At the start of this project, the Rails commerce space was immature and lacking serious solutions for developers with complex business needs. Spree seeks to create a large and healthy open source community that developers of other languages have come to expect.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
-The founder of Spree was motivated to start the project after failing to find an existing community in the Rails space dedicated to this vision. In addition, he was motivated by unsuccessful efforts to use other open source solutions in other programming languages, including (but not limited to) the Magento and OSCommerce platforms. These solutions were deemed to be unsatisfactory when challenged with even the simplest practical cases of use.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###  Opinionated Commerce
-
-David Heinemeier Hansson (the creator of Rails) is well known for saying that Rails is “opinionated software.” Spree continues this fine tradition of adopting a few strong (possibly controversial) opinions which drive its development.
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### No Solution Will Satisfy Everyone
-
-No solution can possibly solve everyone’s needs perfectly. There are simply too many ways in which people do business for us to tailor to each individual need. Rather than come up short (like so many projects before it did), Spree’s approach is to simply accept this and not even try. Instead Spree tries to focus on solving 90% of the bulk that most commerce projects face. The remaining 10% will need to be addressed by the end developer familiar with the client’s exact business requirements.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Online Commerce --Spree
-
-Rails developers are the target audience for this application - not business owners. Serious businesses have complicated needs that require paying one or more software professionals to solve them. Spree seeks to be the platform that developers use as the foundation for their project rather than having to start from scratch or settle for less with other software
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Developers Need Complete Control
-
- Most business owners will not be satisfied with the generic templates offered by other platforms. Most businesses have very specific shipping and taxation rules as well. Spree needs to be flexible enough to accommodate most situations. Sensible defaults should be provided with an eye towards allowing further customization.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-## THE CORE of spree commerce
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Addresses
-* Address
-* Zones
-* Countries
-* State
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Adjustments
-
-* amount
-* label
-* eligible
-* mandatory
-* state
-* included
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Spree customization
-
-* Authentication
-* View
-* Checkout
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-## Setting up spree
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  ###Setting up a sample rails application using spree
-
-  * gem install rails -v 4.2.0
-  * gem install bundle
-  * brew install imagemagick
-  * gem install spree_cmd
-  * rails _4.2.0_ new mystore
-  * cd mystore
-  * spree install --auto-accept // rails generate spree:install
-  * rails server
-
-&lt;/section&gt;
-
-&lt;section&gt;
-
-    &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://guides.spreecommerce.com/images/developer/spree_welcome.png&quot; /&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###References
-
-* http://bluestout.com/blog/magento-vs-spree-best-ecommerce-platform/
-* https://guides.spreecommerce.com/developer/getting_started_tutorial.html
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
-##Thank you :)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 02 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/spree-commerce-an-opensource-ruby-on-rails-project</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/spree-commerce-an-opensource-ruby-on-rails-project</guid>
         
         
       </item>
