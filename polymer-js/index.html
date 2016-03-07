@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Meteor JS | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Meteor JS">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Meteor JS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta property="og:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. " />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/polymer-js">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+## Polymer JS
+</section>
+<section>
+	<h4>Sibin Xavier</h4>
+	<p>
+		Frontend Developer
+	</p>
+</section>
+<section data-markdown="">
+### What is Polymer JS
+The Polymer library is designed to make it easier and faster for developers to create great,
+reusable components for the modern web.
+</section>
+
+<section data-markdown="">
+### HTML and HTML 5
+
+- Form , Inputs , Paragraph
+- Video , Canvas , Audio  - HTML 5
+
+These Elements have it's own apis, form , input have different type of javascript apis
+
+</section>
+
+<section data-markdown="">
+## Complex website need more complex elements
+
+- Like Sidebar, Navbar, Chat Windows
+- Developers build their own solutions, but many features are common
+
+### Reusable Components
+With custom elements, you can extend the vocabulary of HTML with your own elements.
+Elements that provide sophisticated UI.
+</section>
+
+<section data-markdown="">
+## Polymer JS
+
+It is a collection of web components, We can build custom components which uses
+Shady DOM, faster than normal DOM and lighter
+</section>
+
+<section data-markdown="">
+### Shadow DOM
+
+- Shadow DOM provides encapsulation
+for the JavaScript, CSS, and templating in a Web Component.
+- Shadow DOM makes it so these things remain separate
+from the DOM of the main document.
+</section>
+<section data-markdown="">
+### Tree-scoping
+
+- Tree-scoping is the ability to take a DOM subtree and hide it
+from the main document scope
+Jquery
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;x-fade&gt;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="nt">&lt;div&gt;</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;cool.jpg&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="nt">&lt;/div&gt;</span>
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="nt">&lt;canvas&gt;&lt;/canvas&gt;</span>
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;/x-fade&gt;</span></div></div></pre></div></figure>
+
+
+Shadown DOM
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;x-fade&gt;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;cool.png&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;/x-fade&gt;</span></div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+## With Tree Scoping
+-Details of the implementation are hidden.
+-Queries over the document will not see the canvas or the div.
+-The new nodes are not affected by stylesheets, because they are not in the document scope.
+-The img node will not lose styling, because it never moves.
+-The developer can add a new img or replace the old one, it’s just a regular child of x-fade
+
+</section>
+
+<section data-markdown="">
+### Shadow DOM Real Picture
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;x-fade&gt;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;cool.png&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">  #shadow-root
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nt">&lt;div&gt;</span>
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">      <span class="nt">&lt;content</span> <span class="na">select=</span><span class="s">&quot;img&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nt">&lt;/div&gt;</span>
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="nt">&lt;canvas&gt;&lt;/canvas&gt;</span>
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;/x-fade&gt;</span></div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+### Why Shady DOM
+
+- Shadow DOM is not developed as Standard, Not Common in All browser
+- Lots of code required to polyfill Shadow DOM
+- It’s slow to indirect all the DOM API.
+- Structures like NodeList can simply not be emulated.
+- There are certain accessors that cannot be overwritten (for example, window.document, window.document.body).
+- The polyfill returns objects that are not actually Nodes, but Node proxies, which can be very confusing.
+</section>
+
+<section data-markdown="">
+### Shady DOM
+- Originated from idea of Shadow DOM
+- Shady DOM and Shadow DOM are compatible
+- Once Shadow DOM is common, Shady DOM use its features
+- 'Examine it using the shady DOM API' to see Shadow DOM
+-
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">var arrayOfNodes = Polymer.dom(x-fade).children;</div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+## Polymer Elements
+- Iron Elements
+- Paper Elements
+- Google Web Components
+- Gold Elements
+- Neon Elements
+- Platinum Elements
+- Molecules
+</section>
+
+<section data-markdown="">
+## Polymer JS Events
+  - Support all Javascript events
+</section>
+
+<section data-markdown="">
+## Polymer Styles
+- Isolated styles for elements
+</section>
+
+<section data-markdown="">
+## Data Binding  - Syntax
+- One Way Bind [[]]
+- Two way binding 
+</section>
+<section data-markdown="">
+## Data Binding - Helper functions
+### DOM-REPEAT
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;template</span> <span class="na">is=</span><span class="s">&quot;dom-repeat&quot;</span> <span class="na">items=</span><span class="s">&quot;&#x7b;&#x7b;employees&#x7d;&#x7d;&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	<span class="nt">&lt;div&gt;</span># <span class="nt">&lt;span&gt;</span>&#x7b;&#x7b;index&#x7d;&#x7d;<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">	<span class="nt">&lt;div&gt;</span>First name: <span class="nt">&lt;span&gt;</span>&#x7b;&#x7b;item.first&#x7d;&#x7d;<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">	<span class="nt">&lt;div&gt;</span>Last name: <span class="nt">&lt;span&gt;</span>&#x7b;&#x7b;item.last&#x7d;&#x7d;<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;/template&gt;</span></div></div></pre></div></figure>
+
+</section>
+
+<section data-markdown="">
+## Data binding - Helper functions
+### DOM-IF
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;template</span> <span class="na">is=</span><span class="s">&quot;dom-if&quot;</span> <span class="na">if=</span><span class="s">&quot;&#x7b;&#x7b;user.isAdmin&#x7d;&#x7d;&quot;</span><span class="nt">&gt;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">	Only admins will see this.
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">	<span class="nt">&lt;div&gt;</span>&#x7b;&#x7b;user.secretAdminStuff&#x7d;&#x7d;<span class="nt">&lt;/div&gt;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nt">&lt;/template&gt;</span></div></div></pre></div></figure>
+
+</section>
+<section data-markdown="">
+### Reference
+
+* [PolymerJS](https://www.polymer-project.org/)
+* [Shadow &amp;&amp; Shady DOM](http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/)
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Sibin Xavier /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
