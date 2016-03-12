@@ -4,7 +4,7 @@ title: Goal Analyzer
 description: A presentation on our project goalsheet_analyzer
 theme: black
 transition: slide
-permalink: /Goal Analyzer/
+permalink: /goal-analyzer/
 author: Juliat Joy & Ajay Joseph
 post_thumbnail: /slides/images/api.jpg
 profile_image: /slides/profiles/ajay-joseph.jpg
