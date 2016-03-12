@@ -7,7 +7,7 @@ transition: slide
 permalink: /Goal Analyzer/
 author: Juliat Joy & Ajay Joseph
 post_thumbnail: /slides/images/api.jpg
-profile_image: /slides/profiles/ajay-joseph.jpg, /slides/profiles/juliat.jpg
+profile_image: /slides/profiles/ajay-joseph.jpg
 ---
 
 <section data-markdown>
