@@ -1,6 +1,6 @@
 ---
 layout: slide
-title: Meteor JS
+title: Polymer JS
 description:
 theme: black
 transition: slide
@@ -13,10 +13,10 @@ profile_image: /slides/profiles/sibin.jpg
 ## Polymer JS
 </section>
 <section>
-	<h4>Sibin Xavier</h4>
-	<p>
-		Frontend Developer
-	</p>
+  <h4>Sibin Xavier</h4>
+  <p>
+    Frontend Developer
+  </p>
 </section>
 <section data-markdown>
 ### What is Polymer JS
@@ -165,9 +165,9 @@ var arrayOfNodes = Polymer.dom(x-fade).children;
 
 ```html
 <template is="dom-repeat" items="{{employees}}">
-	<div># <span>{{index}}</span></div>
-	<div>First name: <span>{{item.first}}</span></div>
-	<div>Last name: <span>{{item.last}}</span></div>
+  <div># <span>{{index}}</span></div>
+  <div>First name: <span>{{item.first}}</span></div>
+  <div>Last name: <span>{{item.last}}</span></div>
 </template>
 ```
 </section>
@@ -178,8 +178,8 @@ var arrayOfNodes = Polymer.dom(x-fade).children;
 
 ```html
 <template is="dom-if" if="{{user.isAdmin}}">
-	Only admins will see this.
-	<div>{{user.secretAdminStuff}}</div>
+  Only admins will see this.
+  <div>{{user.secretAdminStuff}}</div>
 </template>
 
 ```
