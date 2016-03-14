@@ -5,20 +5,314 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Mar 2016 10:49:19 +0530</pubDate>
-    <lastBuildDate>Mon, 07 Mar 2016 10:49:19 +0530</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 08:44:05 +0530</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 08:44:05 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Meteor JS</title>
+        <title>Goal Analyzer</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+# Goalsheet Analyzer
+
+Mar 11, 2016
+&lt;/section&gt;
+
+&lt;!-- Just to show that markdown and html can be mixed --&gt;
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Ajay Joseph&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Ajay Joseph&quot; src=&quot;https://scontent-hkg3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/945390_3255807009318_1975357127_n.jpg?oh=1cbfba3bef55ba6fa91cb048a4808622&amp;amp;oe=5747C14D&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h4&gt;Hi, I am&lt;/h4&gt;
+  &lt;h3&gt;Juliat Joy&lt;/h3&gt;
+  &lt;div style=&quot;width:150%;&quot;&gt;
+    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
+      &lt;img alt=&quot;Juliat Joy&quot; src=&quot;https://avatars2.githubusercontent.com/u/7353124?v=3&amp;amp;u=6eeeedc3e9ecfbf20e6dcd128ea7344ed9261f49&amp;amp;s=140&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
+      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
+          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### What goalsheet is?
+
+Goalsheet is an app where we can see our goalsheets for the corresponding day, week or month. Which also helps us to know how much of our tasks are completed. Only admin can see all the goalsheets.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why goalsheet?
+
+Goalsheet helps us to see our goalsheets and goals.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Difficulties faced
+
+* has_many_through
+* Absence of rails view
+* Curl requests
+* Testing
+* react and flux
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Application design
+
+In our project we have mainly users, goals, goalsheets and teams model.
+* Where a goal can have a user and belongs to a goalsheet.
+* Where a goalsheet may belong to a team or a user and has many goals.
+* Where a team can have many goals and users.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### view
+
+We buid json view for goalsheet using jbuilder, which is handled by react and flux framework in front end.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why jbuider?
+
+It is simple and has a more approchable concept.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd..
+
+For json handling there are 3 approches they are
+* Active Model Serializers(AMS)
+* Rabl
+* Jbuilder
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Active Model Serializers(AMS)
+
+* Separates the serialization concern into its own folder /app/serializers
+* It comes with its own Rails generator
+* It behaves more like ActiveRecord in that you can define associations in the serializer
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Rabl
+
+RABL&#39;s DSL is generally less favored than Jbuilder&#39;s, there can be difficulty in getting started, and in later maintenance. Jbuilder&#39;s DSL is simpler and easier to learn/use, but the general consensus appears to be that Jbuilder is easier to pick up and run with.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Jbuilder
+
+* It considers JSON format construction as just another Rails view
+* Builds responses in the corresponding /app/views/ directories just like we do with view templates
+* It can take on many of the characteristics of a view template, like understanding what current_user is, chaining relations (@user.posts)... etc
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Documentation of API
+
+Well documented APIs enhance the experience for developers and have become an essential requirement for defining an API&#39;s success. Good documentation is no longer just about clarity but also improving the affordance of documents as live API experiences for developers.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Swagger
+
+With the Swagger framework, the server, client and documentation team can be in synchronization simultaneously.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd
+
+As Swagger is a language-agnostic specification, with its declarative resource specification, clients can easily understand and consume services without any prior knowledge of server implementation or access to the server code.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Testing
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Unit Testing
+
+A unit is the smallest testable part of software. It usually has one or a few inputs and usually a single output. The smallest unit is a method, which may belong to a base/ super class, abstract class or derived/ child class. Unit Testing is the first level of testing and is performed prior to Integration Testing.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Integeration Testing
+
+Integration tests are used to test the interaction among any number of controllers. They are generally used to test important work flows within your application.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Controller specs
+
+A controller spec is an RSpec wrapper for a Rails functional test.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd
+
+It allows you to simulate a single http request in each example, and then
+specify expected outcomes such as:
+
+* rendered templates
+* redirects
+* instance variables assigned in the controller to be shared with the view
+* cookies sent back with the response
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd
+
+To specify outcomes, you can use:
+
+* standard rspec matchers (expect(response.status).to eq(200))
+* standard test/unit assertions (assert_equal 200, response.status)
+* rails assertions (assert_response 200)
+* rails-specific matchers:
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Model specs
+
+It includes all of the behavior and assertions that it provides.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Request specs
+
+Request specs provide a thin wrapper around Rails&#39; integration tests, and are
+designed to drive behavior through the full stack, including routing
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd
+
+With request specs, you can:
+
+* specify a single request
+* specify multiple requests across multiple controllers
+* specify multiple requests across multiple sessions
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Stubs and Mocks
+
+Hitting the database or spinning up a UI for every test can make your test suite too slow, which either slows down productivity or encourages you to not run your tests as often
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Stub
+
+A stub can be told to return a specified fake value when a given method is called. If your test subject requires a companion object to provide some sort of data, you can use a stub to “stub out” that data source and return consistent fake data in your test setup.
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Mock
+
+A mock is similar to a spy, but the way you use it differs slightly. Rather than just capturing all method calls and letting you write assertions on them after the fact, a mock typically requires you to set up expectations beforehand. You tell it what you expect it to happen, execute the code you’re testing, and then verify that the correct behavior happened.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Shared examples
+
+* Shared examples describe behaviour of classes or modules.
+* Shared examples make testing compositions of objects much easier. They allow us to execute the same group of expectations against several classes.
+* By Convention we place the files containing shared examples in spec/support/
+and require files in that directory from spec/spec_helper.rb
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Why react?
+
+React is faster and write-less-do-more than angular. Being faster makes it preferable for mobile clients. It beats angular when memory is limited.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### contd
+
+React uses VDOM(virtual DOM) which results in much better performance than angular rendering views. React is used to create user interfaces, one can use react as V in Angular. React performs DOM modifications only when they are really necessary
+
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### References
+
+http://guides.rubyonrails.org/association_basics.html
+http://stackoverflow.com/questions/26097563/jbuilder-vs-rails-api-active-model-serializers-for-json-handling-in-rails-4
+http://swagger.io/
+https://www.relishapp.com
+http://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub
+https://facebook.github.io/react/docs/why-react.html
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##Thank you :)
+
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 10 Mar 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/goal-analyzer/</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/goal-analyzer/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Polymer JS</title>
         <description>&lt;section data-markdown=&quot;&quot;&gt;
 ## Polymer JS
 &lt;/section&gt;
 &lt;section&gt;
-	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
-	&lt;p&gt;
-		Frontend Developer
-	&lt;/p&gt;
+  &lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+  &lt;p&gt;
+    Frontend Developer
+  &lt;/p&gt;
 &lt;/section&gt;
 &lt;section data-markdown=&quot;&quot;&gt;
 ### What is Polymer JS
@@ -161,9 +455,9 @@ Shadown DOM
 ### DOM-REPEAT
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;template&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;is=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dom-repeat&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;items=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;#x7b;&amp;#x7b;employees&amp;#x7d;&amp;#x7d;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;# &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;index&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;First name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;item.first&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;Last name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;item.last&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;# &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;index&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;First name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;item.first&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;Last name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;item.last&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 
 &lt;/section&gt;
@@ -173,8 +467,8 @@ Shadown DOM
 ### DOM-IF
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;template&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;is=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dom-if&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;if=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;#x7b;&amp;#x7b;user.isAdmin&amp;#x7d;&amp;#x7d;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	Only admins will see this.
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;user.secretAdminStuff&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  Only admins will see this.
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;&amp;#x7b;&amp;#x7b;user.secretAdminStuff&amp;#x7d;&amp;#x7d;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 
 &lt;/section&gt;
@@ -1762,239 +2056,6 @@ A particular gem that is very useful is timezone_local.
         <pubDate>Mon, 08 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/playing-timezone-in-rails</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/playing-timezone-in-rails</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Facebook Flux</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
- Flux
-&lt;/section&gt;
-&lt;section&gt;
-	&lt;h4&gt;Sibin Xavier&lt;/h4&gt;
-	&lt;p&gt;
-		Frontend Developer
-	&lt;/p&gt;
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ## What is Flux
-  * Flux is an architecture used at Facebook with React
-  * Enhance React&#39;s features
-  * It is an architecture not a library like
-  Angular/ Backbone
-  * Flux has Unidirectional data flow
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### Uni directional data flow
-  * One directional data flow
-  * More predictable nature
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Example of Bi-directional data flow
-  ![Bi-Directional](/slides/assets/images/backbone-bi-directional.png)
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Unidirectional data flow
-  ![Uni directional data flow](/slides/assets/images/uni-directional-data-flow.png)
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ### Flux - Important points
-  * Action
-  * dispatcher
-  * Store
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Flux Architecture diagram
-  ![Flux Architecture diagram](/slides/assets/images/flux-simple-f8-diagram-explained.png)
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Action
-  * Collection of methods, that are called inside views
-  * Action methods can used with javascript events like click, change, mouseleave etc
-  * Action connected to dispatcher
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ##### Example code for action
-  ```
-    import dispatcher from &quot;../dispatcher&quot;;
-    import constants from &quot;../const/store-const&quot;;
-    var checkoutActions = {
-      addCart: function(data){
-        dispatcher.dispatch({
-          actionType: constants.ADD_CART,
-          data: data
-        })
-      }
-    }
-    export default checkoutActions;
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Dispatcher
-  * Center hub for your application
-  * Controls stores
-  * Receive data from actions and trigger stores
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ##### Example code Dispatcher
-  ```
-    import {Dispatcher} from &#39;flux&#39;;
-    var dispatcher = new Dispatcher();
-    export default dispatcher;
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Dispatcher have
-  * register (method)
-  * unregister (string)
-  * dispatch (object)
-  * waitFor
-  * isDispatching ( boolean)
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ##### waitFor is not to handle ajax
-  waitFor is used to wait some other store to complete it can&#39;t be used to make ajax calls
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ```
-    CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
-     if (payload.actionType === &#39;country-update&#39;) {
-       CountryStore.country = payload.selectedCountry;
-     }
-    });
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ```
-  CityStore.dispatchToken = flightDispatcher.register(function(payload) {
-  if (payload.actionType === &#39;country-update&#39;) {
-    // `CountryStore.country` may not be updated.
-    flightDispatcher.waitFor([CountryStore.dispatchToken]);
-    // `CountryStore.country` is now guaranteed to be updated.
-
-    // Select the default city for the new country
-    CityStore.city = getDefaultCityForCountry(CountryStore.country);
-  }
-  });
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Store
-  * Manage application state
-  * Use it to get initial data and updated data
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ```
-    import dispatcher from &#39;../dispatcher.js&#39;;
-    import EventEmitter from &#39;events&#39;;
-    import assign from &#39;object-assign&#39;;
-    var CHANGE_EVENT = &#39;change&#39;;
-    var EventEmitterEvent  = EventEmitter.EventEmitter
-
-    var _number  = 0;
-    var checkoutStore = assign({}, EventEmitterEvent.prototype, {
-      addCart: function(number){
-        return _number = _number + number;
-      },
-      getCart: function(){
-        return _number;
-      },
-      emitChange: function(){
-        this.emit(CHANGE_EVENT)
-      },
-      addListener: function(callback){
-        this.on(CHANGE_EVENT, callback)
-      },
-      removeListner: function(callback){
-        this.removeListner(CHANGE_EVENT, callback)
-      }
-    });
-
-    dispatcher.register((action)=&amp;gt;{
-      switch (action.actionType){
-        case &#39;ADD_CART&#39;:
-          console.log(&quot;hello&quot;)
-          checkoutStore.addCart(action.data)
-          checkoutStore.emitChange()
-          break;
-      }
-    })
-
-
-    export default checkoutStore;
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Event Emitter
-  * Flux use similar node js Event emitter
-  * EventEmitter listen/broadcast named events
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### Event emitter
-
-  * emitter.on(&#39;event_name&#39;,callback) // addListener
-  * emitter.emit(&#39;event_name&#39;)
-  * emitter.removeListener(&#39;event_name&#39;)
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ![Event Diagram](/slides/assets/images/events.png)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-  #### React View and Flux
-
-  * We can connect react components with react
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-  ```
-  class CartIconOnTopBar extends React.Component{
-    constructor(){
-      super()
-      this.state = {
-        cartItemCount: checkoutStore.getCart()
-      }
-    }
-    componentDidMount(){
-     checkoutStore.addListener(this.updateCart)
-    };
-    updateCart = () =&amp;gt; {
-      this.setState({
-        cartItemCount: checkoutStore.getCart()
-      })
-    };
-    openClassModal = () =&amp;gt; {
-
-    };
-    render(){
-      return(
-          &lt;li&gt;
-            &amp;lt;a href=&quot;#&quot; onClick={this.openCartModal} className=&quot;cart-element&quot;&amp;gt;
-              &lt;i classname=&quot;fi-shopping-cart&quot;&gt;&lt;/i&gt;
-              &lt;span classname=&quot;cart-count&quot;&gt; {this.state.cartItemCount} &lt;/span&gt;  
-            
-          &lt;/li&gt;
-      )
-    }
-  }
-    export default TopSearch;
-  ```
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-    ##### Reference
-    - [NodeJS Events](https://nodejs.org/api/events.html)
-    - [Flux Docs](http://facebook.github.io/flux/docs/overview.html#content)
-    - [Scotch - Getting Know Flux](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
-    - [Unidirectional data flow](https://medium.com/@AdamRNeary/unidirectional-data-flow-yes-flux-i-am-not-so-sure-b4acf988196c#.5olj6qx6k)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Fri, 05 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/facebook-flux</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/facebook-flux</guid>
         
         
       </item>

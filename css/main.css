@@ -408,15 +408,19 @@ pre {
 /** Profile section on Index page **/
 .profile-author {
   display: block;
-  padding: 5px 5px 5px 48px;
+  padding: 5px;
   position: relative;
   min-height: 48px; }
   .profile-author .profile-author-a {
-    position: absolute;
-    width: 42px;
+    display: inline-table;
+    float: left;
     height: 42px;
-    left: 0; }
+    margin-right: 10px;
+    position: relative;
+    float: left; }
     .profile-author .profile-author-a img {
+      width: 42px;
+      height: 42px;
       -webkit-border-top-right-radius: 50%;
       -webkit-border-bottom-right-radius: 50%;
       -webkit-border-bottom-left-radius: 50%;
@@ -429,8 +433,12 @@ pre {
       border-bottom-right-radius: 50%;
       border-bottom-left-radius: 50%;
       border-top-left-radius: 50%;
-      width: 100%; }
+      display: inline-block;
+      float: left; }
+    .profile-author .profile-author-a img + img {
+      margin-left: 5px; }
   .profile-author .profile-name {
+    float: left;
     display: block;
     margin: 5px 0;
     text-overflow: ellipsis;
