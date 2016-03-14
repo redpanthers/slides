@@ -1,239 +1,248 @@
 .site-top{
-	min-height: 40px;
-	background: #343e47;
-	color: #999;
-	border-bottom: 1px solid #a70e0e;
-	ul{
-		position: relative;
-		margin: 0;
-		padding: 0;
-		li{
-			display: inline-block;
-			a{
-				display: block;
-				color: #999;
-				padding: 10px 10px;
-				&:first-child{
-					padding-left: 0;
-				}
-			}
-		}
-	}
-	.contact-options{
-		li{
-			a{
-				padding: 10px 5px;
-			}
-		}
-	}
+  min-height: 40px;
+  background: #343e47;
+  color: #999;
+  border-bottom: 1px solid #a70e0e;
+  ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        color: #999;
+        padding: 10px 10px;
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .contact-options{
+    li{
+      a{
+        padding: 10px 5px;
+      }
+    }
+  }
 }
 .site-main{
-	.navbar{
-		@include c-border-radius(0,0,0,0);
-		background: #f3f3f3;
-		border: none;
-		min-height: 140px;
-		padding: 40px 0;
-		.navbar-brand{
-			.title{
-				margin: 0;
-			}
-		}
-		.header-links{
-			li{
-				a{
-					font-size: 16px;
-					color: #111;
-				}
-			}
-		}
-	}
+  .navbar{
+    @include c-border-radius(0,0,0,0);
+    background: #f3f3f3;
+    border: none;
+    min-height: 140px;
+    padding: 40px 0;
+    .navbar-brand{
+      .title{
+        margin: 0;
+      }
+    }
+    .header-links{
+      li{
+        a{
+          font-size: 16px;
+          color: #111;
+        }
+      }
+    }
+  }
 }
 
 .slides-wrapper{
-	margin: 30px 0 0;
-	padding: 0px;
-	display: block;
-	.slide{
-		width: 100%;
-		min-height: 320px;
-		border: 1px solid #f3f3f3;
-		padding: 0 15px 10px;
-		@include c-box-shadow-outer(5px,5px, 15px, 0, #f7f7f7);
-		margin-bottom: 15px;
-		.image-wrapper{
-			margin: 0 -15px 0;
-			display: block;
-			clear: both;
-			position: relative;
-			border: none;
-			&:after{
-				content:'';
-				display: block;
-				pointer-events: none;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: #fff;
-				z-index: 1;
-				position: absolute;
-				@include c-gradient-shade(rgba(0,0,0,0),50% ,rgba(0,0,0,0.7),100%);
-			}
-			.post-meta.date{
-				position: absolute;
-				bottom: 15px;
-				right: 15px;
-				background: #961818;
-				padding: 2px 6px;
-				font-size: 11px;
-				@include c-border-radius(6px,6px,6px,6px);
-				@include c-text-decoration(1px,0px,0,#ccc);
-				color: #fff;
-				z-index: 3;
-				font-weight: lighter;
-				i{
-					position: relative;
-					margin-right: 2px;
-					font-size: 10px;
-					vertical-align: middle;
-				}
-			}
-		}
-		.post-link{
-			color: #555;
-			text-decoration: none;
-		}
-		.post-title-a{
-			height: 54px;
-			overflow: hidden;
-		}
-	}
+  margin: 30px 0 0;
+  padding: 0px;
+  display: block;
+  .slide{
+    width: 100%;
+    min-height: 320px;
+    border: 1px solid #f3f3f3;
+    padding: 0 15px 10px;
+    @include c-box-shadow-outer(5px,5px, 15px, 0, #f7f7f7);
+    margin-bottom: 15px;
+    .image-wrapper{
+      margin: 0 -15px 0;
+      display: block;
+      clear: both;
+      position: relative;
+      border: none;
+      &:after{
+        content:'';
+        display: block;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        position: absolute;
+        @include c-gradient-shade(rgba(0,0,0,0),50% ,rgba(0,0,0,0.7),100%);
+      }
+      .post-meta.date{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: #961818;
+        padding: 2px 6px;
+        font-size: 11px;
+        @include c-border-radius(6px,6px,6px,6px);
+        @include c-text-decoration(1px,0px,0,#ccc);
+        color: #fff;
+        z-index: 3;
+        font-weight: lighter;
+        i{
+          position: relative;
+          margin-right: 2px;
+          font-size: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .post-link{
+      color: #555;
+      text-decoration: none;
+    }
+    .post-title-a{
+      height: 54px;
+      overflow: hidden;
+    }
+  }
 }
 /** Profile section on Index page **/
 .profile-author{
-	display: block;
-	padding: 5px 5px 5px 48px;
-	position: relative;
-	min-height: 48px;
-	.profile-author-a{
-		position: absolute;
-		width: 42px;
-		height: 42px;
-
-		left: 0;
-		img{
-			@include c-border-radius(50%,50%,50%,50%);
-			width: 100%;
-		}
-	}
-	.profile-name{
-		display: block;
-		margin: 5px 0;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		max-width: 100%;
-		padding: 6px 0;
-		vertical-align: middle;
-		text-decoration: none;
-		color: #999;
-	}
+  display: block;
+  padding: 5px;
+  position: relative;
+  min-height: 48px;
+  .profile-author-a{
+    display: inline-table;
+    float: left;
+    height: 42px;
+    margin-right: 10px;
+    position: relative;
+    float: left;
+    img{
+      width: 42px;
+      height: 42px;
+      @include c-border-radius(50%,50%,50%,50%);
+      display: inline-block;
+      float: left;
+    }
+    img + img {
+      margin-left: 5px;
+    }
+    
+  }
+  .profile-name{
+    float: left;
+    display: block;
+    margin: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 6px 0;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #999;
+  }
 }
 .home-title{
-	display: block;
-	margin-bottom: 10px;
-	.page-heading{
-		font-size: 42px;
-		font-weight: bold;
-	}
-	.slides-icon{
-		font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+  .page-heading{
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .slides-icon{
+    font-size: 40px;
 
-		display: block;
-		width: 64px;
-		height: 64px;
-		margin: 0 auto;
-		@include c-border-radius(50%,50%,50%,50%);
-		border: 1px solid #eee;
-		text-align: center;
-		padding-top: 12px;
-		line-height: normal;
-	}
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    @include c-border-radius(50%,50%,50%,50%);
+    border: 1px solid #eee;
+    text-align: center;
+    padding-top: 12px;
+    line-height: normal;
+  }
 }
 /** Footer section **/
 .footer-section{
-	background: #343e47;
-	color: #eee;
-	display: block;
+  background: #343e47;
+  color: #eee;
+  display: block;
 }
 .social-media-list{
-	li a{
-		color: #777;
-		text-decoration: none;
-	}
+  li a{
+    color: #777;
+    text-decoration: none;
+  }
 }
 
 .contact-list{
-	li{
-		a{
-			color: #777;
-		}
-	}
+  li{
+    a{
+      color: #777;
+    }
+  }
 }
 /** Brand logo section **/
 .site-main{
-	.redpanther-brand{
-		height: auto;
-	}
-	.brand-logo{
-		display: block;
-		padding: 0 0 0 40px;
-		position: relative;
-		.logo-logo{
-			width: 160px;
-			margin: -20px -25px -20px 0;
-			float: left;
-			position: relative;
-			top: 0;
-			left: 0;
-			img{
-				width: 100%;
-			}
-		}
+  .redpanther-brand{
+    height: auto;
+  }
+  .brand-logo{
+    display: block;
+    padding: 0 0 0 40px;
+    position: relative;
+    .logo-logo{
+      width: 160px;
+      margin: -20px -25px -20px 0;
+      float: left;
+      position: relative;
+      top: 0;
+      left: 0;
+      img{
+        width: 100%;
+      }
+    }
 
-		.logo-title{
-			display: block;
-			padding: 0;
-			.title{
-				color: #d52d2d;
-				font-weight: bold;
-				font-size: 42px;
-	    	line-height: 32px;
-	    	margin-bottom: 3px!important;
-			}
-			.sub-title{
-				font-size: 14px;
-				clear: both;
-				margin: 0;
-				font-style: italic;
-				font-weight: lighter;
-			}
-		}
-	}
+    .logo-title{
+      display: block;
+      padding: 0;
+      .title{
+        color: #d52d2d;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 32px;
+        margin-bottom: 3px!important;
+      }
+      .sub-title{
+        font-size: 14px;
+        clear: both;
+        margin: 0;
+        font-style: italic;
+        font-weight: lighter;
+      }
+    }
+  }
 }
 .pagination-section{
-	text-align: right;
-	.pagination{
-		li >  a{
-			color: #a70e0e;
-			&:hover,&:active,&:focus{
-				color: #a70e0e;
-			}
-		}
-		li.active > a{
-			background: #a70e0e;
-			border-color: #a70e0e;
-			color: #fff;
-		}
-	}
+  text-align: right;
+  .pagination{
+    li >  a{
+      color: #a70e0e;
+      &:hover,&:active,&:focus{
+        color: #a70e0e;
+      }
+    }
+    li.active > a{
+      background: #a70e0e;
+      border-color: #a70e0e;
+      color: #fff;
+    }
+  }
 }
