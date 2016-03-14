@@ -32,8 +32,10 @@ layout: default
         </h2>
         <div class="profile-author">
           <div class="profile-author-a">
-
             <img src="{% if post.profile_image %}{{post.profile_image}}{% else %} /slides/profiles/profile_default.jpg {% endif %}" alt="{{post.author}}">
+            {% if post.profile_image_2 %}
+            <img src="{% if post.profile_image_2 %}{{post.profile_image_2}}{% else %} /slides/profiles/profile_default.jpg {% endif %}" alt="{{post.author}}">
+            {% endif %}
           </div>
           <a href="" class="profile-name">
             {{post.author}}
