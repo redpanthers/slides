@@ -8,6 +8,7 @@ permalink: /goal-analyzer/
 author: Juliat Joy & Ajay Joseph
 post_thumbnail: /slides/images/api.jpg
 profile_image: /slides/profiles/ajay-joseph.jpg
+profile_image_2: /slides/profiles/juliat.jpg
 ---
 
 <section data-markdown>
