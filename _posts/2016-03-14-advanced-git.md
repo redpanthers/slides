@@ -7,7 +7,7 @@ transition: slide
 permalink: /Advanced-git
 author: Aparna V
 post_thumbnail: /slides/images/git.jpg
-profile_image: /slides/profiles/aparna-v.jpg
+profile_image: /slides/profiles/aparnav.jpg
 ---
 
 <section data-markdown>
