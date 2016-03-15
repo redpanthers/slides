@@ -5,9 +5,140 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Mar 2016 09:10:59 +0530</pubDate>
-    <lastBuildDate>Mon, 14 Mar 2016 09:10:59 +0530</lastBuildDate>
+    <pubDate>Tue, 15 Mar 2016 11:43:05 +0530</pubDate>
+    <lastBuildDate>Tue, 15 Mar 2016 11:43:05 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Advanced Git</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+## Advanced Git
+
+March 14 2016
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Aparna V&lt;/h2&gt;
+  &lt;p&gt;
+    Ruby Developer Trainee @RedPanthers
+  &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+What is GIT?
+- Distributed Version Control System.  
+The basic Git workflow:
+* Modify files in your working directory.
+* You stage the files, adding snapshots of them to your staging area.
+* You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Git merge
+git-merge - Join two or more development histories together.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Merge with --ff and --no-ff  
+--ff  
+When the merge resolves as a fast-forward, only update the branch pointer, without creating a merge commit. This is the default behavior.  
+
+--no-ff  
+Create a merge commit even when the merge resolves as a fast-forward. This is the default behaviour when merging an annotated (and possibly signed) tag.  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###FAST-FORWARD MERGE
+Often the current branch head is an ancestor of the named commit. This is the most common case especially when invoked from git pull: you are tracking an upstream repository, you have committed no local changes, and now you want to update to a newer upstream revision. In this case, a new commit is not needed to store the combined history; instead, the HEAD (along with the index) is updated to point at the named commit, without creating an extra merge commit.
+This behavior can be suppressed with the --no-ff option.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Rebase
+As an alternative to merging,rebase the feature branch onto master branch using the following commands:
+git checkout feature
+* git rebase master
+This moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the original branch.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Interactive Rebasing
+Interactive rebasing gives you the opportunity to alter commits as they are moved to the new branch. This is even more powerful than an automated rebase, since it offers complete control over the branch’s commit history. Typically, this is used to clean up a messy history before merging a feature branch into master.
+
+To begin an interactive rebasing session, pass the i option to the git rebase command:
+
+git checkout feature
+* git rebase -i master
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###The Golden Rule of Rebasing
+ The golden rule of git rebase is to never use it on public branches.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Git-cherry-pick
+* Apply the changes introduced by some existing commits.
+What git cherry-pick does, basically, is take a commit from somewhere else, and &quot;play it back&quot; wherever you are right now.
+git cherry-pick commit-hash
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Git rerere
+* The name stands for &quot;reuse recorded resolution&quot; and as the name implies, it allows you to ask Git to remember how you&#39;ve resolved a hunk conflict so that the next time it sees the same conflict, Git can automatically resolve it for you.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Git rerere --contd
+
+* To enable the rerere functionality, you simply have to run this config setting:
+
+* $ git config --global rerere.enabled true
+* You can also turn it on by creating the .git/rr-cache directory in a specific repository, but I think the config setting is clearer, and it can be done globally.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Rebasing Vs Merging
+Rebasing a branch on master:
+* provides an incorrect idea of how commits were created  
+* pollutes master with a bunch of intermediate commits that may not have been well tested
+* makes finding good places in master to checkout difficult.
+* Causes the timestamps on commits to not align with their chronological order in the tree.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;  
+Merging a branch on master:
+* preserves history of where topic branches were created, including any merges from master to the topic branch to help keep it current. You really get an accurate idea of what code the developer was working with when they were building.
+* master is a branch made up mostly of merges, and each of those merge commits are typically &#39;good points&#39; in history that are safe to check out because that&#39;s where the topic branch was ready to be integrated.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+
+* https://git-scm.com/docs/git-merge
+* https://git-scm.com/docs/git-cherry-pick
+* https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+* https://www.git-tower.com/blog/understanding-rebase-merge-in-git/
+* https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+* https://git-scm.com/blog/2010/03/08/rerere.html
+* https://www.atlassian.com/git/tutorials/advanced-overview
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Thank you
+&lt;/section&gt;
+</description>
+        <pubDate>Mon, 14 Mar 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/Advanced-git</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/Advanced-git</guid>
+        
+        
+      </item>
     
       <item>
         <title>Goal Analyzer</title>
@@ -1904,158 +2035,6 @@ the model_name when it calls for it.
         <pubDate>Tue, 09 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/form-objects</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/form-objects</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Playing timezones in rails</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-
-# Playing timezone in rails
-
-Feb 8, 2016
-
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;h4&gt;Pooja Raghunath&lt;/h4&gt;
-  &lt;p&gt;
-    Ruby Developer@RedPanthers
-  &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Why is time important?
-* Track when something happened
-
-* Schedule when something will happen
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### What is UTC?
-“Coordinated Universal Time” International Standard Other time zones can be described with the number of hours and minutes with which they deviate from UTC as an offset
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### UTC offset?
-The UTC offset is the difference in hours and minutes from Coordinated Universal Time (UTC) for a particular place and date.It is generally shown in the format ±[hh]:[mm], ±[hh][mm], or ±[hh].
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
- ### Time zones vs time offsets
- * A time zone is a geographical region where almost everyone observes the same standard time.
-
-* A time offset is an amount of time subtracted from or added to UTC to get the current civil time – whether it&#39;s standard time or daylight saving time.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Configure your Rails app
- * The most important one is the config.time_zone configuration in your `config/application.rb file`.
- * ActiveRecord will help you convert from and to UTC and the time zone.
- * ActiveRecord fetches UTc time from DB and convert it to the timezone in config.time.zone
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Parsing
-* When parsing time information it&#39;s important to never do it without specifying the time zone.
-* The best way to do this is to use Time.zone.parse (which will use the time zone specified in config.time_zone) instead of just Time.parse (which will use the computer&#39;s time zone).
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Date vs Time
-* Time has date information but Date does NOT have time information.
-* Always make sure to convert it to your configured time zone:
-
-* 1.day.from_now # =&amp;gt; Fri, 03 Mar 2012 22:04:47 JST +09:00
-
-* Date.current.in_time_zone # =&amp;gt; Fri, 02 Mar 2012 00:00:00 JST +09:00
-
-* Never use:
-
- Date.today.to_time # =&amp;gt; 2012-03-02 00:00:00 +0100
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Querying
-Since Rails know that your time information is stored as UTC in the database it will convert any time you give it to UTC.
-
-* Post.where([&quot;posts.published_at &amp;gt; ?&quot;, Time.current])
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Working with multiple user time zones
-
-Create a private method in your ActionController and run it as an around filter.  
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###DOs
-* 2.hours.ago # =&amp;gt; Thu, 27 Aug 2015 14:39:36 AFT +04:30
-* 1.day.from_now # =&amp;gt; Fri, 28 Aug 2015 16:39:36 AFT +04:30
-* Time.zone.parse(&quot;2015-08-27T12:09:36Z&quot;) # =&amp;gt; Thu, 27 Aug 2015 16:39:36 AFT +04:30
-* Time.current # =&amp;gt; Thu, 27 Aug 2015 16:39:36 AFT +04:30
-* Time.current.utc.iso8601 # When supliyng an API (&quot;2015-08-27T12:09:36Z&quot;)
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-
-* Time.strptime(&quot;2015-08-27T12:09:36Z&quot;, &quot;%Y-%m-%dT%H:%M:%S%z&quot;).in_time_zone # If you can&#39;t use Time.zone.parse (Thu, 27 Aug 2015 16:39:36 AFT +04:30)
-* Date.current # If you really can&#39;t have a Time or DateTime for some reason (Thu, 27 Aug 2015)
-* Date.current.in_time_zone # If you have a date and want to make the best out of it (Thu, 27 Aug 2015 00:00:00 AFT +04:30)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### DON&#39;Ts
-* Time.now # Returns system time and ignores your configured time zone. (2015-08-27 14:09:36 +0200)
-* Time.parse(&quot;2015-08-27T12:09:36Z&quot;) # Will assume time string given is in the system&#39;s time zone. (2015-08-27 12:09:36 UTC)
-* Time.strptime(&quot;2015-08-27T12:09:36Z&quot;, &quot;%Y-%m-%dT%H:%M:%S%z&quot;) # Same problem as with Time.parse. (2015-08-27 12:09:36 UTC)
-* Date.today # This could be yesterday or tomorrow depending on the machine&#39;s time zone, see https://github.com/ramhoj/time-zone-article/issues/1 for more info. (Thu, 27 Aug 2015)
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### What if I don&#39;t have logged in users
-If your are building a site that needs to show times and you don&#39;t have logged in users, setting the server time zone is not a solution either. You have the following options:
-* Use Javascript on the front end to figure out the correct time to display, based on the user&#39;s browser
-* Try this gem https://github.com/scottwater/detectimezonerails
-* Use the user&#39;s IP address to infer the timezone
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Testing
-
-* Timezones are working correctly by changing the timezone for the current user and checking that  views show the correct date/time for their timezone.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Integration testing with client side JS
-However if you are doing integration testing that involves client side JavaScript, things get more difficult. For example the client side could get the timezone from the browser and then use that for querying the server, this is really hard to mock.
-A particular gem that is very useful is timezone_local.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Reference
-* http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html
-* http://www.elabs.se/blog/36-working-with-time-zones-in-ruby-on-rails
-* https://www.reinteractive.net/posts/168-dealing-with-timezones-effectively-in-rails
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Thank You!!
-
-&lt;/section&gt;
-</description>
-        <pubDate>Mon, 08 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/playing-timezone-in-rails</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/playing-timezone-in-rails</guid>
         
         
       </item>
