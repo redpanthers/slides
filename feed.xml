@@ -5,9 +5,223 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Mar 2016 11:43:05 +0530</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2016 11:43:05 +0530</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 09:36:31 +0530</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 09:36:31 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Snap SVG</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+### Snap SVG
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+  &lt;h4&gt;Sibin Xavier&lt;/h4&gt;
+  &lt;p&gt;
+    Frontend Developer
+  &lt;/p&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### SVG - Scalable Vector Graphics
+  * SVG stands for Scalable Vector Graphics
+  * SVG is used to define vector-based graphics for the Web
+  * SVG defines the graphics in XML format
+  * SVG graphics do NOT lose any quality if they are zoomed or resized
+Every element and every attribute in SVG files can be animated
+  * SVG is a W3C recommendation
+  * SVG integrates with other W3C standards such as the DOM and XSL
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### SVG is a opensource project from W3C
+  - Currently alsmost every browser supports SVG
+  - Many well developed plugins available to create SVG Objects
+  - Google index SVG elements in search results
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ### 14 Functional areas
+  - Paths, Basic Shapes, Text, Painting, Color, Gradients and patterns
+  - Clipping, masking and compositing, Filter effects
+  - Interactivity, Linking, Scripting, Animation
+  - Fonts, Metadata
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h3&gt; Typical SVG Element&lt;/h3&gt;
+  &lt;pre&gt;&lt;code&gt;
+  &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot;&gt;
+    &lt;rect x=&quot;25&quot; y=&quot;25&quot; width=&quot;200&quot; height=&quot;200&quot; fill=&quot;lime&quot; stroke-width=&quot;4&quot; stroke=&quot;pink&quot; /&gt;
+    &lt;circle cx=&quot;125&quot; cy=&quot;125&quot; r=&quot;75&quot; fill=&quot;orange&quot; /&gt;
+    &lt;polyline points=&quot;50,150 50,200 200,200 200,100&quot; stroke=&quot;red&quot; stroke-width=&quot;4&quot; fill=&quot;none&quot; /&gt;
+    &lt;line x1=&quot;50&quot; y1=&quot;50&quot; x2=&quot;200&quot; y2=&quot;200&quot; stroke=&quot;blue&quot; stroke-width=&quot;4&quot; /&gt;
+  &lt;/svg&gt;
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+  ## Why Snap SVG
+  - Snap.svg is a brand new JavaScript library for working with SVG
+  - Snap provides web developers with a clean, streamlined, intuitive, and powerful API for animating and manipulating both existing SVG content, and SVG content generated with Snap.
+  -  Snap was written entirely from scratch by the author of Raphaël (Dmitry Baranovskiy), and is designed specifically for modern browsers (IE9 and up, Safari, Chrome, Firefox, and Opera)
+  - Use advantages of modern browser features (masking, clipping, patterns, full gradients, groups, and more)
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h3&gt; Create a Snap JS Object &lt;/h3&gt;
+  &lt;pre&gt;&lt;code&gt;
+    var s = Snap(&quot;#svg&quot;);
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h3&gt;Simple Snap JS Element &lt;/h3&gt;
+  &lt;pre&gt;&lt;code&gt;
+  var s = Snap(&quot;#svg&quot;);
+  // Lets create big circle in the middle:
+  var bigCircle = s.circle(150, 150, 100);
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h3&gt;Snap SVG Elements&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt; Rectagle, Circle, Paths, Line &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h3&gt; Set Propertries for Snap SVG &lt;/h3&gt;
+  &lt;pre&gt;
+  &lt;code&gt;
+    var s = Snap(&quot;#svg&quot;);
+    // Lets create big circle in the middle:
+    var bigCircle = s.circle(150, 150, 100);
+    // By default its black, lets change its attributes
+    bigCircle.attr({
+        fill: &quot;#bada55&quot;,
+        stroke: &quot;#000&quot;,
+        strokeWidth: 5
+    });
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;Create Multiple Elements &lt;/h3&gt;
+&lt;pre&gt;
+&lt;code&gt;
+  var s = Snap(&quot;#svg&quot;);
+  var bigCircle = s.circle(150, 150, 100);
+  bigCircle.attr({
+    fill: &quot;#bada55&quot;,
+    stroke: &quot;#000&quot;,
+    strokeWidth: 5
+  });
+  var smallCircle = s.circle(100, 150, 70);
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+- We use cordinates inside Snap Objects
+- We use X,Y properties to set position
+- For Polygun, Circle we have extra values
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt;Group SVG Elements&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+  var discs = s.group(smallCircle, s.circle(200, 150, 70));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;
+  var c1 = paper.circle(),
+  c2 = paper.rect(),
+  g = paper.g();
+  g.add(c2, c1);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt; Group continue ....&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+  var c1 = paper.circle(),
+  c2 = paper.rect(),
+  g = paper.g(c2, c1);
+&lt;/code&gt;&lt;/pre&gt;
+Using Groups we can set properties for all elements inside group
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt; Snap SVG Transformation &lt;/h3&gt;
+ groupHouse.transform(&quot;s2, 50, 200&quot;)
+&lt;pre&gt;&lt;code&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt; Snap SVG Animation &lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;
+groupHouse.animate({
+    transform:&#39;s1.2,-400,-400&#39;,
+    fill:&#39;#e51c71&#39;
+  },2000,mina.easeinout, function(){
+    // callback
+    groupHouse.animate({
+      transform:&#39;s1,0,0&#39;,
+      fill:&#39;#e57f1c&#39;
+    },1000)
+  });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;Snap SVG Events&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+treeBranches.click(function(){
+alert(&quot;Hi! Tree Branch&quot;)
+})
+
+groupHouse.mouseover(function(){
+alert(&quot;Moving on House&quot;)
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h3&gt;Snap SVG Event Handlers&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+click, unclick, dbclick, mouseover, unmouseover, mouseup
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h3&gt; Load External SVG Elements &lt;/h3&gt;
+  &lt;pre&gt;&lt;code&gt;
+  var s = Snap(&#39;#svg-external&#39;);
+  // Lets create big circle in the middle:
+  Snap.load(&#39;/images/mascot.svg&#39;, function(element){
+  console.log(&quot;loaded&quot;)
+  s.append(element)
+  })
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;h3&gt;Snap SVG Ajax&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;
+Snap.ajax(
+      &#39;/page-snap-ajax.json&#39;,
+      function(data){
+        console.log(JSON.parse(data.response))
+      }
+    )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+* [Snap SVG](http://snapsvg.io/)
+&lt;/section&gt;
+</description>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/snap-svg-javascript-svg-plugin</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/snap-svg-javascript-svg-plugin</guid>
+        
+        
+      </item>
     
       <item>
         <title>Advanced Git</title>
@@ -1928,113 +2142,6 @@ https://www.twilio.com
         <pubDate>Thu, 11 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/managing environment variable</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/managing environment variable</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Form Objects</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-# Form Objects
-### Decomplexing your models
-
-Feb 09, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left;&quot;&gt;
-      &lt;img alt=&quot;Harisankar P S&quot; src=&quot;https://avatars1.githubusercontent.com/u/979321?v=3&amp;amp;s=460&quot; style=&quot;float: left; width:400px; height:400px;&quot; /&gt;&lt;br /&gt;
-      &lt;b&gt;Harisankar P S aka &lt;i&gt; HsPS&lt;/i&gt;&lt;/b&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;ul style=&quot;float: left&quot;&gt;
-        &lt;li&gt;Biker&lt;/li&gt;
-        &lt;li&gt;Gadget Enthusiast&lt;/li&gt;
-        &lt;li&gt;Writes Ruby code for a living&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-
-* Models, as per the MVC pattern are where we store our business logic.
-* Forms, refering to web forms, are html pages through which we collect data from the user
-* We add a lot of code to the models to make our forms work properly like validations, extra attributes.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### So whats are these form objects?
-
-Form objects are like models just that it would only have code related to your forms.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### So if they are like models, then why create new objects?
-
-Building a complex business application is more or less like building a complex webform, the
-way we collect data is most important. Thus our models are growing for just a single form, now imagine
-if you require 10 forms for your model, and for each model there is a different requiement.
-
-You will end up with models having over ** 500-1000 ** lines of code. Which essentially becomes a nightmare to
-maintain.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### So what will using a form object achieve
-
-
-  * Code related to a forms would be at a single location
-
-  * Thus it becomes easier to write test for them
-
-  * Our model will end up having only the actual business logic
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Now some live code examples
-
-&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;https://github.com/coderhs/form-objects-example
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;Branches:
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;gt; without-form-objects, 
-&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&amp;gt; with-form-objects&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### So how does this work?
-* Duck Typing
-
-Ruby/Rails doesn&#39;t look into the type of object that was passed, the only concern is the methods it tries to call
-should be there. ie. if we ask it to quack, it should quack. In this case, we need to make sure that the form gets
-the model_name when it calls for it.
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### References
-
-* http://railscasts.com/episodes/416-form-objects
-* https://robots.thoughtbot.com/activemodel-form-objects
-* https://github.com/coderhs/form-objects-example
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##Thank you :)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 09 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/form-objects</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/form-objects</guid>
         
         
       </item>

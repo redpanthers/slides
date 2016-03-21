@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Snap SVG | Talks | Red Panthers - Experts in Ruby on Rails kochi, India
+      
+    </title>
+
+    <meta name="author" content="" />
+    <!-- Include Social media meta content -->
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@redpanthershq">
+<meta name="twitter:title" content="Snap SVG">
+
+<meta name="twitter:creator" content="@redpanthershq">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Snap SVG" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.redpanthers.github.com/slides" />
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/749964972/1438853258/1500x500" />
+
+<meta property="og:site_name" content="Redpanthers Slides" />
+<meta property="fb:admins" content="492016520816519" />
+<meta property="fb:app_id" content="458945877638235" />
+
+
+  <meta name="twitter:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+  <meta property="og:description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. " />
+    <!-- eof social media meta content -->
+    <!-- Description -->
+    
+      <meta name="description" content="We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let's help you. ">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/slides/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/slides/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/slides/reveal.js/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="/slides/css/custom.css"/>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/slides/reveal.js/css/print/pdf.css' : '/slides/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/slides/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://slides.redpanthers.co/slides/snap-svg-javascript-svg-plugin">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+### Snap SVG
+</section>
+
+<section data-markdown="">
+  <h4>Sibin Xavier</h4>
+  <p>
+    Frontend Developer
+  </p>
+</section>
+<section data-markdown="">
+  ### SVG - Scalable Vector Graphics
+  * SVG stands for Scalable Vector Graphics
+  * SVG is used to define vector-based graphics for the Web
+  * SVG defines the graphics in XML format
+  * SVG graphics do NOT lose any quality if they are zoomed or resized
+Every element and every attribute in SVG files can be animated
+  * SVG is a W3C recommendation
+  * SVG integrates with other W3C standards such as the DOM and XSL
+</section>
+<section data-markdown="">
+  ### SVG is a opensource project from W3C
+  - Currently alsmost every browser supports SVG
+  - Many well developed plugins available to create SVG Objects
+  - Google index SVG elements in search results
+</section>
+<section data-markdown="">
+  ### 14 Functional areas
+  - Paths, Basic Shapes, Text, Painting, Color, Gradients and patterns
+  - Clipping, masking and compositing, Filter effects
+  - Interactivity, Linking, Scripting, Animation
+  - Fonts, Metadata
+</section>
+<section>
+  <h3> Typical SVG Element</h3>
+  <pre><code>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <rect x="25" y="25" width="200" height="200" fill="lime" stroke-width="4" stroke="pink" />
+    <circle cx="125" cy="125" r="75" fill="orange" />
+    <polyline points="50,150 50,200 200,200 200,100" stroke="red" stroke-width="4" fill="none" />
+    <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="4" />
+  </svg>
+  </code></pre>
+</section>
+<section data-markdown="">
+  ## Why Snap SVG
+  - Snap.svg is a brand new JavaScript library for working with SVG
+  - Snap provides web developers with a clean, streamlined, intuitive, and powerful API for animating and manipulating both existing SVG content, and SVG content generated with Snap.
+  -  Snap was written entirely from scratch by the author of Raphaël (Dmitry Baranovskiy), and is designed specifically for modern browsers (IE9 and up, Safari, Chrome, Firefox, and Opera)
+  - Use advantages of modern browser features (masking, clipping, patterns, full gradients, groups, and more)
+</section>
+<section>
+  <h3> Create a Snap JS Object </h3>
+  <pre><code>
+    var s = Snap("#svg");
+  </code></pre>
+</section>
+<section>
+  <h3>Simple Snap JS Element </h3>
+  <pre><code>
+  var s = Snap("#svg");
+  // Lets create big circle in the middle:
+  var bigCircle = s.circle(150, 150, 100);
+  </code></pre>
+</section>
+<section>
+  <h3>Snap SVG Elements</h3>
+  <ul>
+    <li> Rectagle, Circle, Paths, Line </li>
+  </ul>
+</section>
+<section>
+  <h3> Set Propertries for Snap SVG </h3>
+  <pre>
+  <code>
+    var s = Snap("#svg");
+    // Lets create big circle in the middle:
+    var bigCircle = s.circle(150, 150, 100);
+    // By default its black, lets change its attributes
+    bigCircle.attr({
+        fill: "#bada55",
+        stroke: "#000",
+        strokeWidth: 5
+    });
+  </code>
+  </pre>
+
+</section>
+<section>
+<h3>Create Multiple Elements </h3>
+<pre>
+<code>
+  var s = Snap("#svg");
+  var bigCircle = s.circle(150, 150, 100);
+  bigCircle.attr({
+    fill: "#bada55",
+    stroke: "#000",
+    strokeWidth: 5
+  });
+  var smallCircle = s.circle(100, 150, 70);
+</code>
+</pre>
+</section>
+<section data-markdown="">
+- We use cordinates inside Snap Objects
+- We use X,Y properties to set position
+- For Polygun, Circle we have extra values
+</section>
+
+<section>
+<h3>Group SVG Elements</h3>
+<pre><code>
+  var discs = s.group(smallCircle, s.circle(200, 150, 70));
+</code></pre>
+<pre><code>
+  var c1 = paper.circle(),
+  c2 = paper.rect(),
+  g = paper.g();
+  g.add(c2, c1);
+</code></pre>
+</section>
+<section>
+<h3> Group continue ....</h3>
+<pre><code>
+  var c1 = paper.circle(),
+  c2 = paper.rect(),
+  g = paper.g(c2, c1);
+</code></pre>
+Using Groups we can set properties for all elements inside group
+</section>
+
+<section>
+<h3> Snap SVG Transformation </h3>
+ groupHouse.transform("s2, 50, 200")
+<pre><code>
+
+</code></pre>
+
+</section>
+
+<section>
+<h3> Snap SVG Animation </h3>
+
+<pre><code>
+groupHouse.animate({
+    transform:'s1.2,-400,-400',
+    fill:'#e51c71'
+  },2000,mina.easeinout, function(){
+    // callback
+    groupHouse.animate({
+      transform:'s1,0,0',
+      fill:'#e57f1c'
+    },1000)
+  });
+</code></pre>
+
+</section>
+<section>
+<h3>Snap SVG Events</h3>
+<pre><code>
+treeBranches.click(function(){
+alert("Hi! Tree Branch")
+})
+
+groupHouse.mouseover(function(){
+alert("Moving on House")
+})
+</code></pre>
+</section>
+<section>
+<h3>Snap SVG Event Handlers</h3>
+<pre><code>
+click, unclick, dbclick, mouseover, unmouseover, mouseup
+</code></pre>
+</section>
+
+<section>
+  <h3> Load External SVG Elements </h3>
+  <pre><code>
+  var s = Snap('#svg-external');
+  // Lets create big circle in the middle:
+  Snap.load('/images/mascot.svg', function(element){
+  console.log("loaded")
+  s.append(element)
+  })
+  </code></pre>
+</section>
+
+<section>
+<h3>Snap SVG Ajax</h3>
+<pre><code>
+Snap.ajax(
+      '/page-snap-ajax.json',
+      function(data){
+        console.log(JSON.parse(data.response))
+      }
+    )
+</code></pre>
+
+</section>
+<section data-markdown="">
+### Reference
+* [Snap SVG](http://snapsvg.io/)
+</section>
+
+      </div>
+      <div class="pesentation-details">
+        <p>Sibin Xavier /
+          <a href="https://twitter.com/" title="Follow me on Twitter"></a>
+        </p>
+      </div>
+    </div>
+    <script src="/slides/reveal.js/lib/js/head.min.js"></script>
+    <script src="/slides/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/slides/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/slides/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/slides/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/slides/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/slides/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
