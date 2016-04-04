@@ -5,9 +5,225 @@
     <description>We specialize in helping our clients validate, build and expand their business through technology. If you have an idea, or want to build something innovative, Let&#39;s help you. </description>
     <link>http://slides.redpanthers.co/slides/</link>
     <atom:link href="http://slides.redpanthers.co/slides/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Mar 2016 09:36:31 +0530</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 09:36:31 +0530</lastBuildDate>
+    <pubDate>Mon, 04 Apr 2016 08:32:49 +0530</pubDate>
+    <lastBuildDate>Mon, 04 Apr 2016 08:32:49 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Multithreading</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+## Multi threading in Ruby
+
+March 29th 2016
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Aparna V&lt;/h2&gt;
+  &lt;p&gt;
+    Ruby Developer Trainee @RedPanthers
+  &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Introduction
+What is threading?
+- Threading often improves program response time by making heavy procedures run in the background.
+- A multithreaded program has more than one thread of execution.
+- Within each thread, statements are executed sequentially, but the threads themselves may be executed in parallel on a multicore CPU, for      example.
+- Often on a single CPU machine, multiple threads are not actually executed in parallel, but parallelism is simulated by interleaving the execution of the threads.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Creating Ruby Threads
+- To start a new thread, just associate a block with a call to Thread.new.
+- Thread #1 is running here.
+- Thread.new {
+-  Thread #2 runs this code.
+- }
+  Thread #1 runs this code.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+- How we can use multi-threaded Ruby program.  
+def func1  
+i=0  
+while i&amp;lt;=2  
+puts &quot;func1 at: #{Time.now}&quot;  
+sleep(2)  
+i=i+1  
+end  
+end  
+def func2  
+j=0  
+while j&amp;lt;=2  
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##continued
+puts &quot;func2 at: #{Time.now}&quot;  
+sleep(1)  
+j=j+1  
+end  
+end  
+puts &quot;Started At #{Time.now}&quot;  
+t1=Thread.new{func1()}  
+t2=Thread.new{func2()}  
+t1.join  
+t2.join  
+puts &quot;End at #{Time.now}&quot;  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Threads and exceptions
+- If an exception is raised in the main thread, and is not handled anywhere, the Ruby interpreter prints a message and exits. In threads other than the main thread, unhandled exceptions cause the thread to stop running.
+
+- If a thread t exits because of an unhandled exception, and another thread s calls t.join or t.value, then the exception that occurred in t is raised in the thread s.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+- If Thread.abort_on_exception is false, the default condition, an unhandled exception simply kills the current thread and all the rest continue to run.
+
+- If you would like any unhandled exception in any thread to cause the interpreter to exit, set the class method Thread.abort_on_exception to true.
+
+- t = Thread.new { ... }
+- t.abort_on_exception = true
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Thread Priorities
+- High-priority threads are scheduled before low-priority threads.
+- You can set and query the priority of a Ruby Thread object with priority= and priority. A newly created thread starts at the same priority as the thread that created it. The main thread starts off at priority 0.
+- There is no way to set the priority of a thread before it starts running. A thread can, however, raise or lower its own priority as the first action it takes.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Thread exclusion
+- If two threads share access to the same data, and at least one of the threads modifies that data, you must take special care to ensure that no thread can ever see the data in an inconsistent state. This is called thread exclusion.
+- Mutex is a class that implements a simple semaphore lock for mutually exclusive access to some shared resource. That is, only one thread may hold the lock at a given time. Other threads may choose to wait in line for the lock to become available, or may simply choose to get an immediate error indicating that the lock is not available.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+- By placing all accesses to the shared data under control of a mutex, we ensure consistency and atomic operation.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Muti threading vs Multiprogramming
+- Ruby concurrency is when two tasks can start, run, and complete in overlapping time periods. It doesn’t necessarily mean, though, that they’ll ever both be running at the same instant (e.g., multiple threads on a single-core machine).  In Ruby, the fork() system call is used to create a “copy” of the current process. This new process is scheduled at the operating system level, so it can run concurrently with the original process, just as any other independent process can.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Multi processing
+- using fork() to employ multiple processes:  
+puts Benchmark.measure{  
+  100.times do |i|  
+    fork do  
+      Mailer.deliver do
+        from    &quot;eki_#{i}@eqbalq.com&quot;
+        to      &quot;jill_#{i}@example.com&quot;
+        subject &quot;Threading and Forking (#{i})&quot;
+        body    &quot;Some content&quot;
+      end  
+    end  
+  end  
+  Process.waitall  
+}  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+###continued
+- It has a major drawback which is the amount of memory that it will consume. Forking is somewhat expensive, especially if a Copy-on-Write (CoW) is not utilized by the Ruby interpreter that you’re using.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Ruby Multithreading
+- Multiple threads within a single process have considerably less overhead than a corresponding number of processes since they share address space and memory.
+* A thread is a stream of instructions within a process. Each thread has its own instruction pointer, set of registers and stack memory. The virtual address space is process specific, or common to all threads within a process. So, data on the heap can be readily accessed by all threads, for good or ill.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Using multi threading  
+
+- threads = []  
+puts Benchmark.measure{  
+100.times do |i|  
+threads &amp;lt;&amp;lt; Thread.new do  
+Mailer.deliver do
+from    &quot;eki_#{i}@eqbalq.com&quot;  
+to      &quot;jill_#{i}@example.com&quot;  
+subject &quot;Threading and Forking (#{i})&quot;  
+body    &quot;Some content&quot;  
+end  
+end  
+end  
+threads.map(&amp;amp;:join)  }  
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+- Multi-threading is a more &quot;light weight&quot; form of concurrency: there is less context per thread than per process. As a result thread lifetime, context switching and synchronisation costs are lower. The shared address space (noted above) means data sharing requires no extra work.
+* In any multithreaded environment, context switching occurs. Context switching is the process by which a thread is stopped and its state and context are stored allowing other threads to use CPU cycles. Once the competing thread has been interrupted in a similar manner, the context and state of the original thread are loaded and the original thread has the opportunity to run if it gets priority.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### GIL (Global Interpreter Lock).
+- GIL does not make your code thread-safe. It only guarantees that two threads can’t run Ruby code at the same time. Thus it does inhibit parallelism. However, threads can still be paused and resumed at any given point, which means that they absolutely can clobber each others’ data.
+- GIL makes single threaded programs faster, that multi-threaded programs are much easier to develop since the data structures are safe and finally that a lot of C extensions are not thread safe and without the GIL, these C extensions don’t behave properly.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+- An interpreter which uses GIL will always allow exactly one thread and one thread only to execute at a time, even if run on a multi-core processor.
+- Ruby MRI and CPython are two of the most common examples of popular interpreters that have a GIL.
+- An interpreter which uses GIL will always allow exactly one thread and one thread only to execute at a time, even if run on a multi-core processor. Ruby MRI and CPython are two of the most common examples of popular interpreters that have a GIL.
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### To make a Rails app thread-safe, you have to make sure the code is thread-safe on three different levels:
+
+* Rails framework and its dependencies.
+* Your app code.
+* Any third party code you use.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Actors/Fibers
+* Actors are a like threads which don’t share the same memory context. Communication between actors is done via exchanged messages ensuring that each actor handles its own state and therefore avoiding corrupt data (two threads can modify the same data at the same time, but an actor can’t receive two messages at the exact same time).
+* A fiber is like a simplified thread which isn’t scheduled by the VM but by the programmer. Fibers are like blocks which can be paused and resumed from the outside of from within themselves. Fibers are faster and use less memory than threads.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### continued
+* Fiber allow developers to manually control the scheduling of “concurrent” code but also to have the code within the fiber to auto schedule itself.
+* That’s pretty big because now you can wrap an incoming web request in its own fiber and tell it to send a response back when it’s done doing its things. In the meantime, you can move on the to next incoming request.
+* Whenever a request within a fiber is done, it will automatically resume itself and be returned.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+* The only problem is that if you are doing any type of blocking IO in a fiber, the entire thread is blocked and the other fibers aren’t running. Blocking operations are operations like database/memcached queries, http requests, basically things you are probably triggering from your controllers. The only problem to fix now is to avoid blocking IOs.
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+### Reference
+* https://bearmetal.eu/theden/how-do-i-know-whether-my-rails-app-is-thread-safe-or-not/
+* http://www.tutorialspoint.com/ruby/ruby_multithreading.htm
+* http://merbist.com/2011/02/22/concurrency-in-ruby-explained/
+* http://pltconfusion.com/concurrency_primitives_and_abstractions_in_ruby/
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Thank you
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 29 Mar 2016 00:00:00 +0530</pubDate>
+        <link>http://slides.redpanthers.co/slides/multi-threading-in-ruby-on-rails-framework</link>
+        <guid isPermaLink="true">http://slides.redpanthers.co/slides/multi-threading-in-ruby-on-rails-framework</guid>
+        
+        
+      </item>
     
       <item>
         <title>Snap SVG</title>
@@ -214,6 +430,30 @@ Snap.ajax(
 &lt;section data-markdown=&quot;&quot;&gt;
 ### Reference
 * [Snap SVG](http://snapsvg.io/)
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+## Q&amp;amp;A
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Q? Snap SVG Browser Support.
+A: Snap SVG support only modern browser, It supports IE9 and up, Safari*, Chrome*, Firefox* and Opera* (* latest).This make Snap SVG to use browser features like masking, clipping, patters, gradients, groups etc..
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Q? Which Type Animation used in Snap SVG.
+A: Snap SVG use Javascript animation/ transition. It uses CSS3 properties like translateX, translate3D etc..
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Q?  Why Snap SVG not support old browsers, Is their any alternate plugins.
+A: Old browsers have only limited features, Snap SVG need more complex codes to implement same features on old browsers. Developers can&#39;t add modern browsers features. For old browsers like IE6, Raphael JS can use to create
+SVG elements.
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Q? Can we create Graphs, Charts, Pie Charts etc..
+A: Graphs, Charts are complex elements, Using Snap SVG, users are able to create charts and graphs. There are many plugins like Highcharts, Chartist, easyPieChart available.
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+### Q? Why we need Snap SVG
+A: Snap SVG like plugins help user to build custom shapes, user friendly elements like Charts, Pie Charts, Gauge meters , Complex loading elements etc. User can use same Javascript events on SVG elements.
 &lt;/section&gt;
 </description>
         <pubDate>Sun, 20 Mar 2016 00:00:00 +0530</pubDate>
@@ -2000,148 +2240,6 @@ It is similar to RSpec and Other Frameworks
         <pubDate>Mon, 15 Feb 2016 00:00:00 +0530</pubDate>
         <link>http://slides.redpanthers.co/slides/jasmine-javascript-test-suite</link>
         <guid isPermaLink="true">http://slides.redpanthers.co/slides/jasmine-javascript-test-suite</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Managing environment variable</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-## Managing Environment Configuration Variables in Rails
-
-Feb 11, 2016
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-&lt;section&gt;
-  &lt;h4&gt;Hi, I am&lt;/h4&gt;
-  &lt;h3&gt;Augustin Pulikan&lt;/h3&gt;
-  &lt;div style=&quot;width:150%;&quot;&gt;
-    &lt;div style=&quot;float:left; width:30%;&quot;&gt;
-      &lt;img alt=&quot;Jeroen De Meerleer&quot; src=&quot;https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xft1/v/t1.0-9/12065624_873705689393220_2906766376590498181_n.jpg?oh=a5eca759b8989d24dd44d77d04b5eb8d&amp;amp;oe=57443E25&quot; style=&quot;float: left; width:300px; height:300px;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;float:right; width:70%;&quot;&gt;
-      &lt;ul style=&quot;float: left; padding-top: 4%;&quot;&gt;
-          &lt;li&gt;Ruby Devoloper Trainee at Redpanthers&lt;/li&gt;
-
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/section&gt;
-
-&lt;!-- Just to show that markdown and html can be mixed --&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Introduction
-
-when developing apps with Rails you need to set up environment variables to keep sensitive information secure in your code
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###Why Configuration Variables?
-
-Hard coding sensitive information and committing them into source control can be dangerous as it means anyone with access to your code can see your API keys and secrets
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### few ways to manage environment variables in Rails
-
- Using Bash or Zsh Profile
-
- dotenv
-
- Figaro
-
- secrets.yml
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Using Bash or Zsh Profile
- You can store the environment variable key/value pairs with the operating system directly and globally
-
- export KEY=value
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Demerits of using Zsh or Bash profile
-
- Config file might get cluttered with so many of these variables and you’ll end up with one very messy global space
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### dotenv
-dotenv solves the problems of setting project-specific environment vars and is super easy
-You can then put your sensitive information inside a .env file at the root of your project directory
-
-gem &#39;dotenv-rails&#39;
-
-PASSWORD=h4lpd4skpw0rd
-
-S3_BUCKET=YOURS3BUCKET
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### Figaro
- Figaro is similar to dotenv. What it does is to allow you to store all your sensitive secrets in a YAML file at config/application.yml. With it’s simple figaro install command you get your YAML file automatically added to gitignore.
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### secrets.yml
- Very similar to Figaro’s config/application.yml, secrets.yml was added to Rails 4.1. You’ll have to add your secrets in config/secrets.yml as is done with Figaro
-
- The variables added here are accessible through Rails.application.secrets
-
-
-&lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-### Advantages of secrets.yml
-
- Enhanced security
-
- Prevents session tampering
-
- No need for any external dependency
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-###Other Solutions
-
-If you don’t want to use a gem to separate sensitive information from your project, there is a common pattern to create simple YAML files. You can name it private.yml.
-
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### How do I choose?
-
-Using Bash or Zsh profile to store environment variables allows you to set system wide and user specific environment variable this approach is, as your configuration grows and becomes more complex The addition of secrets.yml to Rails 4.1 is a major step in the right direction and also does a very good job at managing app-specific environment variables in dotenv add your .env file to gitignore when using dotenv. Figaro does this for you because of its convention of never committing configuration files
-
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-### References
-
-https://www.launchschool.com
-
-http://stackoverflow.com
-
-https://www.twilio.com
-&lt;/section&gt;
-
-&lt;section data-markdown=&quot;&quot;&gt;
-##Thank you :)
-
-&lt;/section&gt;
-</description>
-        <pubDate>Thu, 11 Feb 2016 00:00:00 +0530</pubDate>
-        <link>http://slides.redpanthers.co/slides/managing environment variable</link>
-        <guid isPermaLink="true">http://slides.redpanthers.co/slides/managing environment variable</guid>
         
         
       </item>
