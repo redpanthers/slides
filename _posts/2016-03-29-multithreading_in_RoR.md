@@ -1,10 +1,10 @@
 ---
 layout: slide
-title: Multithreading 
+title: Multithreading
 description: A presentation slide for multithreading
 theme: black
 transition: slide
-permalink: /MultithreadingInRoR
+permalink: /multi-threading-in-ruby-on-rails-framework
 author: Aparna V
 post_thumbnail: /slides/images/multithreading.jpg
 profile_image: /slides/profiles/aparnav.jpg
@@ -27,7 +27,7 @@ March 29th 2016
 ### Introduction
 What is threading?
 - Threading often improves program response time by making heavy procedures run in the background.
-- A multithreaded program has more than one thread of execution. 
+- A multithreaded program has more than one thread of execution.
 - Within each thread, statements are executed sequentially, but the threads themselves may be executed in parallel on a multicore CPU, for      example.
 - Often on a single CPU machine, multiple threads are not actually executed in parallel, but parallelism is simulated by interleaving the execution of the threads.
 </section>
@@ -55,7 +55,7 @@ end
 def func2  
 j=0  
 while j<=2  
-     
+
 </section>
 
 <section data-markdown>
@@ -109,7 +109,7 @@ puts "End at #{Time.now}"
 
 <section data-markdown>
 ### Muti threading vs Multiprogramming
-- Ruby concurrency is when two tasks can start, run, and complete in overlapping time periods. It doesn’t necessarily mean, though, that they’ll ever both be running at the same instant (e.g., multiple threads on a single-core machine).  In Ruby, the fork() system call is used to create a “copy” of the current process. This new process is scheduled at the operating system level, so it can run concurrently with the original process, just as any other independent process can. 
+- Ruby concurrency is when two tasks can start, run, and complete in overlapping time periods. It doesn’t necessarily mean, though, that they’ll ever both be running at the same instant (e.g., multiple threads on a single-core machine).  In Ruby, the fork() system call is used to create a “copy” of the current process. This new process is scheduled at the operating system level, so it can run concurrently with the original process, just as any other independent process can.
 </section>
 
 <section data-markdown>
@@ -118,7 +118,7 @@ puts "End at #{Time.now}"
 puts Benchmark.measure{  
   100.times do |i|  
     fork do  
-      Mailer.deliver do 
+      Mailer.deliver do
         from    "eki_#{i}@eqbalq.com"
         to      "jill_#{i}@example.com"
         subject "Threading and Forking (#{i})"
@@ -137,7 +137,7 @@ puts Benchmark.measure{
 
 <section data-markdown>
 ### Ruby Multithreading
-- Multiple threads within a single process have considerably less overhead than a corresponding number of processes since they share address space and memory. 
+- Multiple threads within a single process have considerably less overhead than a corresponding number of processes since they share address space and memory.
 * A thread is a stream of instructions within a process. Each thread has its own instruction pointer, set of registers and stack memory. The virtual address space is process specific, or common to all threads within a process. So, data on the heap can be readily accessed by all threads, for good or ill.
 </section>
 
@@ -148,7 +148,7 @@ puts Benchmark.measure{
 puts Benchmark.measure{  
 100.times do |i|  
 threads << Thread.new do  
-Mailer.deliver do   
+Mailer.deliver do
 from    "eki_#{i}@eqbalq.com"  
 to      "jill_#{i}@example.com"  
 subject "Threading and Forking (#{i})"  
@@ -186,16 +186,16 @@ threads.map(&:join)  }
 
 </section>
 
-<section data-markdown> 
+<section data-markdown>
 ### Actors/Fibers
-* Actors are a like threads which don’t share the same memory context. Communication between actors is done via exchanged messages ensuring that each actor handles its own state and therefore avoiding corrupt data (two threads can modify the same data at the same time, but an actor can’t receive two messages at the exact same time). 
+* Actors are a like threads which don’t share the same memory context. Communication between actors is done via exchanged messages ensuring that each actor handles its own state and therefore avoiding corrupt data (two threads can modify the same data at the same time, but an actor can’t receive two messages at the exact same time).
 * A fiber is like a simplified thread which isn’t scheduled by the VM but by the programmer. Fibers are like blocks which can be paused and resumed from the outside of from within themselves. Fibers are faster and use less memory than threads.
 
 </section>
 
 <section data-markdown>
 ### continued
-* Fiber allow developers to manually control the scheduling of “concurrent” code but also to have the code within the fiber to auto schedule itself. 
+* Fiber allow developers to manually control the scheduling of “concurrent” code but also to have the code within the fiber to auto schedule itself.
 * That’s pretty big because now you can wrap an incoming web request in its own fiber and tell it to send a response back when it’s done doing its things. In the meantime, you can move on the to next incoming request.
 * Whenever a request within a fiber is done, it will automatically resume itself and be returned.
 
