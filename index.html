@@ -40,7 +40,11 @@ layout: default
           <a href="" class="profile-name">
             {{post.author}}
           </a>
+          <a class="pull-right export-pdf" href="{{ post.url | prepend: site.baseurl }}?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     {% endfor %}
@@ -88,3 +92,12 @@ layout: default
     {% endif %}
   </div>
 </div>
+<script>
+  if( window.location.search.match( /print-pdf/gi ) ) {
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'print.css'; // Notice: I changed the path
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  }
+</script>>
