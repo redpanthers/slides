@@ -178,7 +178,11 @@
           <a href="" class="profile-name">
             Augustin Pulikan
           </a>
+          <a class="pull-right export-pdf" href="/slides/jenkins-ci-opensource-automation-server?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -204,7 +208,11 @@
           <a href="" class="profile-name">
             Sibin Xavier
           </a>
+          <a class="pull-right export-pdf" href="/slides/web-with-react-and-flux/?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -230,7 +238,11 @@
           <a href="" class="profile-name">
             Alfred Dominic
           </a>
+          <a class="pull-right export-pdf" href="/slides/sublime-packages/?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -256,7 +268,11 @@
           <a href="" class="profile-name">
             Jeena Jacob
           </a>
+          <a class="pull-right export-pdf" href="/slides/virtualization-using-docker-containers/?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -282,7 +298,11 @@
           <a href="" class="profile-name">
             Ajay Joseph
           </a>
+          <a class="pull-right export-pdf" href="/slides/vim-editor-tips?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -308,7 +328,11 @@
           <a href="" class="profile-name">
             Manu S Ajith
           </a>
+          <a class="pull-right export-pdf" href="/slides/create-slides-with-revealjs-and-jekyll/?print-pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span>
+          </a>
         </div>
+
         </div>
       </li>
     
@@ -358,6 +382,15 @@
     
   </div>
 </div>
+<script>
+  if( window.location.search.match( /print-pdf/gi ) ) {
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'print.css'; // Notice: I changed the path
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  }
+</script>>
 
               </div> 
             </div>

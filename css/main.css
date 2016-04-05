@@ -534,6 +534,35 @@ pre {
     border-color: #a70e0e;
     color: #fff; }
 
+/** Export PDF section **/
+.export-pdf {
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  background: #961818;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  text-align: center;
+  line-height: 40px; }
+  .export-pdf:hover, .export-pdf:active, .export-pdf:visited, .export-pdf:focus {
+    color: #f9f9f9;
+    background: #c21f1f; }
+
+/** eof export PDF section **/
 /**
  * Syntax highlighting styles
  */
