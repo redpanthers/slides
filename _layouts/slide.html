@@ -37,6 +37,7 @@
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
     <link rel="stylesheet" href="{{ "/slides/css/custom.css" | prpend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "/slides/css/print.css" | prpend: site.baseurl }}"/>
 
 
     <!-- Printing and PDF exports -->
@@ -97,6 +98,14 @@
       });
 
     </script>
-
+    <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'print.css'; // Notice: I changed the path
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>>
   </body>
 </html>
